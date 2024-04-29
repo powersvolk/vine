@@ -1,3 +1,238 @@
 .footer{
     background: var(--blue-bg);
+
+    .footer__navigation{
+        padding: 50px 0 35px;
+        display: flex;
+        justify-content: space-between;
+        gap:30px;  
+        &-item{
+            width:20%;
+            &:first-child{
+                width:15%;
+            }
+            &:last-child{
+                width:25%;
+            }
+            h3{
+                font-weight: 700;
+                font-size:rem(16px);
+                color:var(--text-white);
+                padding: 0 0 30px;
+                @media only screen and (max-width: $desktop) {
+                    font-size:rem(14px);
+                    padding: 0 0 25px;
+                }
+            }
+            ul{
+                li{
+                    padding: 0 0 15px;
+                    a{
+                        text-decoration: none;
+                        color:var(--text-gray);
+                        position: relative;
+                        transition: 0.3s ease;
+                        font-size:rem(16px);
+
+                        &:before{
+                            content:'';
+                            width: 0px;
+                            height:1px;
+                            display: block;
+                            position: absolute;
+                            top:100%;
+                            left:50%;
+                            transform: translateX(-50%);
+                            background: var(--text-gray);
+                            transition: 0.3s ease;
+                        }
+                        &:hover{
+                            color:var(--text-white);
+                            &:before{
+                                width:100%;
+                                background: var(--text-white);
+                            }
+                        }
+                        @media only screen and (max-width: $desktop) {
+                           font-size:rem(14px);
+                        }
+                    }
+                }
+            }
+
+            .footer__navigation-address{
+                color:var(--text-gray);
+                font-size: rem(16px);
+                margin: 0 0 15px;
+                padding: 0 0 0 30px;
+                position: relative;
+                a{
+                    color:var(--text-gray);
+                    text-decoration: none;
+                    position: relative;
+                    &:before{
+                        content:'';
+                        width: 0px;
+                        height:1px;
+                        display: block;
+                        position: absolute;
+                        top:100%;
+                        left:50%;
+                        transform: translateX(-50%);
+                        background: var(--text-gray);
+                        transition: 0.3s ease;
+                    }
+                    &:hover{
+                        color:var(--text-white);
+                        &:before{
+                            width:100%;
+                            background: var(--text-white);
+                        }
+                    } 
+                }
+                .icon{
+                    position: absolute;
+                    top:50%;
+                    left:0px;
+                    transform: translateY(-50%);
+                    width:20px;
+                    height:20px;
+                }
+
+                @media only screen and (max-width: $desktop) {
+                    font-size:rem(14px);
+                }
+            }
+            .footer__navigation-description{
+                font-size:rem(12px);
+                color:var(--text-gray);
+                line-height: 1.5em;
+
+                @media only screen and (max-width: $desktop) {
+                    br{
+                        display:none;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer__copyright{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0 10px;
+        border-top:1px solid #3A7395;
+        &-item{
+            width:50%;
+            color:var( --text-white);
+            font-size:rem(16px);
+            &:first-child{
+                width:40%;
+                @media only screen and (max-width: $smDesktop) {
+                    width:30%;
+                }
+            }
+            &:last-child{
+                width:60%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap:40px;
+                @media only screen and (max-width: $smDesktop) {
+                    width:70%;
+                }
+            }
+
+            .footer__copyright-police {
+                a{
+                    text-decoration: none;
+                    color:var(--text-white);
+                    position: relative;
+                    transition: 0.3s ease;
+                    font-size:rem(16px);
+    
+                    &:before{
+                        content:'';
+                        width: 0px;
+                        height:1px;
+                        display: block;
+                        position: absolute;
+                        top:100%;
+                        left:50%;
+                        transform: translateX(-50%);
+                        background: var(--text-white);
+                        transition: 0.3s ease;
+                    }
+                    &:hover{
+                        &:before{
+                            width:100%;
+                        }
+                    }
+                    @media only screen and (max-width: $desktop) {
+                        font-size:rem(14px);
+                    }
+                }
+            }
+            .footer__copyright-banks{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .footer__copyright-banks{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color:var( --text-white);
+                font-size:rem(16px);
+                line-height: 1.2em;
+                img{
+                    width:160px;
+                    height: auto;
+                    margin: 0 0 0 15px;
+                }
+                @media only screen and (max-width: $desktop) {
+                    font-size:rem(14px);
+                }
+            }
+
+            .footer__copyright-social{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                a{
+                    width: 32px;
+                    height: 32px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    transition: 0.3s ease;
+                    &:first-child{
+                        margin: 0 10px 0 0;
+                        background: var(--viber-bg);
+                    }
+                    &:last-child{
+                         background: var(--telegram-bg);
+                    }
+                    .icon{
+                        width:13px;
+                        height:13px;
+                    }
+                    &:first-child:hover{
+                        background: var(--viber-bg-hover);
+                    }
+                    &:last-child:hover{
+                        background: var(--telegram-bg-hover);
+                    }
+                
+                }
+            }
+
+            @media only screen and (max-width: $desktop) {
+                font-size:rem(14px);
+            }
+        }
+    }
 }

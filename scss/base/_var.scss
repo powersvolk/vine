@@ -3,19 +3,27 @@
     /* Fonts */
     --font-family: "Exo 2", sans-serif;
 
-    /* Media */
-    $desktop : 1299px;
-    $tablet : 959px;
-    $smTablatet : 767px;
-    $phone : 576px;
-    $smPhone : 479px;
-
     /* Colors text */
 
+    --text-white:#fff;
     --text-color:#5C798B;
-
+    --text-gray:#D5DFE4;
 
     /* background colors */
 
     --blue-bg:#0F6C8C;
+    --viber-bg:#73EF12;
+    --telegram-bg:#3D81FA;
+    --viber-bg-hover:#59bd0d;
+    --telegram-bg-hover:#225cc0;
 }
+
+
+/* Media */
+$desktop : 1299px;
+$smDesktop : 1199px;
+$tablet : 959px;
+$smTablatet : 767px;
+$phone : 576px;
+$smPhone : 479px;
+

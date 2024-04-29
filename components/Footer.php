@@ -48,6 +48,7 @@
                     </li>
                 </ul>
             </div>
+
             <div class="footer__navigation-item">
                 <h3>
                     Интересное
@@ -85,6 +86,7 @@
                     </li>
                 </ul>
             </div>
+
             <div class="footer__navigation-item">
                 <h3>
                     Популярные разделы
@@ -122,6 +124,7 @@
                     </li>
                 </ul>
             </div>
+
             <div class="footer__navigation-item">
                 <h3>
                     Популярные разделы
@@ -159,47 +162,81 @@
                     </li>
                 </ul>
             </div>
-            
-   
 
             <div class="footer__navigation-item">
                 <h3>
                     Контакты
                 </h3>
-                <div class="footer__navigation_address">
+                <div class="footer__navigation-address">
                     <svg class="icon">
                         <use xlink:href="#location"></use>
                     </svg>
                     г. Москва, Партийный переулок, 1 
                 </div>
-                <div class="footer__navigation_address">
+                <div class="footer__navigation-address">
                     <svg class="icon">
                         <use xlink:href="#phone"></use>
                     </svg>
-                    8 (800) 700-75-75
-                </div>
-                <div class="footer__navigation_address">
+                    <a href="tel:88007007575">
+                        8 (800) 700-75-75
+                    </a>
+                 </div>
+                <div class="footer__navigation-address">
                     <svg class="icon">
                         <use xlink:href="#email"></use>
                     </svg>
-                    drink@retail.com
+                    <a href="mailto:drink@retail.com">
+                        drink@retail.com
+                    </a>
                 </div>
-                <div class="footer__navigation_address">
+                <div class="footer__navigation-address">
                     <svg class="icon">
                         <use xlink:href="#clock"></use>
                     </svg>
                     Пн–Вс, 10:00–21:00 МСК
                 </div>
+                
+                <div class="footer__navigation-description">
+                    Круглосуточно вы можете оформить заказ по<br/> 
+                    телефону или получить ответы на любые<br/> 
+                    интересующие вас вопросы.
+                </div>
             </div>
         </div>
         <div class="footer__copyright">
+            <div class="footer__copyright-item copyright">
+                © 2024 -  Все права защищены 
+            </div>
+            <div class="footer__copyright-item">
+                <div class="footer__copyright-police">
+                    <a href="#">
+                        Политика конфиденциальности
+                    </a>
+                </div>
+                <div class="footer__copyright-banks">
+                    Способы оплаты
+                    <img src="img/banks.png" alt="Способы оплаты">
+                </div>
+                <div class="footer__copyright-social">
+                    <a href="#">
+                        <svg class="icon">
+                            <use xlink:href="#viber"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon">
+                            <use xlink:href="#telegram"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
             
         </div>
     </div>
     
 </section>
 
-<?php include('components/SvgSprite.php'); ?>
+<?php include('components/SVG/SvgSprite.php'); ?>
 <script src="/js/jquery-3.7.1.min.js"></script>
 <script src="/js/main.js"></script>
 </body>
