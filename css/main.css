@@ -62,11 +62,15 @@ table {
   --text-color:#5C798B;
   --text-gray:#D5DFE4;
   /* background colors */
+  --main-bg:#f5f5f5;
+  --white-bg:#fff;
   --blue-bg:#0F6C8C;
   --viber-bg:#73EF12;
   --telegram-bg:#3D81FA;
   --viber-bg-hover:#59bd0d;
   --telegram-bg-hover:#225cc0;
+  /* CTA */
+  --cta-red:#BB0B2B;
 }
 
 /* Media */
@@ -82,6 +86,7 @@ html body {
   max-width: 100%;
   min-width: 100%;
   font-weight: 400;
+  background: var(--main-bg);
 }
 
 html body .container {
@@ -115,7 +120,45 @@ html body .container {
     width: 1320px;
   }
 }
+.icon {
+  max-width: 40px;
+  max-height: 40px;
+}
+
 /* Компоненты */
+.header {
+  padding: 25px 0;
+  background: var(--white-bg);
+}
+.header .header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .header__inner-logo {
+  width: 165px;
+}
+.header .header__inner-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.header .header__inner-catalog {
+  width: 200px;
+}
+.header .header__inner-catalog .cta {
+  display: inline-block;
+  background: var(--cta-red);
+  color: var(--text-white);
+  font-size: 1rem;
+}
+
 .footer {
   background: var(--blue-bg);
 }

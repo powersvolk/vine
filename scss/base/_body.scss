@@ -10,6 +10,7 @@ html body {
 	max-width: 100%;
 	min-width: 100%;
 	font-weight: 400;
+    background: var(--main-bg);
 }
 
 html body .container {
@@ -44,4 +45,9 @@ html body .container {
 	html body .container {
 		width: 1320px;
 	}
+}
+
+.icon{
+    max-width: 40px;
+    max-height: 40px;
 }

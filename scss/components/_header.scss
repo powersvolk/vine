@@ -1,0 +1,27 @@
+.header{
+    padding: 25px 0;
+    background: var(--white-bg);
+    .header__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-logo{
+            width:165px;
+            img{
+                display: block;
+                width:100%;
+                height: auto;
+            }
+        }
+        &-catalog{
+            width:200px;
+            .cta{
+                display: inline-block;
+                background: var(--cta-red);
+                color:var(--text-white);
+                font-size:rem(16px);
+            }
+        }
+    }
+}
