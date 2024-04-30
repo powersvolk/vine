@@ -1226,7 +1226,6 @@ use path {
           justify-content: flex-end;
   gap: 25px;
 }
-
 .footer {
   background: var(--blue-bg);
 }
