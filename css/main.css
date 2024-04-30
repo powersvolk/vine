@@ -1226,6 +1226,17 @@ use path {
           justify-content: flex-end;
   gap: 25px;
 }
+.popular__brand .popular__brand_inner .popular__brand__tabs-item {
+  font-size: 1.125rem;
+  color: var(--text-color);
+  -webkit-transform: 0.3s ease;
+          transform: 0.3s ease;
+}
+.popular__brand .popular__brand_inner .popular__brand__tabs-item .active, .popular__brand .popular__brand_inner .popular__brand__tabs-item:hover {
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
 .footer {
   background: var(--blue-bg);
 }

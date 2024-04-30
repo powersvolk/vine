@@ -11,7 +11,14 @@
             justify-content: flex-end;
             gap:25px;
             &-item{
-                
+                font-size: rem(18px);
+                color:var(--text-color);
+                transform: 0.3s ease;
+                .active,
+                &:hover{
+                    color: var(--text-dark);
+                    cursor: pointer;
+                }
             }
         }
     }

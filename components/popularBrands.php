@@ -5,7 +5,7 @@
                 Популярные брены
             </h2>
             <div class="popular__brand__tabs">
-                <div class="popular__brand__tabs-item">
+                <div class="popular__brand__tabs-item active">
                     Виски
                 </div>
                 <div class="popular__brand__tabs-item">
