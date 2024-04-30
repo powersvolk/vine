@@ -1,4 +1,4 @@
-<section class="banner mb-60">
+<section class="banner pt-60">
 	<div class="container">
 		<div style="background: url(img/banner_index.png) no-repeat;  border-radius: 10px;">
 

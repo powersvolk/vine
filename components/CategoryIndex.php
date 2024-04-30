@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="section_category_brands">
-                        <div class="owl-categories owl-carousel owl-theme mb-30">
+                        <div class="owl-categories owl-carousel owl-theme">
                             <?php $j = 0;
                                 for($i = 1; $i <= 18; $i++) { 
                                     $j++;

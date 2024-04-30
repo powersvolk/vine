@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Intro";
-  src: url("../../Intro-Black.woff2") format("woff2"), url("../../Intro-Black.woff") format("woff"), url("../../Intro-Black.ttf") format("truetype");
+  src: url("../fonts/Intro-Black.woff2") format("woff2"), url("../fonts/Intro-Black.woff") format("woff"), url("../fonts/Intro-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
