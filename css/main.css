@@ -64,7 +64,7 @@ table {
 :root {
   /* Fonts */
   --font-family: "Exo 2", sans-serif;
-  --font-family-baner: "Intro", san-serif;
+  --font-family-baner: "Intro", sans-serif;
   /* Colors text */
   --text-white:#fff;
   --text-color:#5C798B;
@@ -475,11 +475,13 @@ h2 {
 .banner__text_title {
   font-size: 2.5rem;
   font-family: var(--font-family-baner);
+  letter-spacing: 2px;
 }
 .banner__text_number {
   color: #D1FFAC;
   font-size: 8rem;
   font-family: var(--font-family-baner);
+  letter-spacing: 8px;
 }
 .banner__text_description {
   font-family: var(--font-family);

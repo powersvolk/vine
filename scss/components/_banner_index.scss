@@ -5,12 +5,14 @@ padding: 115px 0 114px 120px;
 		&_title {
 			font-size: rem(40px);
 			font-family: var(--font-family-baner);
+			letter-spacing: 2px;
 		}
 
 		&_number {
 			color: #D1FFAC;
 			font-size: rem(128px);
 			font-family: var(--font-family-baner);
+			letter-spacing: 8px;
 		}
 
 		&_description {
