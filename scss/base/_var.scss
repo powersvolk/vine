@@ -56,3 +56,34 @@ $smTablatet : 767px;
 $phone : 576px;
 $smPhone : 479px;
 
+
+/* animation */
+
+@keyframes zoomOut {
+    from {
+      opacity: 1;
+     
+    }
+    50% {
+      opacity: 0;
+      transform: scale3d(.95, .95, .95);
+    
+    }
+  
+    to {
+      opacity: 0;
+     
+    }
+}
+
+@keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale3d(.95, .95, .95);
+     
+    }
+    50% {
+      opacity: 1;
+ 
+    }
+}
