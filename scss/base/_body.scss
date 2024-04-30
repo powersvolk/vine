@@ -156,4 +156,12 @@ use path{
 	color:var(--text-dark);
 	font-size:rem(28px);
 	margin: 0 0 40px;
+.mb-60 {
+	margin-bottom: 60px;
+}
+h2 {
+	font-family: var(--font-family);
+	color: var(--text-black);
+	font-size: rem(28px);
+	font-weight: 600;
 }
