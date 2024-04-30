@@ -3,7 +3,7 @@
 }
 
 @import 'base/_reset';
-@import 'base/fonts';
+@import 'base/_fonts';
 @import 'base/_var';
 @import 'owlcarousel/owl.carousel';
 @import 'owlcarousel/owl.theme.default';
@@ -16,4 +16,5 @@
 @import 'components/_footer';
 @import 'components/_banner_index';
 @import 'components/_map';
+
 
