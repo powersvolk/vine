@@ -5,11 +5,14 @@
 @import 'base/_reset';
 @import 'base/fonts';
 @import 'base/_var';
+@import 'owlcarousel/owl.carousel';
+@import 'owlcarousel/owl.theme.default';
 @import 'base/_body';
-
 /* Компоненты */
 
 @import 'components/_header';
+@import 'components/_bannerPromotion';
+@import 'components/_categoryIndex';
 @import 'components/_footer';
 @import 'components/_banner_index';
 @import 'components/_map';
