@@ -1623,14 +1623,29 @@ use path {
           justify-content: space-between;
 }
 .blog__head-link {
-  font-size: 1rem;
+  color: var(--text-color);
+  font-size: 0.875rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  position: relative;
   text-decoration: none;
-  color: #5C798B;
-  -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
 }
-.blog__head-link:hover {
-  text-decoration: underline;
+.blog__head-link:before {
+  content: "";
+  width: 0;
+  height: 1px;
+  display: block;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: var(--text-blue);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.blog__head-link:hover:before {
+  width: 100%;
 }
 .blog__items {
   display: -webkit-box;
@@ -1639,6 +1654,32 @@ use path {
   gap: 26px;
   padding-top: 16px;
 }
+.blog__item .blog-link {
+  color: var(--text-blue);
+  font-size: 0.875rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  position: relative;
+  text-decoration: none;
+}
+.blog__item .blog-link:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: var(--text-blue);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.blog__item .blog-link:hover:before {
+  width: 0;
+}
+
 .container-padding {
   background-color: var(--white-bg);
   border: 1px solid #DBDBDB;
@@ -1660,10 +1701,6 @@ use path {
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
   display: inline-block;
-}
-
-.blog-img:hover {
-  border: 1px solid var(--text-light-white);
 }
 
 .blog-date {
@@ -1694,18 +1731,6 @@ use path {
   color: #5C798B;
   font-weight: 400;
   margin-bottom: 20px;
-}
-
-.blog-link {
-  color: #1B78AF;
-  font-size: 14px;
-  font-weight: 400;
-  -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
-}
-
-.blog-link:hover {
-  text-decoration: none;
 }
 
 .serving-wine__desc {
