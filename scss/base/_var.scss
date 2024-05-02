@@ -15,16 +15,19 @@
     --text-gray:#D5DFE4;
     --text-light-gray:#AAB7BF;
     --text-semi-gray:#5C798B;
+    --text-bold-gray:#89909D;
     --text-dark:#212121;
     --text-red:#BB0B2B;
     --text-blue:#1B78AF;
     --text-vine:#09213D;
-	 --text-black: #212121;
+	  --text-black: #212121;
+    --text-green:#51B602;
 
     /* background colors */
 
     --main-bg:#f5f5f5;
     --white-bg:#fff;
+    --white-ligh-bg:#F2F2F2;
     --blue-bg:#0F6C8C;
     --viber-bg:#73EF12;
     --telegram-bg:#3D81FA;
@@ -33,6 +36,9 @@
     --lightYellow-bg:#FFBF6A;
     --orange-dark-bg:#E0A556;
     --orange-bg:#FFBF6A;
+    --dark-red-bg:#CC1A1A;
+    --gray-bg:#AAB7BF;
+
     /* CTA */
 
     --cta-red:#BB0B2B;
@@ -58,6 +64,8 @@ $smTablatet : 767px;
 $phone : 576px;
 $smPhone : 479px;
 
+$heightDesktop : 860px; // До 768
+$heightTable: 767px; // До 600
 
 /* animation */
 

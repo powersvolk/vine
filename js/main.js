@@ -1,6 +1,75 @@
 jQuery(function ($) {
     "use strict";
+    
+    /* 18+ */
 
+    if (!localStorage.getItem('enter_window')) {
+        $('.overlay, .popup.enter_window').fadeIn(500);
+    }
+
+    $('.exit_window').click(function (e) {
+		e.preventDefault();
+        $('.overlay').fadeOut(500);
+        $(this).parent().fadeOut(500);
+        if($(this).parent().hasClass('enter_window')){
+            localStorage.setItem('enter_window', 'true');
+        }
+	});
+
+   
+    /* Search */
+
+    $('.header__inner-form .search').keyup(function (e) {
+        e.preventDefault();
+		let val = $(this).val();
+        if(val.length > 0) {
+            $('.header__find').fadeIn(500);
+        } else {
+            $('.header__find').fadeOut(500);
+        }
+	});
+
+    /* Burger menu */
+
+
+    $('.cta_menu').click(function (e) {
+		e.preventDefault();
+        $(this).toggleClass('active');
+        var $menu = $(this).next('.pages_menu');
+        $('.pages_menu').not($menu).fadeOut();
+        $menu.fadeToggle();
+	});
+
+    $(document).on('click', function(e){
+        if (!$(e.target).closest('.pages_menu, .cta_menu').length) {
+            $('.pages_menu').fadeOut();
+        }
+    });
+
+    /* Login & Register */
+    
+    $('.popup_open').click(function (e) {
+		e.preventDefault();
+        $('.pages_menu').fadeOut();
+        let itemId = $(this).data('item');
+        $(`.overlay, .popup.${itemId}_window`).fadeIn(500);
+	});
+
+
+    /* Show Password */
+
+    $('.form_password_show').click(function (e) {
+		e.preventDefault();
+        $(this).toggleClass('show');
+        var passwordField = $('.password');
+        if ($(this).hasClass('show')) {
+            passwordField.attr('type', 'text');
+        } else {
+            passwordField.attr('type', 'password');
+        }
+	});
+
+    
     // Banner Home page
     let $owlFullWidth = $('.owl-fullWidth');
 
@@ -21,11 +90,11 @@ jQuery(function ($) {
 
     $('.section_category_tabs-item').click(function (e) {
 		e.preventDefault();
-		$('.section_category_tabs-item').removeClass('active');
+		$(this).parent().find('.section_category_tabs-item').removeClass('active');
         $(this).addClass('active');
         let catId = $(this).data('categoty');
-        $('.show_tabs').removeClass('active');
-        $(`.show_tab_${catId}`).addClass('active');
+        $(this).parent().parent().find('.show_tabs').removeClass('active');
+        $(this).parent().parent().find(`.show_tab_${catId}`).addClass('active');
 
 	});
 
@@ -34,9 +103,8 @@ jQuery(function ($) {
 		$(this).parent().find('.section_category_sub__tabs-item').removeClass('active');
         $(this).addClass('active');
         let brandId = $(this).data('brand');
-        $('.show_brands').removeClass('active');
-        $(`.show_brands_${brandId}`).addClass('active');
-
+        $(this).parent().parent().find('.show_brands').removeClass('active');
+        $(this).parent().parent().find(`.show_brands_${brandId}`).addClass('active');
 	});
 
 
@@ -76,5 +144,14 @@ jQuery(function ($) {
         }
     });
 
+    /* Brand */
+    $('.popular__brand__tabs-item').click(function (e) {
+		e.preventDefault();
+		$(this).parent().find('.popular__brand__tabs-item').removeClass('active');
+        $(this).addClass('active');
+        let brandId = $(this).data('brand');
+        $('.show_brand').removeClass('active');
+        $(`.show_brand_${brandId}`).addClass('active');
+	});
 
 });

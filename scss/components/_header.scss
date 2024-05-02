@@ -42,6 +42,7 @@
 
         &-search{
             width:calc(100% - 765px);
+            position: relative;
             .header__inner-form{
                 display: block;
                 width: 100%;
@@ -86,6 +87,150 @@
                     &:hover{
                         background: url('../img/search_cta_red.svg') center/cover no-repeat; 
                         transform: translateY(-50%) scale(1.05);
+                    }
+                }
+            }
+
+            .header__find{
+                position: absolute;
+                top:100%;
+                left: 0px;
+                width:100%;
+                height: auto;
+                display: none;
+                background: var(--white-bg);
+                border:1px solid var(--line-bg);
+                z-index: 99;
+                box-sizing: border-box;
+                border-radius: 0 0 10px 10px;
+                box-shadow: 0 0 20px rgba(#000, 0.1);
+                padding: 0 0 20px;
+           
+                h2{
+                    font-size: rem(16px);
+                    font-weight: 600;
+                    color: var(--text-dark);
+                    margin: 20px 20px 0;
+                }
+                &-product{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    transition: 0.3s ease;
+                    position: relative;
+                    &:before{
+                        content:'';
+                        width:calc(100% - 40px);
+                        height: 1px;
+                        display: block;
+                        background: var(--line-bg);
+                        position: absolute;
+                        top:100%;
+                        left:20px;
+                    }
+                    .header__find-product-thumbnuil{
+                        width:40px;
+                        display: block;
+                        margin: 0 20px 0 0;
+                        img{
+                            display: block;
+                            width:100%;
+                            height:auto;
+                        }
+                    }
+                    .header__find-product-description{
+                        .card__item-title{
+                            margin: 0;
+                            color:var(--text-dark);
+                            text-decoration: none;
+                            font-size:rem(12px);
+                            transition: 0.3s ease;
+                        }
+                        .card__item-exist {
+                            margin: 7px 0;
+                            color:var(--text-light-gray);
+                        }
+             
+                    }
+                    &:hover{
+                        background: rgba(#000, 0.03);
+                    }
+                }
+                .find_brands_headline{
+                    margin: 10px 20px 0;
+                }
+                .find_brands{
+                    padding: 10px 20px 0;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap:10px;
+                    a{
+                        color: var(--text-color);
+                        font-size:rem(12px);
+                        text-decoration: none;
+                        transition: 0.3s ease;
+                        display: flex;
+                        align-items: center;
+                        span{
+                            display: inline-block;
+                            color:var(--text-white);
+                            font-size:rem(10px);
+                            background: var(--gray-bg);
+                            padding: 2px 4px;
+                            border-radius: 2px;
+                            line-height: 1;
+                            margin: 0 0 0 3px;
+                            transition: 0.3s ease;
+                        }
+                        &:hover{
+                            color: var(--text-red);
+                            span{
+                                background: var(--text-red); 
+                            }
+                        }
+                    }
+                }
+                .find_collection{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap:10px;
+                    padding: 10px 20px 0;
+                    a{
+                        color:var(--text-dark);
+                        font-size: rem(10px);
+                        padding: 5px 11px;
+                        border: 1px solid var(--gray-bg);
+                        background: var(--cta-white);
+                        border-radius: 30px;
+                        text-decoration: none;
+                        display: flex;
+                        align-items: center;
+                        transition: 0.3s ease;
+                        span{
+                            display: inline-block;
+                            color:var(--text-white);
+                            font-size:rem(10px);
+                            background: var(--gray-bg);
+                            padding: 2px 4px;
+                            border-radius: 2px;
+                            line-height: 1;
+                            margin: 0 0 0 5px;
+                            transition: 0.3s ease;
+                        }
+                        &:hover{
+                            color: var(--text-white);
+                            background: var(--text-red);
+                            span{
+                                background: var(--orange-dark-bg); 
+                                color:var(--text-dark);
+                            }
+                        }
                     }
                 }
             }
@@ -151,6 +296,8 @@
             }
 
             .header__inner-other-burger{
+                position: relative;
+                
                 .icon{
                     margin: 0;
                     fill: var(--text-dark);
@@ -158,13 +305,26 @@
                 &:hover .icon{
                     fill: var(--text-red);
                 }
+                .cta_menu.active{
+                    .icon{
+                        transform: scale(1.03);
+                        fill: var(--text-red);
+                    }
+                }
             }
             .header__inner-other-profile{
+                position: relative;
                 .icon{
                     stroke: var(--text-dark);
                 }
                 &:hover .icon{
                     stroke: var(--text-red);
+                }
+                .cta_menu.active{
+                    .icon{
+                        transform: scale(1.03);
+                        fill: var(--text-red);
+                    }
                 }
             }
             .header__inner-other-compare,
@@ -264,5 +424,551 @@
             }
         }
         
+    }
+
+    .pages_menu{
+        position: absolute;
+        top:59px;
+        right:-17px;
+        background: var(--white-bg);
+        padding: 15px 0;
+        z-index: 999;
+        box-shadow: 0 10px 10px rgba(#000, 0.1);
+        border-radius: 10px;
+        width:245px;
+        border: 1px solid var(--line-bg);
+        display: none;
+        &:before{
+            content: '';
+            position: absolute;
+            top:-9px;
+            right:20px;
+            width: 15px;
+            height: 15px;
+            background: var(--white-bg);
+            border-top: 1px solid var(--line-bg);
+            border-left: 1px solid var(--line-bg);
+            transform: rotate(45deg);
+        }
+        ul{
+            li{
+                a{
+                    display: block;
+                    padding: 10px 20px;
+                    font-weight: 500;
+                    font-size:rem(16px);
+                    color: var(--text-color);
+                    text-decoration: none;
+                    transition: 0.3s ease;
+                    &:hover{
+                        background: rgba(#98ADBB, 0.1);
+                        color:var(--text-dark);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.overlay{
+    background: rgba(#000, 0.6);
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    z-index: 9999;
+    display: none;
+    &.active{
+        display: block;
+    }
+}
+
+.popup{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: var(--white-bg);
+    border-radius: 10px;
+    border:1px solid var(--line-bg);
+    box-shadow: 0 10px 10px rgba(#000, 0.1);
+    padding: 55px 80px;
+    z-index: 99991;
+    display: none;
+    &.active{
+        display: block;
+    }
+    .close_popup{
+        position: absolute;
+        top:15px;
+        right:15px;
+        .icon{
+            width:20px;
+            height:20px;
+            fill:var(--text-back);
+            transition: 0.3s ease;
+        }
+        &:hover{
+            .icon{
+                fill: var(--cta-red-hover);
+                transform: scale(1.03);
+            }
+        }
+    }
+    .cta_popup{
+        display: inline-block;
+        background: var(--cta-red);
+        color:var(--text-white);
+        font-size:rem(16px);
+        font-weight: 700;
+        padding: 12px 40px;
+        border-radius: 3px;
+        transition: 0.3s ease;
+        text-decoration: none;
+        &:hover{
+            background: var(--cta-red-hover);
+            border-radius: 1px;
+        }
+    }
+    @media only screen and (max-width: $smDesktop) {
+        padding: 45px 60px;
+    }
+}
+
+.enter_window{
+    &-title{
+        color:var(--text-white);
+        font-size:rem(53px);
+        font-weight: 700;
+        background: var(--text-red);
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media only screen and (max-width: $smDesktop) {
+            width: 110px;
+            height: 110px;
+            font-size:rem(48px);
+        }
+    }
+    &-description{
+        margin: 40px 0 70px;
+        color: var(--text-dark);
+        font-size: rem(16px);
+        line-height: 1.5em;
+        @media only screen and (max-width: $smDesktop) {
+            margin: 30px 0 40px;
+            p br{
+                display: none;
+            }
+        }
+    }
+
+}
+
+.registration_window{
+    @media only screen and (max-height: $heightDesktop) {
+        padding: 30px 45px;
+    }
+    .registration_form{
+        width: 380px;
+        display: block;
+    }
+    h2{
+        font-size: rem(28px);
+        font-weight: 600;
+        color:var(--text-dark);
+        margin: 0 0 25px;
+        @media only screen and (max-height: $heightDesktop) {
+            margin: 0 0 15px;
+        }
+        @media only screen and (max-height: $heightTable) {
+            font-size:rem(22px);
+         }
+    }
+    form{
+        .line_form{
+            width:100%;
+            height: 1px;
+            background: var(--line-bg);
+            display: block;
+            margin: 15px 0 20px;
+            @media only screen and (max-height: $heightTable) {
+                display: none;
+            }
+        }
+        label{
+            font-weight: 600;
+            font-size:rem(16px);
+            color:var( --text-color);
+            display: block;
+            width: 100%;
+            margin: 0 0 10px;
+            span{
+                color:var(--text-red);
+                font-weight: 700;
+                font-size:rem(20px);
+            }
+            @media only screen and (max-height: $heightDesktop) {
+                margin: 0 0 5px;
+            }
+            @media only screen and (max-height: $heightTable) {
+                font-size:rem(14px);
+                span{
+                    font-size:rem(18px);
+                }
+            }
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"]{
+            width:100%;
+            height:42px;
+            border:1px solid var(--line-bg);
+            border-radius: 5px;
+            outline: none;
+            font-size:rem(12px);
+            color:var( --text-color);
+            padding: 0 20px;
+            transition: 0.3s ease;
+            margin:0 0 15px;
+            box-sizing: border-box;
+            &::placeholder {
+                color:var(--text-color);
+                font-size: rem(12px);
+            }
+            &:hover,
+            &:focus{
+                border:1px solid var(--orange-bg); 
+            }
+            @media only screen and (max-height: $heightDesktop) {
+                margin: 0 0 10px;
+            }
+            @media only screen and (max-height: $heightTable) {
+                height:36px;
+            }
+        }
+        .form_submit{
+            text-align: center;
+            margin: 40px 0 0;
+            input[type="submit"] {
+                font-weight: 700;
+                color:var(--text-white);
+                font-size:rem(16px);
+                background: var(--cta-red);
+                padding: 12px 40px;
+                border: none;
+                outline: none;
+                border-radius: 3px;
+                transition: 0.3s ease;
+                &:hover{
+                    background: var(--cta-red-hover);
+                    cursor: pointer;
+                    border-radius: 1px;
+                }
+            }
+            @media only screen and (max-height: $heightTable) {
+                margin:25px 0 0;
+            }
+        }
+        
+        .form_password{
+            margin:0 0 15px;
+            position: relative;
+            input {
+                margin: 0;
+                &::placeholder {
+                    position: relative;
+                    top:3px;
+                }
+            }
+            .form_password_show{
+                position: absolute;
+                top:50%;
+                right:15px;
+                transform: translateY(-50%);
+                cursor: pointer;
+                transition: 0.3s ease;
+                .icon{
+                    width:16px;
+                    height:16px;
+                    fill:var(--text-color);
+                }
+                &:hover{
+                    .icon{
+                        fill:var(--text-red);
+                    }
+                }
+                &.show{
+                    .icon{
+                        fill:var(--text-red);
+                    }
+                }
+            }
+        }
+        .form_rule{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color:var(--text-dark);
+            font-size: rem(14px);
+            margin: 0 0 15px;
+            label{
+                width:0px;
+                margin: 0;
+            }
+            a{
+                color:var(--text-dark);
+                font-size: rem(14px);
+                transition: 0.3s ease;
+                position: relative;
+                text-decoration: none;
+                &:before{
+                    content:'';
+                    width: 100%;
+                    height:1px;
+                    display: block;
+                    position: absolute;
+                    top:100%;
+                    left:50%;
+                    transform: translateX(-50%);
+                    background: var(--text-dark);
+                    transition: 0.3s ease;
+                }
+                &:hover{
+                    &:before{
+                        width:0;
+                    }
+                }
+            }
+           
+        }
+    }
+}
+
+
+.login_window{
+    @media only screen and (max-height: $heightDesktop) {
+        padding: 30px 45px;
+    }
+    .login_form{
+        width: 380px;
+        display: block;
+    }
+    h2{
+        font-size: rem(28px);
+        font-weight: 600;
+        color:var(--text-dark);
+        margin: 0 0 25px;
+        @media only screen and (max-height: $heightDesktop) {
+            margin: 0 0 15px;
+        }
+        @media only screen and (max-height: $heightTable) {
+            font-size:rem(22px);
+         }
+    }
+    h3 {
+        font-weight: 700;
+        color:var(--text-color);
+        font-size:rem(16px);
+        margin: 0 0 15px;
+    }
+    ul{
+        li{
+            color:var(--text-color);
+            font-size:rem(14px);
+            line-height: 1.5em;
+            position: relative;
+            padding-left:15px;
+            margin-left: 10px;
+            &:before{
+                content:'';
+                position: absolute;
+                top:50%;
+                left:0px;
+                transform: translateY(-50%);
+                width:5px;
+                height:5px;
+                border-radius: 50%;
+                background: var(--text-color);
+                display: block;
+            }
+        }
+    }
+    form{
+        .line_form{
+            width:100%;
+            height: 1px;
+            background: var(--line-bg);
+            display: block;
+            margin: 15px 0 20px;
+            @media only screen and (max-height: $heightTable) {
+                display: none;
+            }
+        }
+        label{
+            font-weight: 600;
+            font-size:rem(16px);
+            color:var( --text-color);
+            display: block;
+            width: 100%;
+            margin: 0 0 10px;
+            span{
+                color:var(--text-red);
+                font-weight: 700;
+                font-size:rem(20px);
+            }
+            @media only screen and (max-height: $heightDesktop) {
+                margin: 0 0 5px;
+            }
+            @media only screen and (max-height: $heightTable) {
+                font-size:rem(14px);
+                span{
+                    font-size:rem(18px);
+                }
+            }
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"]{
+            width:100%;
+            height:42px;
+            border:1px solid var(--line-bg);
+            border-radius: 5px;
+            outline: none;
+            font-size:rem(12px);
+            color:var( --text-color);
+            padding: 0 20px;
+            transition: 0.3s ease;
+            margin:0 0 15px;
+            box-sizing: border-box;
+            &::placeholder {
+                color:var(--text-color);
+                font-size: rem(12px);
+            }
+            &:hover,
+            &:focus{
+                border:1px solid var(--orange-bg); 
+            }
+            @media only screen and (max-height: $heightDesktop) {
+                margin: 0 0 10px;
+            }
+            @media only screen and (max-height: $heightTable) {
+                height:36px;
+            }
+        }
+        .form_submit{
+            text-align: center;
+            margin: 25px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .form_submit-item{
+                a{
+                    color:var(--text-dark);
+                    font-size: rem(14px);
+                    transition: 0.3s ease;
+                    position: relative;
+                    text-decoration: none;
+                    &:before{
+                        content:'';
+                        width: 100%;
+                        height:1px;
+                        display: block;
+                        position: absolute;
+                        top:100%;
+                        left:50%;
+                        transform: translateX(-50%);
+                        background: var(--text-dark);
+                        transition: 0.3s ease;
+                    }
+                    &:hover{
+                        &:before{
+                            width:0;
+                        }
+                    }
+                }
+            }
+            input[type="submit"] {
+                font-weight: 700;
+                color:var(--text-white);
+                font-size:rem(16px);
+                background: var(--cta-red);
+                padding: 12px 30px;
+                border: none;
+                outline: none;
+                border-radius: 3px;
+                transition: 0.3s ease;
+                &:hover{
+                    background: var(--cta-red-hover);
+                    cursor: pointer;
+                    border-radius: 1px;
+                }
+            }
+            @media only screen and (max-height: $heightTable) {
+                margin:25px 0 0;
+            }
+        }
+        
+        .form_password{
+            margin:0 0 15px;
+            position: relative;
+            input {
+                margin: 0;
+                &::placeholder {
+                    position: relative;
+                    top:3px;
+                }
+            }
+            .form_password_show{
+                position: absolute;
+                top:50%;
+                right:15px;
+                transform: translateY(-50%);
+                cursor: pointer;
+                transition: 0.3s ease;
+                .icon{
+                    width:16px;
+                    height:16px;
+                    fill:var(--text-color);
+                }
+                &:hover{
+                    .icon{
+                        fill:var(--text-red);
+                    }
+                }
+                &.show{
+                    .icon{
+                        fill:var(--text-red);
+                    }
+                }
+            }
+        }
+        .open_registration{
+            margin: 60px 0 0;
+            text-align: center;
+            @media only screen and (max-height: $heightTable) {
+                margin: 30px 0 0;
+            }
+            a{
+                display: inline-block;
+                padding: 12px 40px;
+                font-weight: 700;
+                font-size:rem(16px);
+                transition: 0.3s ease;
+                color:var(--text-color);
+                border:1px solid var(--line-bg);
+                text-decoration: none;
+                border-radius: 3px;
+                &:hover{
+                    border:1px solid var(--cta-red-hover);
+                    color:var(--text-white);
+                    background:var(--cta-red-hover);
+                }
+            }
+        }
     }
 }

@@ -47,6 +47,54 @@ html body .container {
 	}
 }
 
+
+.cheackbox {
+    display: none;
+}
+
+.checkbox-label {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px; 
+    color:var(--text-dark);
+    font-size: rem(14px);
+    font-weight: 400;
+    width: 16px; 
+    height: 16px; 
+	cursor: pointer;
+}
+
+.checkbox-label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 16px;
+    height: 16px; 
+    border: 1px solid var(--line-bg);
+    border-radius: 3px; 
+}
+
+.cheackbox:checked + .checkbox-label:before {
+    background-color: var(--orange-bg); 
+    border-color: var(--orange-bg); 
+}
+
+.checkbox-label:after {
+    content: '\2713'; 
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    font-size: rem(14px);
+    color: var(--text-dark);
+    display: none; 
+}
+
+.cheackbox:checked + .checkbox-label:after {
+    display: block; 
+}
+
+
 .icon{
     max-width: 40px;
     max-height: 40px;
