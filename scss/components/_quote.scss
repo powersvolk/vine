@@ -1,0 +1,24 @@
+.quote {
+
+	&__text {
+		padding: 84px 58px 74px 606px;
+		&_desc {
+			font-family: var(--font-family-quote-desc);
+			font-size: rem(31px);
+			color: var(--text-white);
+			line-height: 37px;
+			text-align: end;
+		}
+
+		&_auth {
+			font-family: "Bellota", system-ui;
+  			font-weight: 400;
+  			font-style: italic;
+			padding-top: 29px;
+			text-align: end;
+			font-size: rem(29px);
+			color: var(--text-white);
+		}
+	}
+}
+

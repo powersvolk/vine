@@ -61,10 +61,20 @@ table {
   font-style: normal;
   font-display: swap;
 }
+/*Giloroy*/
+@font-face {
+  font-family: "Gilroy-MediumItalic";
+  src: url("../fonts/Gilroy/Gilroy-MediumItalic.woff2") format("woff2"), url("../fonts/Gilroy/Gilroy-MediumItalic.woff") format("woff"), url("../fonts/Gilroy/Gilroy-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
 :root {
   /* Fonts */
   --font-family: "Exo 2", sans-serif;
   --font-family-baner: "Intro", sans-serif;
+  --font-family-quote-desc: "Gilroy-MediumItalic";
+  --font-family-quote-auth: "Gilroy-MediumItalic";
   /* Colors text */
   --text-back:#000;
   --text-white:#fff;
@@ -1556,4 +1566,131 @@ use path {
   border-radius: 20px;
   width: 100%;
   border: 1px solid #D5DFE4;
+}
+
+.quote__text {
+  padding: 84px 58px 74px 606px;
+}
+.quote__text_desc {
+  font-family: var(--font-family-quote-desc);
+  font-size: 1.9375rem;
+  color: var(--text-white);
+  line-height: 37px;
+  text-align: end;
+}
+.quote__text_auth {
+  font-family: "Bellota", system-ui;
+  font-weight: 400;
+  font-style: italic;
+  padding-top: 29px;
+  text-align: end;
+  font-size: 1.8125rem;
+  color: var(--text-white);
+}
+
+.blog__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blog__head-link {
+  font-size: 16px;
+  text-decoration: none;
+  color: #5C798B;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+.blog__head-link:hover {
+  text-decoration: underline;
+}
+.blog__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 26px;
+  padding-top: 16px;
+}
+.blog-padding {
+  background-color: var(--white-bg);
+  border: 1px solid #DBDBDB;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+.blog-img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 33px;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+  display: inline-block;
+}
+
+.blog-img-link {
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+  display: inline-block;
+}
+
+.blog-img:hover {
+  border: 1px solid var(--text-light-white);
+}
+
+.blog-date {
+  font-size: 16px;
+  color: #5C798B;
+  font-weight: 400;
+}
+
+.blog-title {
+  margin: 0;
+  padding: 11px 0;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+.blog-title-link {
+  text-decoration: none;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+.blog-title-link:hover {
+  text-decoration: underline;
+}
+
+.blog-desc {
+  font-size: 16px;
+  color: #5C798B;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.blog-link {
+  color: #1B78AF;
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+.blog-link:hover {
+  text-decoration: none;
+}
+
+.serving-wine__desc {
+  line-height: 28px;
+  color: #5C798B;
+  font-size: 1rem;
+}
+.serving-wine__title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #212121;
 }/*# sourceMappingURL=main.css.map */

@@ -4,4 +4,7 @@
 <?php include('components/banner_index.php'); ?>
 <?php include('components/map.php'); ?>
 <?php include('components/popularBrands.php'); ?>
+<?php include('components/quote.php'); ?>
+<?php include('components/blog.php'); ?>
+<?php include('components/serving_wine.php'); ?>
 <?php include('components/Footer.php'); ?>
