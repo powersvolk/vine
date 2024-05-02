@@ -1,6 +1,6 @@
 <section class="blog  pt-60">
   <div class="container">
-    <div class="blog-padding"> 
+    <div class="container-padding"> 
 
 		<div class="blog__head">
 			<h2 class="blog__head-title section_headline">Блог</h2>

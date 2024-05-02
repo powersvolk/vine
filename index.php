@@ -7,4 +7,5 @@
 <?php include('components/quote.php'); ?>
 <?php include('components/blog.php'); ?>
 <?php include('components/serving_wine.php'); ?>
+<?php include('components/buy_index.php'); ?>
 <?php include('components/Footer.php'); ?>

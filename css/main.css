@@ -513,6 +513,13 @@ use path {
   border-radius: 5px;
 }
 
+.container-padding {
+  background-color: var(--white-bg);
+  border: 1px solid #DBDBDB;
+  border-radius: 15px;
+  padding: 40px;
+}
+
 .pt-60 {
   padding-top: 60px;
 }
@@ -611,6 +618,20 @@ use path {
   margin: 0 0 40px;
 }
 .section_headline h2 {
+  font-family: var(--font-family);
+  color: var(--text-black);
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.subwine_title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #212121;
+}
+.subwine_title h4 {
   font-family: var(--font-family);
   color: var(--text-black);
   font-size: 1.75rem;
@@ -1538,7 +1559,7 @@ use path {
   color: var(--text-white);
 }
 .banner__text {
-  padding: 115px 650px 114px 120px;
+  padding: 115px 0px 114px 120px;
 }
 .banner__text_title {
   font-size: 2.5rem;
@@ -1575,7 +1596,7 @@ use path {
   font-family: var(--font-family-quote-desc);
   font-size: 1.9375rem;
   color: var(--text-white);
-  line-height: 37px;
+  line-height: 2.3125rem;
   text-align: end;
 }
 .quote__text_auth {
@@ -1587,6 +1608,11 @@ use path {
   font-size: 1.8125rem;
   color: var(--text-white);
 }
+@media (max-width: 1200px) {
+  .quote__text {
+    padding: 64px 38px 54px 306px;
+  }
+}
 
 .blog__head {
   display: -webkit-box;
@@ -1597,7 +1623,7 @@ use path {
           justify-content: space-between;
 }
 .blog__head-link {
-  font-size: 16px;
+  font-size: 1rem;
   text-decoration: none;
   color: #5C798B;
   -webkit-transition: ease 0.3s;
@@ -1613,7 +1639,7 @@ use path {
   gap: 26px;
   padding-top: 16px;
 }
-.blog-padding {
+.container-padding {
   background-color: var(--white-bg);
   border: 1px solid #DBDBDB;
   border-radius: 15px;
@@ -1687,10 +1713,83 @@ use path {
   color: #5C798B;
   font-size: 1rem;
 }
-.serving-wine__title {
-  margin-top: 40px;
+
+.buy-block__flex-pd {
+  padding: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 44px;
+}
+.buy-block_flex-title {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.buy-block__flex-left {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+}
+.buy-block__flex-right {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+
+.buy-block__flex__items {
+  list-style-type: disc;
+  color: #5C798B;
+  margin-left: 15px;
+}
+
+.buy-block__flex__item {
+  margin-bottom: 8px;
+  line-height: 22px;
+}
+
+.buy-block_svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.buy-block_svg span {
+  background-color: #BB0B2B;
+  border-radius: 50%;
+}
+.buy-block_svg span .icon-wine {
+  width: 24px;
+  height: 24px;
+  max-width: 50px;
+  max-height: 50px;
+  margin: 12px;
+}
+
+.buy-block_svg-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 22px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  color: var(--text-dark);
+  font-weight: 400;
+}
+
+.buy-block_svg-left li, .buy-block_svg-right li {
   margin-bottom: 20px;
-  font-size: 20px;
-  font-weight: 600;
-  color: #212121;
+}
+
+.left-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
 }/*# sourceMappingURL=main.css.map */

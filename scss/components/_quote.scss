@@ -2,11 +2,12 @@
 
 	&__text {
 		padding: 84px 58px 74px 606px;
+		
 		&_desc {
 			font-family: var(--font-family-quote-desc);
 			font-size: rem(31px);
 			color: var(--text-white);
-			line-height: 37px;
+			line-height: rem(37px);
 			text-align: end;
 		}
 
@@ -19,6 +20,10 @@
 			font-size: rem(29px);
 			color: var(--text-white);
 		}
+		
+		@media (max-width: 1200px) {
+			padding: 64px 38px 54px 306px;
+	  }
 	}
 }
 

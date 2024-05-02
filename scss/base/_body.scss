@@ -73,6 +73,12 @@ use path{
 		border-radius: 5px;
 	}
 }
+.container-padding {
+	background-color: var(--white-bg);
+	border: 1px solid #DBDBDB;
+	border-radius: 15px;
+	padding: 40px;
+}
 .pt-60{
 	padding-top: 60px;
 }
@@ -166,6 +172,19 @@ use path{
 		font-size: rem(28px);
 		font-weight: 600;
 	}
+}
+.subwine_title {
+	font-size: rem(20px);
+	font-weight: 600;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	color: #212121;
+		h4 {
+			font-family: var(--font-family);
+		color: var(--text-black);
+		font-size: rem(28px);
+		font-weight: 600;
+		}
 }
 
 

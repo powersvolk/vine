@@ -1,6 +1,6 @@
 <section class="quote pt-60">
 	<div class="container">
-		<div style="background: url(img/quote.png) no-repeat;  border-radius: 15px;">
+		<div style="background: url(img/quote.png) no-repeat; background-size: cover;  border-radius: 15px;">
 
 			<div class="quote__text">
 				<div class="quote__text_desc">
