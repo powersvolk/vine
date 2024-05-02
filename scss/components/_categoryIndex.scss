@@ -58,6 +58,10 @@
                 background: var(--orange-bg);
                 color:var(--text-dark);   
             }
+            @media only screen and (max-width: $smDesktop) {
+                padding: 10px 15px;
+                font-size:rem(13px);
+            }
         }
     }
 
