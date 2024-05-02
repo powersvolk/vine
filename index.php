@@ -6,4 +6,8 @@
 <?php include('components/productTabs.php'); ?>
 <?php include('components/popularBrands.php'); ?>
 <?php include('components/productTabsGroup.php'); ?>
+<?php include('components/quote.php'); ?>
+<?php include('components/blog.php'); ?>
+<?php include('components/serving_wine.php'); ?>
+<?php include('components/buy_index.php'); ?>
 <?php include('components/Footer.php'); ?>
