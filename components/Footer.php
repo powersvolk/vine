@@ -1,4 +1,4 @@
-<section class="footer">
+<section class="footer mt-60">
     <div class="container">
         <div class="footer__navigation">
             <div class="footer__navigation-item">

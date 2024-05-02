@@ -31,9 +31,15 @@ jQuery(function ($) {
 
     $('.section_category_sub__tabs-item').click(function (e) {
 		e.preventDefault();
-		$('.section_category_sub__tabs-item').removeClass('active');
+		$(this).parent().find('.section_category_sub__tabs-item').removeClass('active');
         $(this).addClass('active');
+        let brandId = $(this).data('brand');
+        $('.show_brands').removeClass('active');
+        $(`.show_brands_${brandId}`).addClass('active');
+
 	});
+
+
 
     let $owlCategories = $('.owl-categories');
 

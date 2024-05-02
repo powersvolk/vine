@@ -1,0 +1,25 @@
+.popular__brand{
+    .popular__brand_inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .section_headline{
+            margin: 0;
+        }
+        .popular__brand__tabs{
+            display: flex;
+            justify-content: flex-end;
+            gap:25px;
+            &-item{
+                font-size: rem(18px);
+                color:var(--text-color);
+                transform: 0.3s ease;
+                .active,
+                &:hover{
+                    color: var(--text-dark);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
