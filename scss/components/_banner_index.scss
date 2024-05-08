@@ -1,11 +1,17 @@
 .banner {
 	color: var(--text-white);
 	&__text {
-padding: 115px 0px 114px 120px;
+		padding: 115px 120px;
+		@media (max-width: $smDesktop) {
+			padding: 75px 65px;
+		}
 		&_title {
 			font-size: rem(40px);
 			font-family: var(--font-family-baner);
 			letter-spacing: 2px;
+			@media (max-width: $smDesktop) {
+				font-size: rem(36px);
+			}
 		}
 
 		&_number {
@@ -13,6 +19,9 @@ padding: 115px 0px 114px 120px;
 			font-size: rem(128px);
 			font-family: var(--font-family-baner);
 			letter-spacing: 8px;
+			@media (max-width: $smDesktop) {
+				font-size: rem(100px);
+			}
 		}
 
 		&_description {
@@ -21,8 +30,10 @@ padding: 115px 0px 114px 120px;
 			font-size: rem(24px);
 			line-height: 1.2;
 			font-weight: 600;
+			@media (max-width: $smDesktop) {
+				font-size: rem(20px);
+			}
 		}
 	}
 }
-.container {
-}
+

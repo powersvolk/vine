@@ -1,12 +1,29 @@
 .serving-wine {
+	.serving-wine__pd{
+		border-top: 1px solid var(--line-bg);
+		padding:40px 0 0;
+		h2{
+			font-weight: 600;
+			color:var(--text-dark);
+			font-size:rem(28px);
+			margin: 0 0 25px;
+		}
+		h3{
+			margin: 60px 0 25px;
+			font-weight: 600;
+			color:var(--text-dark);
+			font-size:rem(20px);
+		}
 
+		p{
+			line-height: 1.5em;
+			color: var(--text-semi-gray);
+			font-size: rem(16px);
+		}
+	}
 	
 
-	&__desc {
-		line-height: 28px;
-		color: #5C798B;
-		font-size: rem(16px);
-	}
+	
 
 	
 }

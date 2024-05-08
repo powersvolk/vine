@@ -9,6 +9,9 @@
 			color: var(--text-white);
 			line-height: rem(37px);
 			text-align: end;
+			@media (max-width: $smDesktop) {
+				font-size: rem(30px);
+			}
 		}
 
 		&_auth {
@@ -19,11 +22,14 @@
 			text-align: end;
 			font-size: rem(29px);
 			color: var(--text-white);
+			@media (max-width: $smDesktop) {
+				font-size: rem(22px);
+			}
 		}
 		
-		@media (max-width: 1200px) {
+		@media (max-width: $smDesktop) {
 			padding: 64px 38px 54px 306px;
-	  }
+	  	}
 	}
 }
 

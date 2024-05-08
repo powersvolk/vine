@@ -5,6 +5,7 @@
 @import 'base/_reset';
 @import 'base/_fonts';
 @import 'base/_var';
+@import 'base/_nice-select';
 @import 'owlcarousel/owl.carousel';
 @import 'owlcarousel/owl.theme.default';
 @import 'base/_body';
@@ -16,6 +17,7 @@
 @import 'components/_popularbrands';
 @import 'components/cards/_cartTypeOne';
 @import 'components/cards/_cartTypeTwo';
+@import 'components/cards/_cardTypeThree';
 @import 'components/_footer';
 @import 'components/_banner_index';
 @import 'components/_map';
@@ -23,5 +25,8 @@
 @import 'components/_blog';
 @import 'components/_serving_wine';
 @import 'components/_buy_index';
+
+/* Pages */
+@import 'pages/_catalog';
 
 

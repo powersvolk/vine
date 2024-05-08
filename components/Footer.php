@@ -237,7 +237,16 @@
 </section>
 
 <?php include('components/SVG/SvgSprite.php'); ?>
+
+<div class="up_body">
+    <svg class="icon">
+        <use xlink:href="#arrow-up"></use>
+    </svg>
+</div>
+
 <script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
 </body>
