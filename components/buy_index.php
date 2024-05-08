@@ -1,74 +1,82 @@
-<section class="buy-block  pt-60">
+<section class="advantages pt-60">
 	<div class="container">
-		<div class="container-padding buy-block__flex-pd">
-
-			<div class="buy-block__flex-left">
-				<h4 class="subwine_title buy-block_flex-title">Удобство и надежность</h4>
-				<div class="left-content">
-					<div class="buy-block_svg-left">
-						<ul>
-							<li class="buy-block_svg-item">
-
-								<div class="buy-block_svg"><span> <svg class="icon-wine">
-											<use xlink:href="#castle"></use>
-										</svg> </span> </div>
-								Широкий<br>
-								ассортимент
-
-							</li>
-							<li class="buy-block_svg-item">
-
-								<div class="buy-block_svg"><span><svg class="icon-wine">
-											<use xlink:href="#crown"></use>
-										</svg></span></div>
-								Все напитки проходят <br> через ЕГАИС
-
-							</li>
-						</ul>
+		<div class="advantages_inner">
+			<div class="advantages_inner-item">
+				<h2>
+					Удобство и надежность
+				</h2>
+			</div>
+			<div class="advantages_inner-item">	
+				<h2>
+					У нас вы можете купить:
+				</h2>
+			</div>
+			<div class="advantages_inner-item">
+				
+				<div class="advantages_inner-info">
+					<div class="advantages_inner-info__item">
+						<div class="advantages_inner-info__item-icon">
+							<svg class="icon">
+								<use xlink:href="#castle"></use>
+							</svg> 
+						</div>	
+						<div class="advantages_inner-info__item-desc">
+							Широкий<br/>
+							ассортимент
+						</div>
 					</div>
-
-					<div class="buy-block_svg-right">
-						<ul>
-							<li class="buy-block_svg-item">
-								<div class="buy-block_svg"><span><svg class="icon-wine">
-											<use xlink:href="#delivery"></use>
-										</svg></span></div>
-								Прямые поставки от <br> производителей
-							</li>
-
-							<li class="buy-block_svg-item">
-								<div class="buy-block_svg"><span><svg class="icon-wine">
-											<use xlink:href="#lamp"></use>
-										</svg></span></div>
-								Индивидуальный<br>
-								подход
-							</li>
-						</ul>
+					
+					<div class="advantages_inner-info__item">
+						<div class="advantages_inner-info__item-icon">
+							<svg class="icon">
+								<use xlink:href="#delivery"></use>
+							</svg> 
+						</div>	
+						<div class="advantages_inner-info__item-desc">
+							Прямые поставки от <br/> 
+							производителей
+						</div>
 					</div>
-
-
+					<div class="advantages_inner-info__item">
+						<div class="advantages_inner-info__item-icon">
+							<svg class="icon">
+								<use xlink:href="#crown"></use>
+							</svg> 
+						</div>	
+						<div class="advantages_inner-info__item-desc">
+							Все напитки проходят<br/> 
+							через ЕГАИС
+						</div>
+					</div>
+					<div class="advantages_inner-info__item">
+						<div class="advantages_inner-info__item-icon">
+							<svg class="icon">
+								<use xlink:href="#lamp"></use>
+							</svg> 
+						</div>	
+						<div class="advantages_inner-info__item-desc">
+							Индивидуальный<br/>
+							подход
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="buy-block__flex-right">
-				<h4 class="subwine_title buy-block_flex-title"> У нас вы можете купить:</h4>
-				<ul class="buy-block__flex__items">
-					<li class="buy-block__flex__item">
+			<div class="advantages_inner-item">
+				<ul>
+					<li>
 						Виски) произведенных в Шотландии;
 					</li>
-					<li class="buy-block__flex__item">
+					<li>
 						В количестве 16 бутылок по цене о124;
 					</li>
-					<li class="buy-block__flex__item">
+					<li>
 						цена на вино в наличии, составляет от 500 руб. до 2300 руб.;
 					</li>
-					<li class="buy-block__flex__item">
+					<li>
 						Вцена на виски под заказ составляет от 5000 руб. до 50000 руб.
 					</li>
 				</ul>
 			</div>
-
-
-
 		</div>
 	</div>
-</section>
+</section>	

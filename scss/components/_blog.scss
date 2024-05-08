@@ -3,11 +3,11 @@
 	&__head {
 		display: flex;
 		justify-content: space-between;
-
+		align-items: center;
 	}
 
 	&__head-title {
-		
+		margin: 0 0 15px;
 	}
 
 	 &__head-link {
@@ -22,7 +22,7 @@
 			 height:1px;
 			 display: block;
 			 position: absolute;
-			 top:25%;
+			 top:100%;
 			 left:50%;
 			 transform: translateX(-50%);
 			 background: var(--text-blue);
@@ -72,48 +72,70 @@
 
 .container-padding {
 	background-color: var(--white-bg);
-	border: 1px solid #DBDBDB;
+	border: 1px solid var(--line-bg);
 	border-radius: 15px;
 	padding: 40px;
+	@media only screen and (max-width: $desktop) {
+		padding: 30px;
+	}
 }
 
-.blog-img {
-	width: 100%;
-	height: auto;
-	border-radius: 15px;
-	margin-bottom: 33px;
-	transition: ease 0.3s;
-	display: inline-block;
-	
-}
 .blog-img-link {
-	transition: ease 0.3s;
-	display: inline-block;
+	display: block;
+	position: relative;
+	.blog-img {
+		width: 100%;
+		height: auto;
+		border-radius: 15px;
+		margin-bottom: 30px;
+		display: block;
+		transition: 0.3s ease;
+	}
+	&:hover{
+		.blog-img {
+			box-shadow: 0 0 20px rgba(#000, 0.2); 
+		}
+		
+	}
 }
-.blog-img:hover {
-	
-}
+
 .blog-date {
-	font-size: 16px;
-	color: #5C798B;
+	font-size: rem(16px);
+	color: var(--text-strong-gray);
 	font-weight: 400;
 }
 .blog-title {
 	margin: 0;
-	padding: 11px 0;
-	transition: ease 0.3s;
+	padding: 10px 0;
 }
 .blog-title-link {
+	line-height: 1.1em;
 	text-decoration: none;
-	transition: ease 0.3s;
+	font-weight: 600;
+	font-size:rem(28px);
+	color:var(--text-dark);
+	transition: 0.3s ease;
+	background: -webkit-gradient(linear, left top, right top, from(currentColor), to(currentColor));
+    background: linear-gradient(to right, currentColor 0%, currentColor 100%);
+    background-size: 0px 1px;
+    background-position: 0 95%;
+    -webkit-transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+    transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+    background-repeat: no-repeat;
+	&:hover{
+		color: var(--text-dark);
+		background-size: 100% 1px;
+	}
+	@media only screen and (max-width: $smDesktop) {
+		font-size:rem(24px);
+    }
 }
-.blog-title-link:hover {
-	text-decoration: underline;
-}
+
 .blog-desc {
-	font-size: 16px;
-	color: #5C798B;
+	font-size: rem(16px);
+	color: var(--text-strong-gray);
 	font-weight: 400;
-	margin-bottom: 20px;;
+	margin-bottom: 10px;
+	line-height: 1.5em;
 }
 

@@ -236,3 +236,27 @@
         }
     }
 }
+
+.up_body{
+    position: fixed;
+    bottom: 15px;
+    right:15px;
+    width:53px;
+    height:53px;
+    border-radius: 50%;
+    background: var(--cta-red);
+    transition: 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+    .icon{
+        fill:#fff;
+        width:16px;
+        height:16px;
+    }
+    &:hover{
+        background: var(--cta-red-hover);
+    }
+}
