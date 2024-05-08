@@ -3783,38 +3783,23 @@ use path {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 40px;
-     -moz-column-gap: 40px;
-          column-gap: 40px;
-}
-
-/* Cocktail page */
-.breadcrumbs ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   gap: 8px;
 }
 .category_hero .category_hero_inner .breadcrumbs ul li {
-  padding: 11px 0;
-}
-.breadcrumbs ul li {
   font-weight: 500;
   font-size: 0.75rem;
   color: var(--text-light-gray);
 }
 .category_hero .category_hero_inner .breadcrumbs ul li a {
-.breadcrumbs ul li a {
   font-size: 0.75rem;
   color: var(--text-light-gray);
   text-decoration: none;
   position: relative;
 }
 .category_hero .category_hero_inner .breadcrumbs ul li a:before {
-.breadcrumbs ul li a:before {
   content: "";
   width: 0px;
   height: 1px;
@@ -3866,142 +3851,6 @@ use path {
   font-size: 1rem;
 }
 .category_hero .category_hero_inner .category_hero_description a:before {
-.breadcrumbs ul li a:hover:before {
-  width: 100%;
-}
-
-.coctails-head__baner {
-  min-height: 398px;
-  overflow: hidden;
-  border-radius: 15px;
-  background: linear-gradient(to right bottom, #82B0B5 600px, transparent 600px);
-}
-
-.coctails-head__baner_container {
-  position: relative;
-}
-
-.text-container {
-  width: calc(100% - 300px);
-  background-color: #82B0B5;
-  padding: 73px 0 65px 53px;
-  float: left;
-  max-width: 480px;
-}
-
-.image-container {
-  position: absolute;
-  top: 0px;
-  right: -1px;
-  width: 58%;
-  height: 401px;
-  background-image: url("../img/cocktail/cocktail_baner.png");
-  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 20% 0);
-          clip-path: polygon(100% 0, 100% 100%, 0 100%, 20% 0);
-  z-index: 1;
-}
-
-.coctails-banner-title {
-  font-family: var(--font-family);
-  color: var(--text-white);
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-.coctails-banner-text {
-  margin-top: 24px;
-  font-family: var(--font-family);
-  color: var(--text-white);
-  font-size: 1.0625rem;
-  max-width: 375px;
-  line-height: 1.2;
-}
-
-.coctails-banne-button {
-  margin-top: 40px;
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #fff;
-  color: var(--text-back);
-  text-decoration: none;
-  border-radius: 5px;
-  border: 1px inside #F0F0F4;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
-}
-
-.coctails-banne-button:hover {
-  background-color: #eee;
-}
-
-@media only screen and (max-width: 1299px) {
-  .coctails-banner-title {
-    font-size: 2rem;
-  }
-}
-.coctails-content .filter-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-column-gap: 18px;
-     -moz-column-gap: 18px;
-          column-gap: 18px;
-}
-.coctails-content__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-.coctails-content__item {
-  width: calc(33% - 33px);
-}
-.coctails-content__item.half {
-  width: calc(50% - 44px);
-  margin-top: 60px;
-  margin-bottom: 40px;
-}
-.coctails-content__more {
-  display: block;
-  text-decoration: none;
-  background-color: var(--text-white);
-  margin-top: 30px;
-  width: 100%;
-  border: 1px solid var(--white-ligh-bg);
-  border-radius: 8px;
-  padding: 15px 0;
-  text-align: center;
-  color: var(--text-semi-gray);
-  font-size: 1rem;
-  -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
-}
-.coctails-content__more:hover {
-  background-color: var(--text-light-white);
-}
-.coctails-content__more::after {
-  content: url("../img/arrow-down.svg");
-  display: inline-block;
-  margin-left: 15px;
-  vertical-align: middle;
-}
-
-.coctails-content-link {
-  color: var(--text-blue);
-  font-size: 0.875rem;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-  position: relative;
-  text-decoration: none;
-}
-.coctails-content-link:before {
   content: "";
   width: 100%;
   height: 1px;
@@ -4681,6 +4530,189 @@ use path {
 .horizontal_filter .horizontal_filter_inner .horizontal_filter_inner-item:last-child .sidebar_tab_fly {
   left: auto;
   right: 0;
+}
+
+/* Cocktail page */
+.breadcrumbs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 8px;
+  padding: 11px 0;
+}
+.breadcrumbs ul li {
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: var(--text-light-gray);
+}
+.breadcrumbs ul li a {
+  font-size: 0.75rem;
+  color: var(--text-light-gray);
+  text-decoration: none;
+  position: relative;
+}
+.breadcrumbs ul li a:before {
+  content: "";
+  width: 0px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: var(--text-light-gray);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.breadcrumbs ul li a:hover:before {
+  width: 100%;
+}
+
+.coctails-head__baner {
+  min-height: 398px;
+  overflow: hidden;
+  border-radius: 15px;
+  background: linear-gradient(to right bottom, #82B0B5 600px, transparent 600px);
+}
+
+.coctails-head__baner_container {
+  position: relative;
+}
+
+.text-container {
+  width: calc(100% - 300px);
+  background-color: #82B0B5;
+  padding: 73px 0 65px 53px;
+  float: left;
+  max-width: 480px;
+}
+
+.image-container {
+  position: absolute;
+  top: 0px;
+  right: -1px;
+  width: 58%;
+  height: 401px;
+  background-image: url("../img/cocktail/cocktail_baner.png");
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 20% 0);
+          clip-path: polygon(100% 0, 100% 100%, 0 100%, 20% 0);
+  z-index: 1;
+}
+
+.coctails-banner-title {
+  font-family: var(--font-family);
+  color: var(--text-white);
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.coctails-banner-text {
+  margin-top: 24px;
+  font-family: var(--font-family);
+  color: var(--text-white);
+  font-size: 1.0625rem;
+  max-width: 375px;
+  line-height: 1.2;
+}
+
+.coctails-banne-button {
+  margin-top: 40px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: var(--text-back);
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px inside #F0F0F4;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.coctails-banne-button:hover {
+  background-color: #eee;
+}
+
+@media only screen and (max-width: 1299px) {
+  .coctails-banner-title {
+    font-size: 2rem;
+  }
+}
+.coctails-content .filter-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-column-gap: 18px;
+     -moz-column-gap: 18px;
+          column-gap: 18px;
+}
+.coctails-content__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.coctails-content__item {
+  width: calc(33% - 33px);
+}
+.coctails-content__item.half {
+  width: calc(50% - 44px);
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.coctails-content__more {
+  display: block;
+  text-decoration: none;
+  background-color: var(--text-white);
+  margin-top: 30px;
+  width: 100%;
+  border: 1px solid var(--white-ligh-bg);
+  border-radius: 8px;
+  padding: 15px 0;
+  text-align: center;
+  color: var(--text-semi-gray);
+  font-size: 1rem;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+.coctails-content__more:hover {
+  background-color: var(--text-light-white);
+}
+.coctails-content__more::after {
+  content: url("../img/arrow-down.svg");
+  display: inline-block;
+  margin-left: 15px;
+  vertical-align: middle;
+}
+
+.coctails-content-link {
+  color: var(--text-blue);
+  font-size: 0.875rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  position: relative;
+  text-decoration: none;
+}
+.coctails-content-link:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   background: var(--text-blue);
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
