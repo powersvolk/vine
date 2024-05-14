@@ -650,12 +650,12 @@
                                     <a href="#">по выгодности</a>
                                 </div>
                                 <div class="product_type_switch">
-                                    <a href="#">
+                                    <a href="#" class="active">
                                         <svg class="icon">
                                             <use xlink:href="#row"></use>
                                         </svg>
                                     </a>
-                                    <a href="#" class="active">
+                                    <a href="#">
                                         <svg class="icon">
                                             <use xlink:href="#grid"></use>
                                         </svg>
@@ -666,15 +666,10 @@
       
                     </section> 
                     <section class="product_items">
-                            <div class="product_items_inner three_item">
-                                <?php include('components/cards/cartTypeOne.php'); ?>
-                                <?php include('components/cards/cartTypeOne.php'); ?>
-                                <?php include('components/cards/cartTypeOne.php'); ?>
-                                <?php include('components/cards/cartTypeOne.php'); ?>
-                                <?php include('components/cards/cartTypeOne.php'); ?>
-                                <?php include('components/cards/cartTypeOne.php'); ?>
-                            </div>
-      
+                        <div class="product_items_inner one_item">
+                            <?php include('components/cards/cartTypeFull.php'); ?>
+                            <?php include('components/cards/cartTypeFull.php'); ?>
+                        </div>
                     </section>
 
                     <section class="product_vine_short_information">
@@ -686,17 +681,22 @@
                     </section>
 
                     <section class="product_items">
-                        
-                            <div class="product_items_inner three_item">
-                                <?php include('components/cards/cartTypeOne.php'); ?>
-                                <?php include('components/cards/cartTypeOne.php'); ?>
-                                <?php include('components/cards/cartTypeOne.php'); ?>
-                                <?php include('components/cards/cartTypeOne.php'); ?>
-                                <?php include('components/cards/cartTypeOne.php'); ?>
-                                <?php include('components/cards/cartTypeOne.php'); ?>
-                            </div>
-                               
+                        <div class="product_items_inner one_item">
+                            <?php include('components/cards/cartTypeFull.php'); ?>
+                            <?php include('components/cards/cartTypeFull.php'); ?>
+                        </div>
                     </section>
+
+                    <a href="#" class="coctails-content__more">Показать еще</a>
+                    <div class="pagination">
+                        <ul class="pagination__items">
+                            <li class="pagination__item"><a href="#" class="pagination__link active">1</a></li>
+                            <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+                            <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+                            <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+                            <li class="pagination__item"><a href="#" class="pagination__link">></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             

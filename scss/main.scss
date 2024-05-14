@@ -18,6 +18,7 @@
 @import 'components/cards/_cartTypeOne';
 @import 'components/cards/_cartTypeTwo';
 @import 'components/cards/_cardTypeThree';
+@import 'components/cards/_carttypefull';
 @import 'components/_footer';
 @import 'components/_banner_index';
 @import 'components/_map';
@@ -28,7 +29,7 @@
 
 /* Pages */
 @import 'pages/_catalog';
-
+@import 'pages/_single';
 
 /* Cocktail page */
 @import 'components/cocktail/_cocktail';

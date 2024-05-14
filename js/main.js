@@ -35,7 +35,10 @@ jQuery(function ($) {
     $('.overlay').click(function (e) {
 		e.preventDefault();
         $('.overlay').fadeOut(500);
-        $('.popup').fadeOut(500);
+        $('.popup, .category_window').fadeOut(500);
+        if($('.cta-catalog').hasClass('active')){
+            $('.cta-catalog').removeClass('active');
+        }
 	});
    
     /* Search */
@@ -90,7 +93,38 @@ jQuery(function ($) {
         }
 	});
 
-    
+    /* Catalog Menu */    
+    $('.cta-catalog').click(function (e) {
+		e.preventDefault();
+        $(this).toggleClass('active');
+        $('.overlay').fadeToggle(500);
+        $('.category_window').fadeToggle(500);
+        
+    });
+
+
+    $('.category_window_inner-navigation ul li a').hover(function (e) {
+        $('.category_window_inner-navigation ul li a').removeClass('active');
+        $(this).addClass('active');
+        let catID = $(this).data('cat');
+        $('.category_window_inner-menu_section').removeClass('active');
+        $(`.show_menu_section_${catID}`).addClass('active');
+	});
+
+    $('.category_show_more').click(function (e) {
+		e.preventDefault();
+        $(this).toggleClass('active');
+        $(this).parent().parent().find('.hide_menu_item').fadeToggle(500);
+       
+	});
+
+    $('.menu-product_progress_item').click(function() {
+        $(this).addClass('active').removeClass('preactive');
+        $(this).prevAll().addClass('preactive').removeClass('active');
+        $(this).nextAll().removeClass('active preactive');
+    });
+
+
     // Banner Home page
     let $owlFullWidth = $('.owl-fullWidth');
 
@@ -314,8 +348,34 @@ jQuery(function ($) {
             $(this).parent().toggleClass('close');
             
         });
+
+    /* Product Option */    
+
+        $('.product_options_item').click(function (e) {
+            e.preventDefault();
+            if(!$(this).hasClass('active')){
+                $(this).parent().find('.product_options_item').removeClass('active');
+                $(this).addClass('active');
+            }
+            
+        });
+
+    /* ToolTip */    
+    $('.tooltip').hover(function (e) {
+        e.preventDefault();
+        $(this).parent().parent().css({'z-index':'3'});
+        
+    });
+
     
-        /* Select */
-        $('.select').niceSelect();
+
+    /* Select */
+    $('.select').niceSelect();
+
+    $('.zooming').extm({
+        squareOverlay:true,
+        position:'right',
+        rightPad: 15,
+    });
 });
 
