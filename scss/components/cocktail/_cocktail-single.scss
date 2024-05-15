@@ -2,7 +2,7 @@
 
 	&__item {
 		display: flex;
-		gap: 140px;
+		gap: 130px;
 		justify-content: space-between;
 		
 	}
@@ -10,6 +10,8 @@
 
 	&__text {
 		font-family: var(--font-family);
+		flex: 1;
+	
 		&_title {
 			font-weight: 600;
 			font-size: rem(36px);
@@ -33,6 +35,11 @@
 
 	&__image {
 		width: auto;
+		flex: 1;
+		
+		@media only screen and (max-width: $smDesktop) {
+			width: 100%;
+		}
 			
 	}
 	&__image-img {
@@ -42,6 +49,9 @@
 	}
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> 6dcadc295ae3c7b6a1a657b787cde716d95c11fb
 	@media only screen and (max-width: $desktop) {
 		&__item {
 			gap: 80px;
@@ -68,26 +78,30 @@
 				}
 		}
 	}
+<<<<<<< HEAD
+=======
 >>>>>>> 9daf21e048335f4abc78dee51c5d8e70b79eb05b
+>>>>>>> 6dcadc295ae3c7b6a1a657b787cde716d95c11fb
 	@media only screen and (max-width: $smDesktop) {
 		&__item {
 		gap: 40px;
 		justify-content: space-around;
 		}
 		&__image {
-			width: auto;
-				
+			width: 100%;
+			flex: 1;
 		}
 		&__image-img {
-				max-width: 450px;
+				width: 100%;
 				border-radius: 10px;
 			
 		}
 		&__text {
 			font-family: var(--font-family);
+			flex: 1;
 			&_title {
 				font-weight: 600;
-				font-size: rem(24px);
+				font-size: rem(22px);
 				color: var(--text-dark);
 			}
 	
@@ -178,7 +192,7 @@
 			font-size: rem(17px);
 			color: var(--text-color);
 			border-radius: 8px;
-			padding: 20px 24px;
+			padding: 15px 24px;
 			transition: ease 0.3s;
 			&::before {
 				content: url('../img/cart.svg');
@@ -198,4 +212,20 @@
 	display: block;
 	margin: 0 auto;
 	margin-top: 40px;
+	
+}
+
+
+.blog-coctail .blog__items {
+	gap: 66px;
+	padding-top: 0;
+}
+.blog-coctail .blog__head-title {
+	margin-bottom: 40px;
+}
+@media only screen and (max-width: $smDesktop) {
+	.coctail-recept-baner {
+	width: 100%;
+	margin-top: 20px;
+}
 }

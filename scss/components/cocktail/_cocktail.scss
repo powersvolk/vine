@@ -3,7 +3,7 @@
 		 display: flex;
 		 justify-content: flex-start;
 		 gap:8px;
-		 padding: 11px 0;
+		 padding-top: 16px;
 		 li{
 			  font-weight: 500;
 			  font-size: rem(12px);
@@ -61,7 +61,7 @@
 	right: -1px; 
 	width: 58%; 
 	height: 401px; 
-	background-image: url('../img/cocktail/cocktail_baner.png'); 
+	background-image: url('../img/cocktail/cocktail_hero.png'); 
 	clip-path: polygon(100% 0, 100% 100%, 0 100%, 20% 0); 
 	z-index: 1; 
 }
@@ -130,13 +130,21 @@
 			width: calc(50% - 44px);
 			margin-top: 60px;
 			margin-bottom: 40px;
+			@media only screen and (max-width: $desktop) {
+				width: calc(50% - 24px);
+			margin-top: 40px;
+			}
 	  }
+	  @media only screen and (max-width: $desktop) {
+		width: calc(33% - 16px);
+	
+	}
 	}
 	&__more {
 		display: block;
 		text-decoration: none;
 		background-color: var(--text-white);
-		margin-top: 30px;
+		// margin-top: 30px;
 		width: 100%;
 		border: 1px solid var(--white-ligh-bg);
 		border-radius: 8px;
@@ -191,7 +199,8 @@ font-size: rem(48px);
 font-family: var(--font-family) ;
 color: var(--text-dark);/**/
 font-weight: 700;
-margin: 40px 0;
+margin-top: 60px;
+margin-bottom: 40px;
 }
 
 
