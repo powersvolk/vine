@@ -40,6 +40,35 @@
 			border-radius: 10px;
 		
 	}
+<<<<<<< HEAD
+=======
+	@media only screen and (max-width: $desktop) {
+		&__item {
+			gap: 80px;
+			justify-content: space-around;
+			}
+			&__image {
+				width: 100%;
+				flex: 1;
+			}
+			&__image-img {
+					width: 100%;
+					border-radius: 10px;
+				
+			}
+			&__text {
+				font-family: var(--font-family);
+				flex: 1;
+				
+		// 
+				
+				&_desc {
+					margin-top: 15px;
+					
+				}
+		}
+	}
+>>>>>>> 9daf21e048335f4abc78dee51c5d8e70b79eb05b
 	@media only screen and (max-width: $smDesktop) {
 		&__item {
 		gap: 40px;

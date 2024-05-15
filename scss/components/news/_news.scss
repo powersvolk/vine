@@ -3,7 +3,7 @@
 		 display: flex;
 		 justify-content: flex-start;
 		 gap:8px;
-		 padding: 11px 0;
+		 padding-top: 16px;
 		 li{
 			  font-weight: 500;
 			  font-size: rem(12px);
@@ -35,45 +35,45 @@
 	}
 }
 
-.coctails-head__baner {
+.news-head__baner {
 	min-height: 398px;
 	overflow: hidden;
 	border-radius: 15px;
-	background: linear-gradient(to right bottom, #82B0B5 600px, transparent 600px); 
+	background: linear-gradient(to right bottom, #78A4BE 600px, transparent 600px); 
 }
 
-.coctails-head__baner_container {
+.news-head__baner_container {
 	position: relative;
 	
 }
 
-.text-container {
+.news-text-container {
 	width: calc(100% - 300px); 
-	background-color: #82B0B5; 
+	background-color: #78A4BE; 
 	padding: 73px 0 65px 53px; 
 	float: left; 
 	max-width: 480px;
 }
 
-.image-container {
+.news-image-container {
 	position: absolute; 
 	top: 0px; 
 	right: -1px; 
 	width: 58%; 
 	height: 401px; 
-	background-image: url('../img/cocktail/cocktail_baner.png'); 
+	background-image: url('../img/news/news_hero.png'); 
 	clip-path: polygon(100% 0, 100% 100%, 0 100%, 20% 0); 
 	z-index: 1; 
 }
 
-.coctails-banner-title {
+.news-banner-title {
 	font-family: var(--font-family);
 	color: var(--text-white);
 	font-size: rem(48px);
 	font-weight: bold;
 }
 
-.coctails-banner-text {
+.news-banner-text {
 	margin-top: 24px; 
 	font-family: var(--font-family);
 	color: var(--text-white);
@@ -82,7 +82,7 @@
 	line-height: 1.2;
 }
 
-.coctails-banne-button {
+.news-banne-button {
 	margin-top: 40px;
 	display: inline-block;
 	padding: 10px 20px;
@@ -94,16 +94,16 @@
 	transition: background-color 0.3s ease;
 }
 
-.coctails-banne-button:hover {
+.news-banne-button:hover {
 	background-color: #eee;
 }
 @media only screen and (max-width: $desktop) {
-	.coctails-banner-title {
+	.news-banner-title {
 		font-size: rem(32px);
 	}
 }
 
-.coctails-content {
+.news-content {
 
 	.filter-container {
 		display: flex;
@@ -130,13 +130,21 @@
 			width: calc(50% - 44px);
 			margin-top: 60px;
 			margin-bottom: 40px;
+			@media only screen and (max-width: $desktop) {
+				width: calc(50% - 24px);
+			margin-top: 40px;
+			}
 	  }
+	  @media only screen and (max-width: $desktop) {
+		width: calc(33% - 16px);
+	
+	}
 	}
 	&__more {
 		display: block;
 		text-decoration: none;
 		background-color: var(--text-white);
-		margin-top: 30px;
+		// margin-top: 30px;
 		width: 100%;
 		border: 1px solid var(--white-ligh-bg);
 		border-radius: 8px;
@@ -159,7 +167,7 @@
 
 		
 }
-		.coctails-content-link {
+		.news-content-link {
 			color:var(--text-blue);
 			font-size: rem(14px);
 			transition: 0.3s ease;
@@ -186,13 +194,15 @@
 		}
 	
 
-.coctail-title {
-font-size: rem(48px);
+.news-title {
+font-size: rem(28px);
 font-family: var(--font-family) ;
-color: var(--text-dark);/**/
+color: var(--text-dark);
 font-weight: 700;
-margin: 40px 0;
+margin-top: 20px;
+margin-bottom: 40px;
 }
+/*test
 
 
 
@@ -201,7 +211,7 @@ margin: 40px 0;
 
 
 
-.coctails-content-padding {
+.news-content-padding {
 	padding: 40px 0;
 	.pagination {
 		margin-top: 40px;
@@ -254,10 +264,10 @@ margin: 40px 0;
 	}
 }
 
-.coctails-content-img-link {
+.news-content-img-link {
 	display: block;
 	position: relative;
-	.coctails-content-img {
+	.news-content-img {
 		width: 100%;
 		height: auto;
 		border-radius: 15px;
@@ -266,25 +276,25 @@ margin: 40px 0;
 		transition: 0.3s ease;
 	}
 	&:hover{
-		.coctails-content-img {
+		.news-content-img {
 			box-shadow: 0 0 20px rgba(#000, 0.2); 
 		}
 		
 	}
 }
-.half .coctails-content-date {
+.half .news-content-date {
 	display: none;
 }
-.coctails-content-date {
+.news-content-date {
 	font-size: rem(16px);
 	color: var(--text-strong-gray);
 	font-weight: 400;
 }
-.coctails-content-title {
+.news-content-title {
 	margin: 0;
 	padding: 10px 0;
 }
-.coctails-content-title-link {
+.news-content-title-link {
 	line-height: 1.1em;
 	text-decoration: none;
 	font-weight: 600;
@@ -308,10 +318,14 @@ margin: 40px 0;
 }
 
 
-.coctails-content-desc {
+.news-content-desc {
 	font-size: rem(16px);
 	color: var(--text-strong-gray);
 	font-weight: 400;
 	margin-bottom: 10px;
 	line-height: 1.5em;
+}
+.news-content .section_headline {
+	margin-top: 60px;
+	margin-bottom: 0;
 }
