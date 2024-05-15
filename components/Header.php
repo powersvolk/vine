@@ -163,6 +163,622 @@
     </div>
 </div>
 
+
+<div class="category_window">
+    <div class="container">
+        <div class="category_window_inner">
+            <div class="category_window_inner-navigation">
+                 <ul>
+                    <li>
+                        <a href="#" class="active" data-cat="1">
+                            <svg class="icon">
+                                <use xlink:href="#cat-1"></use>
+                            </svg>
+                            Акции
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-cat="2">
+                            <svg class="icon">
+                                <use xlink:href="#cat-2"></use>
+                            </svg>
+                            Вино
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-cat="3">
+                            <svg class="icon">
+                                <use xlink:href="#cat-3"></use>
+                            </svg>
+                            Шампанское 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-cat="4">
+                            <svg class="icon">
+                                <use xlink:href="#cat-4"></use>
+                            </svg>
+                            Виски
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-cat="5">
+                            <svg class="icon">
+                                <use xlink:href="#cat-5"></use>
+                            </svg>
+                            Коньяк
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-cat="6">
+                            <svg class="icon">
+                                <use xlink:href="#cat-6"></use>
+                            </svg>
+                            Водка
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-cat="7">
+                            <svg class="icon">
+                                <use xlink:href="#cat-7"></use>
+                            </svg>
+                            Ликер
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-cat="8">
+                            <svg class="icon">
+                                <use xlink:href="#cat-8"></use>
+                            </svg>
+                            Крепкие напитки
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-cat="9">
+                            <svg class="icon">
+                                <use xlink:href="#cat-9"></use>
+                            </svg>
+                            Пиво и сидр
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-cat="10">
+                            <svg class="icon">
+                                <use xlink:href="#cat-10"></use>
+                            </svg>
+                            Подарки
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-cat="11">
+                            <svg class="icon">
+                                <use xlink:href="#cat-11"></use>
+                            </svg>
+                            Бокалы
+                        </a>
+                    </li>
+                 </ul>   
+            </div>
+            <div class="category_window_inner-menu">
+                <?php for($m = 1; $m <= 5; $m++) { ?>
+                    <div class="category_window_inner-menu_section show_menu_section_<?php echo $m;  if($m == 1) { echo ' active'; }?>">
+                        <div class="category_window_inner-menu_section_in">
+                            <div class="category_window_inner-menu-container">
+                                <div class="category_window_inner-menu-container-item">
+                                    <h3>
+                                        Происхождение
+                                    </h3>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/country/georgia.png" alt="">
+                                                <span>Франция</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/country/spain.png" alt="">
+                                                <span>Греция</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/country/brazil.png" alt="">
+                                                <span>Италия</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/country/spain.png" alt="">
+                                                <span>Испания</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="img/country/georgia.png" alt="">
+                                                <span>Бразилия</span>
+                                            </a>
+                                        </li>
+                                        <li class="hide_menu_item">
+                                            <a href="#">
+                                                <img src="img/country/brazil.png" alt="">
+                                                <span>Италия</span>
+                                            </a>
+                                        </li>
+                                        <li class="hide_menu_item">
+                                            <a href="#">
+                                                <img src="img/country/spain.png" alt="">
+                                                <span>Испания</span>
+                                            </a>
+                                        </li>
+                                        <li class="hide_menu_item">
+                                            <a href="#">
+                                                <img src="img/country/georgia.png" alt="">
+                                                <span>Бразилия</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="category_show_more">
+                                                <span>Еще</span>
+                                                <svg class="icon">
+                                                    <use xlink:href="#arrow-down"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category_window_inner-menu-container-item">
+                                    <h3>
+                                        Типы 
+                                    </h3>
+                                    <ul>
+                                        <li><a href="#"><span>Кьянти</span></a></li>
+                                        <li><a href="#"><span>Бордо</span></a></li>
+                                        <li><a href="#"><span>Силия</span></a></li>
+                                        <li><a href="#"><span>Амароне</span></a></li>
+                                        <li><a href="#"><span>Тоскана</span></a></li>
+                                        <li><a href="#"><span>Риоха</span></a></li>
+                                        <li class="hide_menu_item"><a href="#"><span>Амароне</span></a></li>
+                                        <li class="hide_menu_item"><a href="#"><span>Тоскана</span></a></li>
+                                        <li class="hide_menu_item"><a href="#"><span>Риоха</span></a></li>
+                                        <li>
+                                            <a href="#" class="category_show_more">
+                                                <span>Еще</span>
+                                                <svg class="icon">
+                                                    <use xlink:href="#arrow-down"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category_window_inner-menu-container-item">
+                                    <h3>
+                                        Цвет
+                                    </h3>
+                                    <ul>
+                                        <li><a href="#"><span>Красное</span></a></li>
+                                        <li><a href="#"><span>Белое</span></a></li>
+                                        <li><a href="#"><span>Розовое</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="category_window_inner-menu-container-item">
+                                    <h3>
+                                        Бренд
+                                    </h3>
+                                    <ul>
+                                        <li><a href="#"><span>Красное</span></a></li>
+                                        <li><a href="#"><span>Белое</span></a></li>
+                                        <li><a href="#"><span>Розовое</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="category_window_inner-menu-container-item">
+                                    <h3>
+                                        Сорт винограда
+                                    </h3>
+                                    <ul>
+                                        <li><a href="#"><span>Гевюрцтраминер</span></a></li>
+                                        <li><a href="#"><span>Каберне Совиньон</span></a></li>
+                                        <li><a href="#"><span>Мерло</span></a></li>
+                                        <li><a href="#"><span>Мускат</span></a></li>
+                                        <li><a href="#"><span>Неббиоло</span></a></li>
+                                        <li><a href="#"><span>Рислинг</span></a></li>
+                                        <li><a href="#"><span>Совиньон Блан</span></a></li>
+                                        <li class="hide_menu_item"><a href="#"><span>Неббиоло</span></a></li>
+                                        <li class="hide_menu_item"><a href="#"><span>Рислинг</span></a></li>
+                                        <li class="hide_menu_item"><a href="#"><span>Совиньон Блан</span></a></li>
+                                        <li>
+                                            <a href="#" class="category_show_more">
+                                                <span>Еще</span>
+                                                <svg class="icon">
+                                                    <use xlink:href="#arrow-down"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category_window_inner-menu-container-item">
+                                    <h3>
+                                        Размер бутылки
+                                    </h3>
+                                    <ul>
+                                        <li><a href="#"><span>0,25 литра</span></a></li>
+                                        <li><a href="#"><span>0,5 литра</span></a></li>
+                                        <li><a href="#"><span>0,75 литра</span></a></li>
+                                        <li><a href="#"><span>1 литр</span></a></li>
+                                        <li><a href="#"><span>1,5 литр</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="category_window_inner-menu-container-item">
+                                    <h3>
+                                        Специальные вина
+                                    </h3>
+                                    <ul>
+                                        <li><a href="#"><span>В подарочной упаковке</span></a></li>
+                                        <li><a href="#"><span>Биодинамическое вино</span></a></li>
+                                        <li><a href="#"><span>Выдержанные в амфоре</span></a></li>
+                                        <li><a href="#"><span>Органические</span></a></li>
+                                        <li><a href="#"><span>Биологические вина</span></a></li>
+                                        <li><a href="#"><span>Безалкогольные вина</span></a></li>
+                                        <li class="hide_menu_item"><a href="#"><span>Органические</span></a></li>
+                                        <li class="hide_menu_item"><a href="#"><span>Биологические вина</span></a></li>
+                                        <li class="hide_menu_item"><a href="#"><span>Безалкогольные вина</span></a></li>
+                                        <li>
+                                            <a href="#" class="category_show_more">
+                                                <span>Еще</span>
+                                                <svg class="icon">
+                                                    <use xlink:href="#arrow-down"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="category_window_inner-menu-product">
+                                <div class="card__item">
+                                    <div class="card__item-thumbnuil">
+                                        <a href="#">
+                                            <img src="img/product/product_<?php echo rand(1, 3);?>.png" alt="">
+                                        </a>
+                                        <div class="card__item-raiting">
+                                            <svg class="icon">
+                                                <use xlink:href="#star"></use>
+                                            </svg>
+                                            5.0
+                                        </div>
+                                        <div class="card__item-message">
+                                            <svg class="icon">
+                                                <use xlink:href="#message"></use>
+                                            </svg>
+                                            12
+                                        </div>
+                                        <div class="card__item-compare">
+                                            <a href="#">
+                                                <svg class="icon">
+                                                    <use xlink:href="#heart"></use>
+                                                </svg>
+                                            </a>    
+                                        </div>
+                                        <div class="card__item-discount">
+                                            -20%
+                                        </div>
+                                    </div> 
+                                    <div class="card__item-sku">
+                                        02-33985-2021
+                                    </div>
+                                    <div class="card__item-title">
+                                        <a href="#">
+                                            Виски Johnnie Walker Blue Label Ghost and Rare Pittyvaich 0,7 л
+                                        </a>
+                                    </div>
+                                    <div class="card__item-category">
+                                        <a href="#">Виски</a>,
+                                        <a href="#">Ирландия</a>, 
+                                        <a href="#">0,7 л</a>
+                                    </div> 
+                                    <div class="card__item-old_price">
+                                        48 239  ₽
+                                    </div> 
+                                    <div class="card__item-data">
+                                        <div class="card__item-data-price">
+                                            513 859 ₽
+                                        </div> 
+                                        <div class="card__item-data-cta">
+                                            <a href="#" class="card_cta">
+                                                В корзину
+                                            </a>
+                                        </div> 
+                                    </div>
+                                </div>     
+                            </div> 
+                        </div> 
+                        <div class="menu-product_progress">
+                            <div class="menu-product_progress_item active">
+                                до 500 руб
+                            </div>
+                            <div class="menu-product_progress_item">
+                                500 - 1500 руб 
+                            </div>
+                            <div class="menu-product_progress_item">
+                                1500 - 3000 руб 
+                            </div>
+                            <div class="menu-product_progress_item">
+                                от 3000 руб
+                            </div>
+                        </div>   
+                    </div>
+                    
+                <?php } ?>
+
+                <!-- Type 2 -->
+
+                <?php for($m = 6; $m <= 11; $m++) { ?>
+                    <div class="category_window_inner-menu_section show_menu_section_<?php echo $m;  if($m == 1) { echo ' active'; }?>">
+                        <div class="category_window_inner-menu_section_in">
+                            <div class="category_window_inner-menu-container">
+                                <div class="category_window_inner-menu-container-item category_window_inner-menu-container-item-full">
+                                    <h3>
+                                        Выбрать напитки по типу
+                                    </h3>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <span>Абсент</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>Аперитив</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>Арманьяк</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>Бренди </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>Коньяк</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>Виски</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <span>Водка</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>Граппа</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>Чача</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>Джин</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>Кальвадос</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>Кашаса</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <span>Ликер</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>Мескаль</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>Писко</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>Ракия</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>Ром</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>Самогон</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <span>Текила</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>Узо</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>Шнапс</span>
+                                            </a>
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                                
+                                <div class="category_window_inner-menu-container-item">
+                                    <h3>
+                                        Сорт винограда
+                                    </h3>
+                                    <ul>
+                                        <li><a href="#"><span>Гевюрцтраминер</span></a></li>
+                                        <li><a href="#"><span>Каберне Совиньон</span></a></li>
+                                        <li><a href="#"><span>Мерло</span></a></li>
+                                        <li><a href="#"><span>Мускат</span></a></li>
+                                        <li><a href="#"><span>Неббиоло</span></a></li>
+                                        <li><a href="#"><span>Рислинг</span></a></li>
+                                        <li><a href="#"><span>Совиньон Блан</span></a></li>
+                                        <li class="hide_menu_item"><a href="#"><span>Неббиоло</span></a></li>
+                                        <li class="hide_menu_item"><a href="#"><span>Рислинг</span></a></li>
+                                        <li class="hide_menu_item"><a href="#"><span>Совиньон Блан</span></a></li>
+                                        <li>
+                                            <a href="#" class="category_show_more">
+                                                <span>Еще</span>
+                                                <svg class="icon">
+                                                    <use xlink:href="#arrow-down"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="category_window_inner-menu-container-item">
+                                    <h3>
+                                        Размер бутылки
+                                    </h3>
+                                    <ul>
+                                        <li><a href="#"><span>0,25 литра</span></a></li>
+                                        <li><a href="#"><span>0,5 литра</span></a></li>
+                                        <li><a href="#"><span>0,75 литра</span></a></li>
+                                        <li><a href="#"><span>1 литр</span></a></li>
+                                        <li><a href="#"><span>1,5 литр</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="category_window_inner-menu-container-item">
+                                    <h3>
+                                        Специальные вина
+                                    </h3>
+                                    <ul>
+                                        <li><a href="#"><span>В подарочной упаковке</span></a></li>
+                                        <li><a href="#"><span>Биодинамическое вино</span></a></li>
+                                        <li><a href="#"><span>Выдержанные в амфоре</span></a></li>
+                                        <li><a href="#"><span>Органические</span></a></li>
+                                        <li><a href="#"><span>Биологические вина</span></a></li>
+                                        <li><a href="#"><span>Безалкогольные вина</span></a></li>
+                                        <li class="hide_menu_item"><a href="#"><span>Органические</span></a></li>
+                                        <li class="hide_menu_item"><a href="#"><span>Биологические вина</span></a></li>
+                                        <li class="hide_menu_item"><a href="#"><span>Безалкогольные вина</span></a></li>
+                                        <li>
+                                            <a href="#" class="category_show_more">
+                                                <span>Еще</span>
+                                                <svg class="icon">
+                                                    <use xlink:href="#arrow-down"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="category_window_inner-menu-product">
+                                <div class="card__item">
+                                    <div class="card__item-thumbnuil">
+                                        <a href="#">
+                                            <img src="img/product/product_<?php echo rand(1, 3);?>.png" alt="">
+                                        </a>
+                                        <div class="card__item-raiting">
+                                            <svg class="icon">
+                                                <use xlink:href="#star"></use>
+                                            </svg>
+                                            5.0
+                                        </div>
+                                        <div class="card__item-message">
+                                            <svg class="icon">
+                                                <use xlink:href="#message"></use>
+                                            </svg>
+                                            12
+                                        </div>
+                                        <div class="card__item-compare">
+                                            <a href="#">
+                                                <svg class="icon">
+                                                    <use xlink:href="#heart"></use>
+                                                </svg>
+                                            </a>    
+                                        </div>
+                                        <div class="card__item-discount">
+                                            -20%
+                                        </div>
+                                    </div> 
+                                    <div class="card__item-sku">
+                                        02-33985-2021
+                                    </div>
+                                    <div class="card__item-title">
+                                        <a href="#">
+                                            Виски Johnnie Walker Blue Label Ghost and Rare Pittyvaich 0,7 л
+                                        </a>
+                                    </div>
+                                    <div class="card__item-category">
+                                        <a href="#">Виски</a>,
+                                        <a href="#">Ирландия</a>, 
+                                        <a href="#">0,7 л</a>
+                                    </div> 
+                                    <div class="card__item-old_price">
+                                        48 239  ₽
+                                    </div> 
+                                    <div class="card__item-data">
+                                        <div class="card__item-data-price">
+                                            513 859 ₽
+                                        </div> 
+                                        <div class="card__item-data-cta">
+                                            <a href="#" class="card_cta">
+                                                В корзину
+                                            </a>
+                                        </div> 
+                                    </div>
+                                </div>     
+                            </div> 
+                        </div> 
+                        <div class="menu-product_progress">
+                            <div class="menu-product_progress_item active">
+                                до 500 руб
+                            </div>
+                            <div class="menu-product_progress_item">
+                                500 - 1500 руб 
+                            </div>
+                            <div class="menu-product_progress_item">
+                                1500 - 3000 руб 
+                            </div>
+                            <div class="menu-product_progress_item">
+                                от 3000 руб
+                            </div>
+                        </div>   
+                    </div>
+                    
+                <?php } ?>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
 <section class="header">
     <div class="container">
         <div class="header__inner">
@@ -396,7 +1012,7 @@
 
         <div class="navigation__menu">
             <ul>
-                <li class="interest">
+                <li class="interest no_depth">
                     <a href="#">
                         <svg class="icon">
                             <use xlink:href="#interest"></use>
@@ -404,13 +1020,15 @@
                         Акции
                     </a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="#">
                         Вино
                         <svg class="icon">
                             <use xlink:href="#arrow-down"></use>
                         </svg>
                     </a>
+                    <?php include('components/menu-item.php'); ?>        
+
                 </li>
                 <li>
                     <a href="#">
@@ -418,7 +1036,8 @@
                         <svg class="icon">
                             <use xlink:href="#arrow-down"></use>
                         </svg>
-                    </a>    
+                    </a> 
+                    <?php include('components/menu-item.php'); ?>   
                 </li>
                 <li>
                     <a href="#">
@@ -427,6 +1046,7 @@
                             <use xlink:href="#arrow-down"></use>
                         </svg>
                     </a>
+                    <?php include('components/menu-item.php'); ?>
                 </li>
                 <li>
                     <a href="#">
@@ -435,6 +1055,7 @@
                             <use xlink:href="#arrow-down"></use>
                         </svg>
                     </a>
+                    <?php include('components/menu-item.php'); ?>
                 </li>
                 <li>
                     <a href="#">
@@ -443,6 +1064,7 @@
                             <use xlink:href="#arrow-down"></use>
                         </svg>
                     </a>
+                    <?php include('components/menu-item.php'); ?>
                 </li>
                 <li>
                     <a href="#">
@@ -451,6 +1073,7 @@
                             <use xlink:href="#arrow-down"></use>
                         </svg>
                     </a>
+                    <?php include('components/menu-item.php'); ?>
                 </li>
                 <li>
                     <a href="#">
@@ -459,6 +1082,7 @@
                             <use xlink:href="#arrow-down"></use>
                         </svg>
                     </a>
+                    <?php include('components/menu-item.php'); ?>
                 </li>
                 <li>
                     <a href="#">
@@ -467,6 +1091,7 @@
                             <use xlink:href="#arrow-down"></use>
                         </svg>
                     </a>
+                    <?php include('components/menu-item.php'); ?>
                 </li>
                 <li>
                     <a href="#">
@@ -475,6 +1100,7 @@
                             <use xlink:href="#arrow-down"></use>
                         </svg>
                     </a>
+                    <?php include('components/menu-item.php'); ?>
                 </li>
             </ul>
         </div>

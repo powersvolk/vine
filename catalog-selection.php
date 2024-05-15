@@ -36,207 +36,11 @@
         </div>
     </section>    
 
-    <section class="category__section pt-60">
-        <div class="container">
-            <div class="category__section_inner">
-                <h2 class="section_headline">
-                    Популярные вина
-                </h2>
-                <div class="show_tabs active">
-                    <div class="section_category_sub__tabs">
-                        <div class="section_category_sub__tabs-item active" data-brand="1">
-                            Мы рекомендуем
-                        </div>
-                        <div class="section_category_sub__tabs-item" data-brand="2">
-                            По акции
-                        </div>
-                        <div class="section_category_sub__tabs-item" data-brand="3">
-                            Подборки
-                        </div>
-                    </div>
-                    <?php for($n = 1; $n <= 3; $n++) { ?>
-                        <div class="section_category_brands show_brands show_brands_<?php echo $n; if($n==1) {echo ' active'; }?> ">
-                            <div class="cards_section five_item">
-                                <?php for($j = 1; $j <= 5; $j++) { ?>   
-                                    <div class="card__item">
-                                        <div class="card__item-thumbnuil">
-                                            <a href="#">
-                                                <img src="img/product/product_<?php echo rand(1, 3);?>.png" alt="">
-                                            </a>
-                                            <div class="card__item-raiting">
-                                                <svg class="icon">
-                                                    <use xlink:href="#star"></use>
-                                                </svg>
-                                                5.0
-                                            </div>
-                                            <div class="card__item-message">
-                                                <svg class="icon">
-                                                    <use xlink:href="#message"></use>
-                                                </svg>
-                                                12
-                                            </div>
-                                            <div class="card__item-compare">
-                                                <a href="#">
-                                                    <svg class="icon">
-                                                        <use xlink:href="#heart"></use>
-                                                    </svg>
-                                                </a>    
-                                            </div>
-                                            <div class="card__item-discount">
-                                                -20%
-                                            </div>
-                                        </div> 
-                                        <div class="card__item-old_price">
-                                            48 239  ₽
-                                        </div> 
-                                        <div class="card__item-data">
-                                            <div class="card__item-data-price">
-                                                513 859 ₽
-                                            </div> 
-                                            <div class="card__item-data-cta">
-                                                <a href="#" class="card_cta">
-                                                    В корзину
-                                                </a>
-                                            </div> 
-                                        </div> 
-                                        <div class="card__item-sku">
-                                            02-33985-2021
-                                        </div>
-                                        <div class="card__item-title">
-                                            <a href="#">
-                                                Виски Johnnie Walker Blue Label Ghost and Rare Pittyvaich 0,7 л
-                                            </a>
-                                        </div>
-                                        <div class="card__item-category">
-                                            <a href="#">Виски</a>,
-                                            <a href="#">Ирландия</a>, 
-                                            <a href="#">0,7 л</a>
-                                        </div> 
-                                    </div>
-                                <?php } ?>    
-                            </div>    
-                        </div> 
-                    <?php } ?>  
-                    
-                </div> 
-            </div>
-        </div>
-    </section>    
-
-
-    <section class="category__section pt-60">
-        <div class="container">
-            <div class="category__section_inner">
-                <h2 class="section_headline">
-                    Выберите вино
-                </h2>
-                <div class="show_tabs active">
-                    <div class="section_category_brands show_brands active">
-                        <div class="owl-categories owl-carousel owl-theme">
-
-                            <div class="item">
-                                <div class="category_brands_thumbnuil">
-                                    <img src="img/vine_type/vine_type_1.png">
-                                </div>
-                                <h3>
-                                    К ужину
-                                </h3>
-                            </div>
-                            <div class="item">
-                                <div class="category_brands_thumbnuil">
-                                    <img src="img/vine_type/vine_type_2.png">
-                                </div>
-                                <h3>
-                                    К мясу
-                                </h3>
-                            </div>
-                            <div class="item">
-                                <div class="category_brands_thumbnuil">
-                                    <img src="img/vine_type/vine_type_3.png">
-                                </div>
-                                <h3>
-                                    На праздник
-                                </h3>
-                            </div>
-                            <div class="item">
-                                <div class="category_brands_thumbnuil">
-                                    <img src="img/vine_type/vine_type_4.png">
-                                </div>
-                                <h3>
-                                    В подарок
-                                </h3>
-                            </div>
-                            <div class="item">
-                                <div class="category_brands_thumbnuil">
-                                    <img src="img/vine_type/vine_type_5.png">
-                                </div>
-                                <h3>
-                                    Для выдержки
-                                </h3>
-                            </div>
-                            <div class="item">
-                                <div class="category_brands_thumbnuil">
-                                    <img src="img/vine_type/vine_type_6.png">
-                                </div>
-                                <h3>
-                                    К рыбе
-                                </h3>
-                            </div>
-                            <div class="item">
-                                <div class="category_brands_thumbnuil">
-                                    <img src="img/vine_type/vine_type_7.png">
-                                </div>
-                                <h3>
-                                    Вермуты
-                                </h3>
-                            </div>
-                            <div class="item">
-                                <div class="category_brands_thumbnuil">
-                                    <img src="img/vine_type/vine_type_8.png">
-                                </div>
-                                <h3>
-                                    К сладкому
-                                </h3>
-                            </div>
-                            <div class="item">
-                                <div class="category_brands_thumbnuil">
-                                    <img src="img/vine_type/vine_type_9.png">
-                                </div>
-                                <h3>
-                                    Вино и сыр
-                                </h3>
-                            </div>
-                        </div>
-                    </div> 
-                </div> 
-            </div>
-        </div>
-    </section>                                     
     
-    <?php include('components/map.php'); ?>
-
-    <section class="popular__brand pt-60">
-        <div class="container">
-            <div class="popular__brand_inner">
-                <h2 class="section_headline">
-                    Популярные брены
-                </h2>
-            </div>
-            <?php for($j = 1; $j<= 7; $j++) { ?>
-                <div class="popular__brand__content show_brand show_brand_<?php echo $j; if($j == 1) { echo ' active'; }?>">
-                    <?php for($i = 1; $i<= 18; $i++) { ?>
-                        <a href="#">
-                            <img src="img/brands/brand_<?php echo $i; ?>.jpg" alt="">
-                        </a> 
-                    <?php } ?>   
-                </div>
-            <?php } ?>
-        </div>
-    </section>   
 
     <section class="tags">
         <div class="container"> 
-            <div class="tags_inner">
+            <div class="tags_inner" style="border-top:none;">
                 <a href="#">Белое</a>
                 <a href="#">Красное</a>
                 <a href="#">Розовое</a>
@@ -253,8 +57,293 @@
                 <a href="#">Вина крыма</a>
             </div>          
         </div>              
-    </section>                       
+    </section>  
 
+    <section class="horizontal_filter">
+        <div class="container"> 
+            <div class="horizontal_filter_inner">
+                <div class="horizontal_filter_inner-item">
+                    Цена, ₽
+                    <span>
+                        <svg class="icon">
+                            <use xlink:href="#arrow-down"></use>
+                        </svg>
+                    </span> 
+                    <div class="sidebar_tab sidebar_tab_fly">
+                        <h3 class="active">
+                            Цена, ₽
+                        </h3>
+                        <div class="sidebar_tab-content price-slider_data">
+                            <div id="price-slider"></div>
+                            <div class="price-slider_data-row">
+                                <input type="text" id="min-price" readonly>
+                                <input type="text" id="max-price" readonly>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="horizontal_filter_inner-item">
+                    Содержание сахара
+                    <span>
+                        <svg class="icon">
+                            <use xlink:href="#arrow-down"></use>
+                        </svg>
+                    </span>
+                    <div class="sidebar_tab sidebar_tab_fly">
+                        <h3 class="active">
+                            Содержание сахара
+                        </h3>
+                        <div class="sidebar_tab-content sidebar-filter-data">
+                            <div class="form_rule">
+                                <input type="checkbox" class="cheackbox" id="name_1">
+                                <label for="name_1" class="checkbox-label">Сухое <span>34</span></label>
+                            </div>
+                            <div class="form_rule">
+                                <input type="checkbox" class="cheackbox" id="name_2">
+                                <label for="name_2" class="checkbox-label">Полусухое <span>71</span></label>
+                            </div>
+                            <div class="form_rule">
+                                <input type="checkbox" class="cheackbox" id="name_3">
+                                <label for="name_3" class="checkbox-label">Полусладкое <span>105</span></label>
+                            </div>
+                            <div class="form_rule">
+                                <input type="checkbox" class="cheackbox" id="name_4">
+                                <label for="name_4" class="checkbox-label">Сладкое <span>2356</span></label>
+                            </div>
+                            <div class="form_rule">
+                                <input type="checkbox" class="cheackbox" id="name_5">
+                                <label for="name_5" class="checkbox-label">Сладкое <span>2356</span></label>
+                            </div>
+                            <div class="form_rule">
+                                <input type="checkbox" class="cheackbox" id="name_6">
+                                <label for="name_6" class="checkbox-label">Сладкое <span>2356</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal_filter_inner-item">
+                    Производитель
+                    <span>
+                        <svg class="icon">
+                            <use xlink:href="#arrow-down"></use>
+                        </svg>
+                    </span>
+                    <div class="sidebar_tab sidebar_tab_fly">
+                        <h3 class="active">
+                            Производитель
+                        </h3>
+                        <div class="sidebar_tab-content sidebar-filter-country">
+                            <select class="select">
+                                <option value="Турция">Турция</option>
+                                <option value="Италия">Италия</option>
+                                <option value="Грузия">Грузия</option>
+                                <option value="Испания">Испания</option>
+                                <option value="Португалия">Португалия</option>
+                            </select>    
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal_filter_inner-item">
+                    Страна 
+                    <span>
+                        <svg class="icon">
+                            <use xlink:href="#arrow-down"></use>
+                        </svg>
+                    </span>
+                    <div class="sidebar_tab sidebar_tab_fly">
+                        <h3 class="active">
+                            Страна
+                        </h3>
+                        <div class="sidebar_tab-content sidebar-filter-data">
+                            <div class="form_rule">
+                                <input type="checkbox" class="cheackbox" id="cname_1">
+                                <label for="cname_1" class="checkbox-label">
+                                    <img src="img/country/brazil.png" alt="">
+                                    Франция <span>34</span>
+                                </label>
+                            </div>
+                            <div class="form_rule">
+                                <input type="checkbox" class="cheackbox" id="cname_2">
+                                <label for="cname_2" class="checkbox-label">
+                                    <img src="img/country/georgia.png" alt="">
+                                    Италия <span>71</span>
+                                </label>
+                            </div>
+                            <div class="form_rule">
+                                <input type="checkbox" class="cheackbox" id="cname_3">
+                                <label for="cname_3" class="checkbox-label">
+                                    <img src="img/country/spain.png" alt="">
+                                    Испания <span>105</span>
+                                </label>
+                            </div>
+                            <div class="form_rule">
+                                <input type="checkbox" class="cheackbox" id="cname_4">
+                                <label for="cname_4" class="checkbox-label">
+                                    <img src="img/country/brazil.png" alt="">
+                                    Грузия <span>2356</span>
+                                </label>
+                            </div>
+                            <div class="form_rule">
+                                <input type="checkbox" class="cheackbox" id="cname_5">
+                                <label for="cname_5" class="checkbox-label">
+                                    <img src="img/country/spain.png" alt="">
+                                    Бразилия <span>2356</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal_filter_inner-item">
+                    Сорт винограда
+                    <span>
+                        <svg class="icon">
+                            <use xlink:href="#arrow-down"></use>
+                        </svg>
+                    </span>
+                    <div class="sidebar_tab sidebar_tab_fly">
+                        <h3 class="active">
+                            Сорт винограда
+                        </h3>
+                        <div class="form_rule_field">
+                            <input type="text" placeholder="Введите сорт винограда">
+                        </div>
+                        <div class="sidebar_tab-content sidebar-filter-data">
+                            <div class="form_rule">
+                                <input type="checkbox" class="cheackbox" id="sname_1">
+                                <label for="sname_1" class="checkbox-label">
+                                    Пино Нуар<span>34</span>
+                                </label>
+                            </div>
+                            <div class="form_rule">
+                                <input type="checkbox" class="cheackbox" id="sname_2">
+                                <label for="sname_2" class="checkbox-label">
+                                    Мерло <span>71</span>
+                                </label>
+                            </div>
+                            <div class="form_rule">
+                                <input type="checkbox" class="cheackbox" id="sname_3">
+                                <label for="sname_3" class="checkbox-label">
+                                    Совиньон Блан <span>105</span>
+                                </label>
+                            </div>
+                            <div class="form_rule">
+                                <input type="checkbox" class="cheackbox" id="sname_4">
+                                <label for="sname_4" class="checkbox-label">
+                                    Санджовезе <span>2356</span>
+                                </label>
+                            </div>
+                            <div class="form_rule">
+                                <input type="checkbox" class="cheackbox" id="sname_5">
+                                <label for="sname_5" class="checkbox-label">
+                                    Каберене Совиньон <span>2356</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal_filter_inner-item">
+                    Год
+                    <span>
+                        <svg class="icon">
+                            <use xlink:href="#arrow-down"></use>
+                        </svg>
+                    </span>
+                    <div class="sidebar_tab sidebar_tab_fly">
+                        <h3 class="active">
+                            Год
+                            <span>
+                                <svg class="icon">
+                                    <use xlink:href="#arrow-down"></use>
+                                </svg>
+                            </span>
+                        </h3>
+                        <div class="sidebar_tab-content sidebar-filter-data">
+                            <div class="form_rule">
+                                <input type="checkbox" class="cheackbox" id="dsname_1">
+                                <label for="dsname_1" class="checkbox-label">
+                                    1930<span>34</span>
+                                </label>
+                            </div>
+                            <div class="form_rule">
+                                <input type="checkbox" class="cheackbox" id="dsname_2">
+                                <label for="dsname_2" class="checkbox-label">
+                                    1950 <span>71</span>
+                                </label>
+                            </div>
+                            <div class="form_rule">
+                                <input type="checkbox" class="cheackbox" id="dsname_3">
+                                <label for="dsname_3" class="checkbox-label">
+                                    1960 <span>105</span>
+                                </label>
+                            </div>
+                            <div class="form_rule">
+                                <input type="checkbox" class="cheackbox" id="dsname_4">
+                                <label for="dsname_4" class="checkbox-label">
+                                    1990 <span>2356</span>
+                                </label>
+                            </div>
+                            <div class="form_rule">
+                                <input type="checkbox" class="cheackbox" id="dsname_5">
+                                <label for="dsname_5" class="checkbox-label">
+                                    2000 <span>2356</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="horizontal_filter_inner-item">
+                    Крепость, °С
+                    <span>
+                        <svg class="icon">
+                            <use xlink:href="#arrow-down"></use>
+                        </svg>
+                    </span>
+                    <div class="sidebar_tab sidebar_tab_fly">
+                        <h3 class="active">
+                            Крепость, °С
+                            <span>
+                                <svg class="icon">
+                                    <use xlink:href="#arrow-down"></use>
+                                </svg>
+                            </span>
+                        </h3>
+                        <div class="sidebar_tab-content sidebar-filter-data">
+                            <div class="form_rule">
+                                <input type="checkbox" class="cheackbox" id="ssname_1">
+                                <label for="ssname_1" class="checkbox-label">
+                                    10%<span>34</span>
+                                </label>
+                            </div>
+                            <div class="form_rule">
+                                <input type="checkbox" class="cheackbox" id="ssname_2">
+                                <label for="ssname_2" class="checkbox-label">
+                                    15% <span>71</span>
+                                </label>
+                            </div>
+                            <div class="form_rule">
+                                <input type="checkbox" class="cheackbox" id="ssname_3">
+                                <label for="ssname_3" class="checkbox-label">
+                                    20% <span>105</span>
+                                </label>
+                            </div>
+                            <div class="form_rule">
+                                <input type="checkbox" class="cheackbox" id="ssname_4">
+                                <label for="ssname_4" class="checkbox-label">
+                                    25% <span>2356</span>
+                                </label>
+                            </div>
+                            <div class="form_rule">
+                                <input type="checkbox" class="cheackbox" id="ssname_5">
+                                <label for="ssname_5" class="checkbox-label">
+                                    30% <span>2356</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>          
+        </div>              
+    </section>
 
     <section class="switch_filter">
         <div class="container"> 
@@ -385,338 +474,55 @@
         </div>
     </section> 
     
-
-    <section class="product_sidebar_container">
+    <section class="sort_product">
         <div class="container"> 
-            <div class="product_sidebar_container_inner">
-                <div class="product_sidebar">
-                    <div class="sidebar_tab">
-                        <h3 class="active">
-                            Цена, ₽
-                            <span>
-                                <svg class="icon">
-                                    <use xlink:href="#arrow-down"></use>
-                                </svg>
-                            </span>
-                        </h3>
-                        <div class="sidebar_tab-content price-slider_data">
-                            <div id="price-slider"></div>
-                            <div class="price-slider_data-row">
-                                <input type="text" id="min-price" readonly>
-                                <input type="text" id="max-price" readonly>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sidebar_tab">
-                        <h3 class="active">
-                            Содержание сахара
-                            <span>
-                                <svg class="icon">
-                                    <use xlink:href="#arrow-down"></use>
-                                </svg>
-                            </span>
-                        </h3>
-                        <div class="sidebar_tab-content sidebar-filter-data">
-                            <div class="form_rule">
-                                <input type="checkbox" class="cheackbox" id="name_1">
-                                <label for="name_1" class="checkbox-label">Сухое <span>34</span></label>
-                            </div>
-                            <div class="form_rule">
-                                <input type="checkbox" class="cheackbox" id="name_2">
-                                <label for="name_2" class="checkbox-label">Полусухое <span>71</span></label>
-                            </div>
-                            <div class="form_rule">
-                                <input type="checkbox" class="cheackbox" id="name_3">
-                                <label for="name_3" class="checkbox-label">Полусладкое <span>105</span></label>
-                            </div>
-                            <div class="form_rule">
-                                <input type="checkbox" class="cheackbox" id="name_4">
-                                <label for="name_4" class="checkbox-label">Сладкое <span>2356</span></label>
-                            </div>
-                            <div class="form_rule">
-                                <input type="checkbox" class="cheackbox" id="name_5">
-                                <label for="name_5" class="checkbox-label">Сладкое <span>2356</span></label>
-                            </div>
-                            <div class="form_rule">
-                                <input type="checkbox" class="cheackbox" id="name_6">
-                                <label for="name_6" class="checkbox-label">Сладкое <span>2356</span></label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sidebar_tab">
-                        <h3 class="active">
-                            Производитель
-                            <span>
-                                <svg class="icon">
-                                    <use xlink:href="#arrow-down"></use>
-                                </svg>
-                            </span>
-                        </h3>
-                        <div class="sidebar_tab-content sidebar-filter-country">
-                            <select class="select">
-                                <option value="Турция">Турция</option>
-                                <option value="Италия">Италия</option>
-                                <option value="Грузия">Грузия</option>
-                                <option value="Испания">Испания</option>
-                                <option value="Португалия">Португалия</option>
-                            </select>    
-                        </div>
-                    </div>
-                    <div class="sidebar_tab">
-                        <h3 class="active">
-                            Страна
-                            <span>
-                                <svg class="icon">
-                                    <use xlink:href="#arrow-down"></use>
-                                </svg>
-                            </span>
-                        </h3>
-                        <div class="sidebar_tab-content sidebar-filter-data">
-                            <div class="form_rule">
-                                <input type="checkbox" class="cheackbox" id="cname_1">
-                                <label for="cname_1" class="checkbox-label">
-                                    <img src="img/country/brazil.png" alt="">
-                                    Франция <span>34</span>
-                                </label>
-                            </div>
-                            <div class="form_rule">
-                                <input type="checkbox" class="cheackbox" id="cname_2">
-                                <label for="cname_2" class="checkbox-label">
-                                    <img src="img/country/georgia.png" alt="">
-                                    Италия <span>71</span>
-                                </label>
-                            </div>
-                            <div class="form_rule">
-                                <input type="checkbox" class="cheackbox" id="cname_3">
-                                <label for="cname_3" class="checkbox-label">
-                                    <img src="img/country/spain.png" alt="">
-                                    Испания <span>105</span>
-                                </label>
-                            </div>
-                            <div class="form_rule">
-                                <input type="checkbox" class="cheackbox" id="cname_4">
-                                <label for="cname_4" class="checkbox-label">
-                                    <img src="img/country/brazil.png" alt="">
-                                    Грузия <span>2356</span>
-                                </label>
-                            </div>
-                            <div class="form_rule">
-                                <input type="checkbox" class="cheackbox" id="cname_5">
-                                <label for="cname_5" class="checkbox-label">
-                                    <img src="img/country/spain.png" alt="">
-                                    Бразилия <span>2356</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sidebar_tab">
-                        <h3 class="active">
-                            Сорт винограда
-                            <span>
-                                <svg class="icon">
-                                    <use xlink:href="#arrow-down"></use>
-                                </svg>
-                            </span>
-                        </h3>
-                        <div class="form_rule_field">
-                            <input type="text" placeholder="Введите сорт винограда">
-                        </div>
-                        <div class="sidebar_tab-content sidebar-filter-data">
-                            <div class="form_rule">
-                                <input type="checkbox" class="cheackbox" id="sname_1">
-                                <label for="sname_1" class="checkbox-label">
-                                    Пино Нуар<span>34</span>
-                                </label>
-                            </div>
-                            <div class="form_rule">
-                                <input type="checkbox" class="cheackbox" id="sname_2">
-                                <label for="sname_2" class="checkbox-label">
-                                    Мерло <span>71</span>
-                                </label>
-                            </div>
-                            <div class="form_rule">
-                                <input type="checkbox" class="cheackbox" id="sname_3">
-                                <label for="sname_3" class="checkbox-label">
-                                    Совиньон Блан <span>105</span>
-                                </label>
-                            </div>
-                            <div class="form_rule">
-                                <input type="checkbox" class="cheackbox" id="sname_4">
-                                <label for="sname_4" class="checkbox-label">
-                                    Санджовезе <span>2356</span>
-                                </label>
-                            </div>
-                            <div class="form_rule">
-                                <input type="checkbox" class="cheackbox" id="sname_5">
-                                <label for="sname_5" class="checkbox-label">
-                                    Каберене Совиньон <span>2356</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sidebar_tab close">
-                        <h3 class="">
-                            Год
-                            <span>
-                                <svg class="icon">
-                                    <use xlink:href="#arrow-down"></use>
-                                </svg>
-                            </span>
-                        </h3>
-                        <div class="sidebar_tab-content sidebar-filter-data">
-                            <div class="form_rule">
-                                <input type="checkbox" class="cheackbox" id="dsname_1">
-                                <label for="dsname_1" class="checkbox-label">
-                                    1930<span>34</span>
-                                </label>
-                            </div>
-                            <div class="form_rule">
-                                <input type="checkbox" class="cheackbox" id="dsname_2">
-                                <label for="dsname_2" class="checkbox-label">
-                                    1950 <span>71</span>
-                                </label>
-                            </div>
-                            <div class="form_rule">
-                                <input type="checkbox" class="cheackbox" id="dsname_3">
-                                <label for="dsname_3" class="checkbox-label">
-                                    1960 <span>105</span>
-                                </label>
-                            </div>
-                            <div class="form_rule">
-                                <input type="checkbox" class="cheackbox" id="dsname_4">
-                                <label for="dsname_4" class="checkbox-label">
-                                    1990 <span>2356</span>
-                                </label>
-                            </div>
-                            <div class="form_rule">
-                                <input type="checkbox" class="cheackbox" id="dsname_5">
-                                <label for="dsname_5" class="checkbox-label">
-                                    2000 <span>2356</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sidebar_tab close">
-                        <h3 class="">
-                            Крепость, °С
-                            <span>
-                                <svg class="icon">
-                                    <use xlink:href="#arrow-down"></use>
-                                </svg>
-                            </span>
-                        </h3>
-                        <div class="sidebar_tab-content sidebar-filter-data">
-                            <div class="form_rule">
-                                <input type="checkbox" class="cheackbox" id="ssname_1">
-                                <label for="ssname_1" class="checkbox-label">
-                                    10%<span>34</span>
-                                </label>
-                            </div>
-                            <div class="form_rule">
-                                <input type="checkbox" class="cheackbox" id="ssname_2">
-                                <label for="ssname_2" class="checkbox-label">
-                                    15% <span>71</span>
-                                </label>
-                            </div>
-                            <div class="form_rule">
-                                <input type="checkbox" class="cheackbox" id="ssname_3">
-                                <label for="ssname_3" class="checkbox-label">
-                                    20% <span>105</span>
-                                </label>
-                            </div>
-                            <div class="form_rule">
-                                <input type="checkbox" class="cheackbox" id="ssname_4">
-                                <label for="ssname_4" class="checkbox-label">
-                                    25% <span>2356</span>
-                                </label>
-                            </div>
-                            <div class="form_rule">
-                                <input type="checkbox" class="cheackbox" id="ssname_5">
-                                <label for="ssname_5" class="checkbox-label">
-                                    30% <span>2356</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product_data">
-                    <section class="sort_product">
-                            <div class="product_data_type_switch">
-                                <div class="sort_product_inner">
-                                    <a href="#" class="active">по популярности</a>
-                                    <a href="#">по цене</a>
-                                    <a href="#">по убыванию</a>
-                                    <a href="#">по рейтингу</a>
-                                    <a href="#">по выгодности</a>
-                                </div>
-                                <div class="product_type_switch">
-                                    <a href="#">
-                                        <svg class="icon">
-                                            <use xlink:href="#row"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="#" class="active">
-                                        <svg class="icon">
-                                            <use xlink:href="#grid"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-    
-      
-                    </section> 
-                    <section class="product_items">
-                            <div class="product_items_inner three_item">
-                                <?php include('components/cards/cartTypeOne.php'); ?>
-                                <?php include('components/cards/cartTypeOne.php'); ?>
-                                <?php include('components/cards/cartTypeOne.php'); ?>
-                                <?php include('components/cards/cartTypeOne.php'); ?>
-                                <?php include('components/cards/cartTypeOne.php'); ?>
-                                <?php include('components/cards/cartTypeOne.php'); ?>
-                            </div>
-      
-                    </section>
-
-                    <section class="product_vine_short_information">
-
-                            <div class="product_vine_short_information_inner">
-                                Вопреки устоявшемуся мнению, родиной вина считается не Древняя Греция, а Грузия – там напиток начали делать гораздо раньше, чем в других странах. Первая же действующая винодельня была построена на территории современной Армении более 5000 лет назад. Археологам удалось обнаружить в ее стенах винный пресс, а также глиняные кувшины для ферментации вина. Цена на вино составляет 120 руб. за бутылку 0.5 л, в ассортименте представлены объемы от 0.1 до 15 л стоимостью от 81 до 6 336 092 рублей. Продажа осуществляется в розничных магазинах Декантер в Москве по адресам Пресненский Вал 44, Новая Басманная 31с1, Ленинский пр-т 66, Мастеркова 1 и Сущевский Вал 46с2 (склад), оплата наличными или банковской картой. Стоимость и наличие актуальны на 9:00 22.12.2023.
-                            </div>
-                               
-                    </section>
-
-                    <section class="product_items">
-                        
-                            <div class="product_items_inner three_item">
-                                <?php include('components/cards/cartTypeOne.php'); ?>
-                                <?php include('components/cards/cartTypeOne.php'); ?>
-                                <?php include('components/cards/cartTypeOne.php'); ?>
-                                <?php include('components/cards/cartTypeOne.php'); ?>
-                                <?php include('components/cards/cartTypeOne.php'); ?>
-                                <?php include('components/cards/cartTypeOne.php'); ?>
-                            </div>
-                               
-                    </section>
-                    <a href="#" class="coctails-content__more">Показать еще</a>
-                    <div class="pagination">
-                        <ul class="pagination__items">
-                            <li class="pagination__item"><a href="#" class="pagination__link active">1</a></li>
-                            <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
-                            <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
-                            <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
-                            <li class="pagination__item"><a href="#" class="pagination__link">></a></li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="sort_product_inner">
+                <a href="#" class="active">по популярности</a>
+                <a href="#">по цене</a>
+                <a href="#">по убыванию</a>
+                <a href="#">по рейтингу</a>
+                <a href="#">по выгодности</a>
             </div>
-            
+        </div>        
+    </section>    
+
+    <section class="product_items">
+        <div class="container"> 
+            <div class="product_items_inner three_item">
+                <?php include('components/cards/cartTypeThree.php'); ?>
+                <?php include('components/cards/cartTypeThree.php'); ?>
+            </div>
+        </div>        
+    </section>
+
+    <section class="product_vine_short_information">
+        <div class="container"> 
+            <div class="product_vine_short_information_inner">
+                Вопреки устоявшемуся мнению, родиной вина считается не Древняя Греция, а Грузия – там напиток начали делать гораздо раньше, чем в других странах. Первая же действующая винодельня была построена на территории современной Армении более 5000 лет назад. Археологам удалось обнаружить в ее стенах винный пресс, а также глиняные кувшины для ферментации вина. Цена на вино составляет 120 руб. за бутылку 0.5 л, в ассортименте представлены объемы от 0.1 до 15 л стоимостью от 81 до 6 336 092 рублей. Продажа осуществляется в розничных магазинах Декантер в Москве по адресам Пресненский Вал 44, Новая Басманная 31с1, Ленинский пр-т 66, Мастеркова 1 и Сущевский Вал 46с2 (склад), оплата наличными или банковской картой. Стоимость и наличие актуальны на 9:00 22.12.2023.
+            </div>
+        </div>        
+    </section>
+
+    <section class="product_items">
+        <div class="container"> 
+            <div class="product_items_inner three_item">
+                <?php include('components/cards/cartTypeThree.php'); ?>
+                <?php include('components/cards/cartTypeThree.php'); ?>
+            </div>
+        </div>        
+    </section>
+    <div class="container">
+        <a href="#" class="coctails-content__more">Показать еще</a>
+        <div class="pagination">
+            <ul class="pagination__items">
+                <li class="pagination__item"><a href="#" class="pagination__link active">1</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link">></a></li>
+            </ul>
         </div>
-    </section>                    
-
-       
-
-    
-
+    </div>
     <section class="category__section pt-60">
         <div class="container">
             <div class="category__section_inner">

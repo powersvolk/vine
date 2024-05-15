@@ -1,5 +1,5 @@
 <?php include('components/Header.php'); ?>
-<section class="coctails-head banner__promotion">
+<section class="coctails-head">
 	<div class="container">
 		<div class="breadcrumbs">
 			<ul>
@@ -337,7 +337,7 @@
 
 
 			</div>
-			<a href="#" class="coctails-content__more mt-60">Показать еще</a>
+			<a href="#" class="coctails-content__more">Показать еще</a>
 			<div class="pagination">
 				<ul class="pagination__items">
 					<li class="pagination__item"><a href="#" class="pagination__link active">1</a></li>

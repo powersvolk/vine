@@ -1,5 +1,5 @@
 <?php include('components/Header.php'); ?>
-<section class="breadcrumbs banner__promotion">
+<section class="breadcrumbs">
 	<div class="container">
 		<div class="breadcrumbs">
 			<ul>
@@ -24,7 +24,7 @@
 <section class="cocktail-block mt-40">
 	<div class="container">
 		<div class="cocktail-block__item">
-			<div class="cocktail-block__text">
+			<div class="cocktail-blocki__text">
 				<h1 class="cocktail-block__text_title">Коктейль «Виски хайбол»: виски в новом свете</h1>
 				<div class="cocktail-block__text_view">
 					<div class="text_view_time">19 февраля</div>
@@ -57,8 +57,8 @@
 		</p>
 		<ol class="recept__items">
 			<li class="recept__item">Наполнить доверху льдом бокал хайбол.</li>
-			<li class="recept__item">Налить сверху 20 мл лимонного сока, 40 мл</br> виски, и в последнюю очередь — долить 80-100
-				мл </br>имбирного пива Ginger Ale до краев бокала.</li>
+			<li class="recept__item">Налить сверху 20 мл лимонного сока, 40 мл виски, и в последнюю очередь — долить 80-100
+				мл имбирного пива Ginger Ale до краев бокала.</li>
 			<li class="recept__item">Тщательно перемешать коктейль ложкой.</li>
 			<li class="recept__item">Украсить цедрой лимона и подать коктейль с соломинкой.</li>
 		</ol>
@@ -77,74 +77,16 @@
 				<a href="#" class="category__section_cart">Добавить все в корзину</a>
 			</div>
 
-			<?php for($p = 1; $p <= 3; $p++) { ?>
-                        <div class="section_category_brands show_brands show_brands_<?php echo $p; if($p==1) {echo ' active'; }?> ">
-                            <div class="owl-product owl-carousel owl-theme">
-                                <?php for($q = 1; $q <= 10; $q++) { ?>   
-                                    <div class="item">
-                                        <div class="full_item">
-                                            <div class="card__item">
-                                                <div class="card__item-thumbnuil">
-                                                    <a href="#">
-                                                        <img src="img/product/product_<?php echo rand(1, 3);?>.png" alt="">
-                                                    </a>
-                                                    <div class="card__item-raiting">
-                                                        <svg class="icon">
-                                                            <use xlink:href="#star"></use>
-                                                        </svg>
-                                                        5.0
-                                                    </div>
-                                                    <div class="card__item-message">
-                                                        <svg class="icon">
-                                                            <use xlink:href="#message"></use>
-                                                        </svg>
-                                                        12
-                                                    </div>
-                                                    <div class="card__item-compare">
-                                                        <a href="#">
-                                                            <svg class="icon">
-                                                                <use xlink:href="#heart"></use>
-                                                            </svg>
-                                                        </a>    
-                                                    </div>
-                                                    <div class="card__item-discount">
-                                                        -20%
-                                                    </div>
-                                                </div> 
-                                                <div class="card__item-old_price">
-                                                    48 239  ₽
-                                                </div> 
-                                                <div class="card__item-data">
-                                                    <div class="card__item-data-price">
-                                                        513 859 ₽
-                                                    </div> 
-                                                    <div class="card__item-data-cta">
-                                                        <a href="#" class="card_cta">
-                                                            В корзину
-                                                        </a>
-                                                    </div> 
-                                                </div> 
-                                                <div class="card__item-sku">
-                                                    02-33985-2021
-                                                </div>
-                                                <div class="card__item-title">
-                                                    <a href="#">
-                                                        Виски Johnnie Walker Blue Label Ghost and Rare Pittyvaich 0,7 л
-                                                    </a>
-                                                </div>
-                                                <div class="card__item-category">
-                                                    <a href="#">Виски</a>,
-                                                    <a href="#">Ирландия</a>, 
-                                                    <a href="#">0,7 л</a>
-                                                </div> 
-                                            </div>
-                                        </div>  
-                                    </div>
-                                <?php } ?> 
-                                
-                            </div>
-                        </div> 
-                    <?php } ?>  
+			<?php for($n = 1; $n <= 6; $n++) { ?>
+			<div class="section_category_brands show_brands show_brands_<?php echo $n; if($n==1) {echo ' active'; }?> ">
+				<div class="cards_section four_item">
+					<?php include('components/cards/cartTypeTwo.php'); ?>
+					<?php include('components/cards/cartTypeTwo.php'); ?>
+					<?php include('components/cards/cartTypeTwo.php'); ?>
+					<?php include('components/cards/cartTypeTwo.php'); ?>
+				</div>
+			</div>
+			<?php } ?>
 
 		</div>
 	</div>
@@ -174,74 +116,16 @@
 				<a href="#" class="category__section_cart">Добавить все в корзину</a>
 			</div>
 
-			<?php for($p = 1; $p <= 3; $p++) { ?>
-                        <div class="section_category_brands show_brands show_brands_<?php echo $p; if($p==1) {echo ' active'; }?> ">
-                            <div class="owl-product owl-carousel owl-theme">
-                                <?php for($q = 1; $q <= 10; $q++) { ?>   
-                                    <div class="item">
-                                        <div class="full_item">
-                                            <div class="card__item">
-                                                <div class="card__item-thumbnuil">
-                                                    <a href="#">
-                                                        <img src="img/product/product_<?php echo rand(1, 3);?>.png" alt="">
-                                                    </a>
-                                                    <div class="card__item-raiting">
-                                                        <svg class="icon">
-                                                            <use xlink:href="#star"></use>
-                                                        </svg>
-                                                        5.0
-                                                    </div>
-                                                    <div class="card__item-message">
-                                                        <svg class="icon">
-                                                            <use xlink:href="#message"></use>
-                                                        </svg>
-                                                        12
-                                                    </div>
-                                                    <div class="card__item-compare">
-                                                        <a href="#">
-                                                            <svg class="icon">
-                                                                <use xlink:href="#heart"></use>
-                                                            </svg>
-                                                        </a>    
-                                                    </div>
-                                                    <div class="card__item-discount">
-                                                        -20%
-                                                    </div>
-                                                </div> 
-                                                <div class="card__item-old_price">
-                                                    48 239  ₽
-                                                </div> 
-                                                <div class="card__item-data">
-                                                    <div class="card__item-data-price">
-                                                        513 859 ₽
-                                                    </div> 
-                                                    <div class="card__item-data-cta">
-                                                        <a href="#" class="card_cta">
-                                                            В корзину
-                                                        </a>
-                                                    </div> 
-                                                </div> 
-                                                <div class="card__item-sku">
-                                                    02-33985-2021
-                                                </div>
-                                                <div class="card__item-title">
-                                                    <a href="#">
-                                                        Виски Johnnie Walker Blue Label Ghost and Rare Pittyvaich 0,7 л
-                                                    </a>
-                                                </div>
-                                                <div class="card__item-category">
-                                                    <a href="#">Виски</a>,
-                                                    <a href="#">Ирландия</a>, 
-                                                    <a href="#">0,7 л</a>
-                                                </div> 
-                                            </div>
-                                        </div>  
-                                    </div>
-                                <?php } ?> 
-                                
-                            </div>
-                        </div> 
-                    <?php } ?>  
+			<?php for($n = 1; $n <= 6; $n++) { ?>
+			<div class="section_category_brands show_brands show_brands_<?php echo $n; if($n==1) {echo ' active'; }?> ">
+				<div class="cards_section four_item">
+					<?php include('components/cards/cartTypeTwo.php'); ?>
+					<?php include('components/cards/cartTypeTwo.php'); ?>
+					<?php include('components/cards/cartTypeTwo.php'); ?>
+					<?php include('components/cards/cartTypeTwo.php'); ?>
+				</div>
+			</div>
+			<?php } ?>
 
 		</div>
 	</div>
@@ -252,8 +136,8 @@
 	<div class="container">
 		<ol class="recept__items">
 			<li class="recept__item">Наполнить доверху льдом бокал хайбол.</li>
-			<li class="recept__item">Налить сверху 20 мл лимонного сока, 40 мл</br> виски, и в последнюю очередь — долить 80-100
-				мл </br>имбирного пива Ginger Ale до краев бокала.</li>
+			<li class="recept__item">Налить сверху 20 мл лимонного сока, 40 мл виски, и в последнюю очередь — долить 80-100
+				мл имбирного пива Ginger Ale до краев бокала.</li>
 			<li class="recept__item">Тщательно перемешать коктейль ложкой.</li>
 			<li class="recept__item">Украсить цедрой лимона и подать коктейль с соломинкой.</li>
 		</ol>
@@ -262,7 +146,7 @@
 <img src="img/cocktail/baner_2.png" class="coctail-recept-baner" alt="">
 
 
-<section class="blog-coctail  pt-60">
+<section class="blog  pt-60">
 	<div class="container">
 		<div class="">
 

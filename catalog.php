@@ -707,7 +707,18 @@
             </div>
         </div>        
     </section>
-
+    <div class="container">
+        <a href="#" class="coctails-content__more">Показать еще</a>
+        <div class="pagination">
+            <ul class="pagination__items">
+                <li class="pagination__item"><a href="#" class="pagination__link active">1</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+                <li class="pagination__item"><a href="#" class="pagination__link">></a></li>
+            </ul>
+        </div>
+    </div>
     <section class="category__section pt-60">
         <div class="container">
             <div class="category__section_inner">
