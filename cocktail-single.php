@@ -247,7 +247,7 @@
 	</div>
 	</div>
 </section>
-
+<!--  -->
 <section class="recept-list">
 	<div class="container">
 		<ol class="recept__items">
