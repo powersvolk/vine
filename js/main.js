@@ -368,6 +368,30 @@ jQuery(function ($) {
     });
 
     
+    /* Card Count */
+
+
+    $('.card_count_minus').click(function(){
+        let count = parseInt($('.card_count_count span').text());
+        if (count > 1) {
+            count--;
+            $('.card_count_count span').text(count);
+        }
+    });
+
+    $('.card_count_plus').click(function(){
+        let count = parseInt($('.card_count_count span').text());
+        count++;
+        $('.card_count_count span').text(count);
+    });
+
+    $('.product_full_description_content_text_show').click(function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $('.show_opacity').toggleClass('active');
+        $('.product_text_show').fadeToggle();
+    });
+   
 
     /* Select */
     $('.select').niceSelect();
