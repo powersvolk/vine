@@ -392,6 +392,25 @@ jQuery(function ($) {
         $('.product_text_show').fadeToggle();
     });
    
+  
+
+    /* Review */
+
+    $('.show_all_review a').click(function(e){
+        e.preventDefault();
+        $(this).fadeOut();
+        $('.hide_review').fadeToggle();
+       
+    });
+
+    $('.reviews_headline_item_stars .icon').click(function(e){
+        e.preventDefault();
+        $(this).toggleClass('full');
+   
+       
+    });
+    
+
 
     /* Select */
     $('.select').niceSelect();
