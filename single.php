@@ -441,7 +441,7 @@
                 </div>
             </div>
 
-            <div class="product_full_description_content">
+            <div class="product_full_description_content show_tabs show_tab_1 active">
                 <div class="product_full_description_content_info">
                     <h3>
                         Вкусовые свойства
@@ -709,7 +709,278 @@
                     </div>
 
                 </div>
-            </div>                
+            </div>
+            
+            
+            <div class="product_full_description_content show_tabs show_tab_2">
+                <div class="product_full_description_content_info">
+                    <h3>
+                        Вкусовые свойства 2
+                    </h3>       
+                    <div class="card__item-options">
+                        <div class="card__item-options_item">
+                            <div class="card__item-options_item-progress">
+                                Ароматичность
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width:60%;"></div>
+                                </div>
+                            </div>
+                            <div class="card__item-options_item-progress">
+                                Кислотность
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width:20%;"></div>
+                                </div>
+                            </div>
+                            <div class="card__item-options_item-progress">
+                                Танинность
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width:50%;"></div>
+                                </div>
+                            </div>
+                            <div class="card__item-options_item-progress">
+                                Полнотелость
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width:80%;"></div>
+                                </div>
+                            </div>
+                            <div class="card__item-options_item-progress">
+                                Сладость
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width:30%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product_full_description_content_shorts">
+                        <div class="product_full_description_content_shorts_thumbnuil">
+                            <img src="img/settings/settings_1.png" alt="">
+                        </div>
+                        <div class="product_full_description_content_shorts_desc">
+                            <h4>
+                                Сицилия
+                            </h4>
+                            <p>
+                                Итальянские вина
+                            </p>
+                        </div>
+                    </div>
+                    <div class="product_full_description_content_shorts">
+                        <div class="product_full_description_content_shorts_thumbnuil">
+                            <img src="img/settings/settings_2.png" alt="">
+                        </div>
+                        <div class="product_full_description_content_shorts_desc">
+                            <h4>
+                                Цвет вина:
+                            </h4>
+                            <p>
+                                тёмное рубиновое
+                            </p>
+                        </div>
+                    </div>
+                    <div class="product_full_description_content_shorts">
+                        <div class="product_full_description_content_shorts_thumbnuil">
+                            <img src="img/settings/settings_3.png" alt="">
+                        </div>
+                        <div class="product_full_description_content_shorts_desc">
+                            <h4>
+                                Информация о почве:
+                            </h4>
+                            <p>
+                                глина
+                            </p>
+                        </div>
+                    </div>  
+                    <div class="product_full_description_content_shorts">
+                        <div class="product_full_description_content_shorts_thumbnuil">
+                            <img src="img/settings/settings_4.png" alt="">
+                        </div>
+                        <div class="product_full_description_content_shorts_desc">
+                            <h4>
+                                Потенциал<br/> хранения:
+                            </h4>
+                            <p>
+                                10-15 лет
+                            </p>
+                        </div>
+                    </div>  
+                    <div class="product_full_description_content_shorts">
+                        <div class="product_full_description_content_shorts_thumbnuil">
+                            <img src="img/settings/settings_5.png" alt="">
+                        </div>
+                        <div class="product_full_description_content_shorts_desc">
+                            <h4>
+                                Подача
+                            </h4>
+                            <p>
+                                14–16 °C
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product_full_description_content_description">
+                    <div class="card__item-options">
+                        <div class="card__item-options_item">
+                            <h3>
+                                Сорт Винограда
+                            </h3>   
+                            <div class="card__item-options_cards">
+                                <div class="card__item-options_cards-item">
+                                    <a href="#">
+                                        <img src="img/grenash.png" alt="">
+                                        <span>Ваниль</span>
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/grenash_1.png" alt="">
+                                        <span>Малина</span>
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/grenash_2.png" alt="">
+                                        <span>Кожа</span>
+                                    </a>
+                                </div>
+                            </div> 
+                            <h3>
+                                Вкусовые букеты
+                            </h3>   
+                            <div class="card__item-options_cards">
+                                <div class="card__item-options_cards-item">
+                                    <a href="#">
+                                        <img src="img/grenash_3.png" alt="">
+                                        <span>Малина</span>
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/grenash_4.png" alt="">
+                                        <span>Кожа</span>
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/grenash_5.png" alt="">
+                                        <span>Малина</span>
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/grenash_6.png" alt="">
+                                        <span>Кожа</span>
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/grenash_7.png" alt="">
+                                        <span>Ваниль</span>
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/grenash_8.png" alt="">
+                                        <span>Малина</span>
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/grenash_9.png" alt="">
+                                        <span>Кожа</span>
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/grenash_10.png" alt="">
+                                        <span>Малина</span>
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/grenash_11.png" alt="">
+                                        <span>Малина</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3>
+                                Вкусовые сочитания
+                            </h3>
+                            <div class="card__item-options_cards">
+                                <div class="card__item-options_cards-item">
+                                    <a href="#">
+                                        <img src="img/grenash_12.png" alt="">
+                                        <span>Ваниль</span>
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/grenash_13.png" alt="">
+                                        <span>Малина</span>
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/grenash_14.png" alt="">
+                                        <span>Кожа</span>
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/grenash_15.png" alt="">
+                                        <span>Дуб</span>
+                                    </a>
+                                    <a href="#">
+                                        <img src="img/grenash_16.png" alt="">
+                                        <span>Дуб</span>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="product_full_description_content_text">
+                        <h3>
+                            Цвет
+                        </h3>
+                        <p>
+                            Вермут светло-рубинового цвета.
+                        </p>
+                        <h3>
+                            Аромат
+                        </h3>
+                        <p>
+                            У вермута очень выразительный аромат с яркими акцентами сладких специй, особенно корицы и гвоздики. В букете также ощущаются тона цукатов и легкие травянистые нотки.
+                        </p>    
+                        <h3>
+                            Вкус
+                        </h3>    
+                        <p class="show_opacity">
+                            У вермута сливочная текстура, на фоне которой хорошо выделяется свежая фруктовая палитра с нотками спелого винограда. А долгое послевкусие украшено нотками средиземноморских трав.
+                        </p>   
+                        <h3 class="product_text_show"> 
+                            Гастрономические сочетания
+                        </h3>
+                        <p class="product_text_show">
+                            Вермут идеально сочетается со льдом, джином, тоником, соками. Можно подавать в чистом виде или сочетать с фруктами.
+                        </p>   
+                        <p class="product_text_show"> 
+                            "Padro & Co" Rojo Clasico — приятный вермут, своим вкусом напоминающий то вино, которое было популярно в Таррагоне в древности. Менялись года и столетия, но "фирменный" вкус до сих пор ассоциируется с этой местностью. "Падро & Ко" Рохо Клаcсико создают из сортов Макабео и Чарелло, выращенных на собственных виноградниках компании. 
+                        </p>
+                        <p class="product_text_show">    
+                            Во время ферментации в сусло добавляют сахар, а также экстракт средиземноморских трав, после чего выдерживают его в 50-летних баррелях из каштана, ранее предназначавшихся для транспортировки напитка, а сегодня адаптированных под его выдержку.
+                        </p>    
+                        <div class="product_full_description_content_text_show">
+                            <a href="#">
+                                Свернуть
+                                <svg class="icon">
+                                    <use xlink:href="#arrow-down"></use>
+                                </svg>
+                            </a>
+                        </div> 
+                    </div>   
+
+                       
+                    <div class="tags">
+                        <h3>
+                            Категории напитка
+                        </h3> 
+                        <div class="tags_inner">
+                            <a href="#">Белое</a>
+                            <a href="#">Красное</a>
+                            <a href="#">Розовое</a>
+                            <a href="#" class="active">Сладкое </a>
+                            <a href="#">Мальбек</a>
+                            <a href="#">Французские вина</a>
+                            <a href="#">Белое/a>
+                            <a href="#">Красное</a>
+                            <a href="#">Грузинское вино</a>
+                            <a href="#">Испанское вино</a>
+                            <a href="#">11.2%</a>
+                            <a href="#">Сухое</a>
+                            <a href="#">Полусладкое</a>
+                            <a href="#">Вина крыма</a>
+                        </div>          
+                    </div>
+
+                </div>
+            </div>
 
         </div>
     </div>   
