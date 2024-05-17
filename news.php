@@ -41,6 +41,50 @@
 
 	</div>
 </section>
+<section class="tags">
+	<div class="container">
+		<div class="tags_flex">
+			<div class="tags_inner" style="border-top:none; border-bottom: none;">
+				<a href="#">Белое</a>
+				<a href="#">Красное</a>
+				<a href="#">Розовое</a>
+				<a href="#" class="active">Сладкое </a>
+				<a href="#">Мальбек</a>
+				<a href="#">Французские вина</a>
+				<a href="#">Белое/a>
+					<a href="#">Красное</a>
+					<a href="#">Грузинское вино</a>
+					<a href="#">Испанское вино</a>
+					<a href="#">11.2%</a>
+					<a href="#">Сухое</a>
+					<a href="#">Полусладкое</a>
+					<a href="#">Вина крыма</a>
+			</div>
+
+			<div class="filter-container">
+				<div class="filter-container__filter">
+					<select class="select" name="form[select]">
+						<option value="" disabled selected>Фильтр</option>
+						<option>Пункт №1</option>
+						<option>Пункт №2</option>
+						<option>Пункт №3</option>
+						<option>Пункт №4</option>
+					</select>
+				</div>
+				<div class="filter-container__brand">
+					<select class="select" name="form[select]">
+						<option value="" disabled selected>Новинки</option>
+						<option>Пункт №1</option>
+						<option>Пункт №2</option>
+						<option>Пункт №3</option>
+						<option>Пункт №4</option>
+					</select>
+				</div>
+
+			</div>
+
+		</div>
+</section>
 <section class="news-content mt-60">
 	<div class="container">
 
@@ -117,7 +161,7 @@
 </section>
 <section class="news-content mt-60">
 	<div class="container">
-		<h2 class="section_headline">Самое обсуждаемое</h2>
+		<h2 class="section_headline">Популярные статьи</h2>
 
 
 		<div class="news-content-padding">
