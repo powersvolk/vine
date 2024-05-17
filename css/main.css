@@ -7405,6 +7405,134 @@ use path {
   font-weight: 400;
 }
 
+.vacansion_hero {
+  background: #8F96A3;
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+@media only screen and (max-width: 1599px) {
+  .vacansion_hero {
+    background-position: 80%;
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .vacansion_hero {
+    background-position: 75%;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .vacansion_hero:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+}
+.vacansion_hero .vacansion_hero_inner {
+  padding: 80px 0 85px;
+  position: relative;
+  z-index: 2;
+}
+.vacansion_hero .vacansion_hero_inner .breadcrumbs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 8px;
+}
+.vacansion_hero .vacansion_hero_inner .breadcrumbs ul li {
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: var(--text-light-gray);
+}
+.vacansion_hero .vacansion_hero_inner .breadcrumbs ul li a {
+  font-size: 0.75rem;
+  color: var(--text-light-gray);
+  text-decoration: none;
+  position: relative;
+}
+.vacansion_hero .vacansion_hero_inner .breadcrumbs ul li a:before {
+  content: "";
+  width: 0px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: var(--text-light-gray);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.vacansion_hero .vacansion_hero_inner .breadcrumbs ul li a:hover:before {
+  width: 100%;
+}
+.vacansion_hero .vacansion_hero_inner .vacansion_hero_description {
+  width: 50%;
+}
+@media only screen and (max-width: 1199px) {
+  .vacansion_hero .vacansion_hero_inner .vacansion_hero_description {
+    width: 75%;
+  }
+}
+.vacansion_hero .vacansion_hero_inner .vacansion_hero_description h1 {
+  font-weight: 600;
+  font-size: 3rem;
+  color: var(--text-white);
+  margin: 35px 0 30px;
+}
+.vacansion_hero .vacansion_hero_inner .vacansion_hero_description h1 span {
+  color: var(--text-white);
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin: 0 0 0 15px;
+}
+@media only screen and (max-width: 1199px) {
+  .vacansion_hero .vacansion_hero_inner .vacansion_hero_description h1 {
+    font-size: 2.25rem;
+  }
+}
+.vacansion_hero .vacansion_hero_inner .vacansion_hero_description p {
+  font-size: 1rem;
+  color: var(--text-white);
+  line-height: 1.5em;
+  margin: 0 0 30px;
+}
+.vacansion_hero .vacansion_hero_inner .vacansion_hero_description a {
+  text-decoration: none;
+  color: var(--text-white);
+  position: relative;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  font-size: 1rem;
+}
+.vacansion_hero .vacansion_hero_inner .vacansion_hero_description a:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: var(--text-white);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.vacansion_hero .vacansion_hero_inner .vacansion_hero_description a:hover:before {
+  width: 0;
+}
+
 .vacansion__title {
   font-family: var(--font-family);
   color: var(--text-dark);
@@ -7436,13 +7564,41 @@ use path {
 .vacantion-container__item {
   background: #1B78AF;
   border-radius: 15px;
-  padding: 42px 34px;
-  color: var(--text-white);
+  padding: 42px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.9375rem;
+  font-family: var(--font-family);
+  color: var(--text-white);
+  line-height: 1.2;
+  font-weight: 500;
   text-align: center;
-  vertical-align: middle;
+}
+.vacantion-container__item span {
+  font-weight: 400;
+  font-size: 0.75rem;
+  margin-top: 5px;
+}
+@media only screen and (max-width: 1199px) {
+  .vacantion-container {
+    gap: 16px;
+  }
 }
 
 .vacantion-about-container {
@@ -7455,14 +7611,38 @@ use path {
 .vacantion-about-container__item {
   background: #DBDBDB;
   border-radius: 15px;
-  padding: 42px 34px;
+  padding: 54px 40px 60px;
   color: var(--text-semi-gray);
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   text-align: center;
   vertical-align: middle;
   font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.vacantion-about-container__img {
+  width: auto;
+  height: 72px;
+  display: inline-block;
+}
+.vacantion-about-container__span {
+  padding-top: 40px;
+  display: block;
 }
 
 .vacansion-form__title {
@@ -7471,4 +7651,89 @@ use path {
   font-size: 1.75rem;
   font-weight: 600;
   text-align: center;
+}
+
+.form-container {
+  width: 680px;
+  margin: 0 auto;
+}
+.form-container__form {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 24px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form-container__form .vacansion-input, .form-container__form .vacansion-text {
+  border: 1px solid #dbdbdb;
+  border-radius: 15px;
+  padding: 16px 24px;
+}
+
+.form-container__form input::-webkit-input-placeholder, .form-container__form .vacansion-text::-webkit-input-placeholder {
+  color: var(--text-semi-gray);
+  font-size: 0.875rem;
+}
+
+.form-container__form input::-moz-placeholder, .form-container__form .vacansion-text::-moz-placeholder {
+  color: var(--text-semi-gray);
+  font-size: 0.875rem;
+}
+
+.form-container__form input:-ms-input-placeholder, .form-container__form .vacansion-text:-ms-input-placeholder {
+  color: var(--text-semi-gray);
+  font-size: 0.875rem;
+}
+
+.form-container__form input::-ms-input-placeholder, .form-container__form .vacansion-text::-ms-input-placeholder {
+  color: var(--text-semi-gray);
+  font-size: 0.875rem;
+}
+
+.form-container__form input::placeholder, .form-container__form .vacansion-text::placeholder {
+  color: var(--text-semi-gray);
+  font-size: 0.875rem;
+}
+
+.form-container__form button {
+  background-color: var(--text-red);
+  color: var(--text-white);
+  font-family: var(--font-family);
+  font-size: 1.0625rem;
+  border: 0;
+  padding: 15px 0;
+  border-radius: 5px;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+.form-container__form button:hover {
+  opacity: 0.8;
+}
+
+.vacansion-file {
+  display: inline-block;
+  width: 100%;
+  background-color: #F0F0F4;
+  padding: 15px 0;
+  border: 1ps solid #E3E3E8;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: #333333;
+  font-family: var(--font-family);
+  font-size: 1.0625rem;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
+}
+
+.vacansion-file:hover {
+  background-color: #E3E3E8;
 }/*# sourceMappingURL=main.css.map */
