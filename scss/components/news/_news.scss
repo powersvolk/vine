@@ -109,11 +109,7 @@
 		display: flex;
 		justify-content: flex-end;
 		column-gap: 18px;
-		// &__filter {
-		// }
-
-		// &__brand {
-		// }
+	
 }
 
 	
@@ -202,9 +198,6 @@ font-weight: 700;
 margin-top: 20px;
 margin-bottom: 40px;
 }
-<<<<<<< HEAD
-=======
-/*test
 
 
 
@@ -212,7 +205,7 @@ margin-bottom: 40px;
 
 
 
->>>>>>> 6dcadc295ae3c7b6a1a657b787cde716d95c11fb
+
 
 .news-content-padding {
 	padding: 40px 0;
@@ -305,19 +298,21 @@ margin-bottom: 40px;
 	color:var(--text-dark);
 	transition: 0.3s ease;
 	background: -webkit-gradient(linear, left top, right top, from(currentColor), to(currentColor));
-    background: linear-gradient(to right, currentColor 0%, currentColor 100%);
-    background-size: 0px 1px;
-    background-position: 0 95%;
-    -webkit-transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
-    transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
-    background-repeat: no-repeat;
+   background: linear-gradient(to right, currentColor 0%, currentColor 100%);
+   background-size: 0px 1px;
+   background-position: 0 95%;
+   -webkit-transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+   transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+   background-repeat: no-repeat;
 	&:hover{
 		color: var(--text-dark);
 		background-size: 100% 1px;
 	}
 	@media only screen and (max-width: $smDesktop) {
+		.news-content-title-link {
 		font-size:rem(24px);
     }
+	}
 }
 
 
