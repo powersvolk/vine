@@ -219,7 +219,7 @@
         <div class="container">
             <div class="popular__brand_inner">
                 <h2 class="section_headline">
-                    Популярные брены
+                    Популярные бренды
                 </h2>
             </div>
             <?php for($j = 1; $j<= 7; $j++) { ?>
