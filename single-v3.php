@@ -566,26 +566,11 @@
                                 48 239  ₽
                             </div> 
                         </div> 
-                        <div class="card__item-exist">
-                            В наличии 111 622 шт.
+                        <div class="card__item-not-exist">
+                            Нет в наличии
                         </div> 
-                        <div class="card_count">
-                            <div class="card_count_minus">
-                            </div>
-                            <div class="card_count_count">
-                                <span>1</span> шт.
-                            </div>
-                            <div class="card_count_plus">
-                            </div>
-                        </div> 
-                        <div class="add_card">
-                            <a href="#">Добавить в корзину</a>
-                        </div>
-                        <div class="buy_now" >
-                            <a href="#" class="popup_open" data-item="fast-buy">Купить сразу</a>
-                        </div>
-                        <div class="rait_now">
-                            <a href="#" class="popup_open" data-item="rate">Оценить товар</a>
+                        <div class="buy_now product_back_cta">
+                            <a href="#">Сообщить о поступлении</a>
                         </div>
                     </div>
 
@@ -715,7 +700,13 @@
                             </div>
                         </div>
                     </div>
-
+                    <h3 class="region_title">
+                        Региона производства
+                    </h3>   
+                    <a href="#" class="region_link">
+                        Перейти на карту 
+                    </a>      
+                    <img class="region_thumb" src="img/map_vine.png" alt="">
                     <div class="product_full_description_content_shorts">
                         <div class="product_full_description_content_shorts_thumbnuil">
                             <img src="img/settings/settings_1.png" alt="">
@@ -1184,11 +1175,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="reviews_cta">
-                    <a href="#">
-                        Оставить отзыв
-                    </a>
-                </div>    
+                  
             </div>
 
             <div class="tags">
@@ -1205,390 +1192,155 @@
                 </div>
             </div>
             
-            <div class="review__list">
-                <div class="review__list-item">
-                    <div class="review__list-item_header">
-                        <div class="review__list-item_avatar">
-                            <img src="img/avatar.png" alt="">
-                        </div>
-                        <div class="review__list-item_description">
-                            <div class="review__list-item_description_names">
-                                <div class="review__list-item_description_autor">
-                                    Mikheili
+            <div class="review_section_block">
+                <div class="review_section_block_list">
+                    <?php for($i=0; $i< 10; $i++) { ?>
+                        <div class="review_section_block_list_inner">
+                            <div class="review__list-item_avatar">
+                                <img src="img/avatar.png" alt="">
+                            </div>
+                            <div class="review__list-item_description">
+                                <div class="review__list-item_description_names">
+                                    <div class="review__list-item_description_autor">
+                                        Mikheili
+                                    </div>
+                                    <div class="review__list-item_description_date">
+                                        22 сентябрь 2023, 10:45
+                                    </div> 
                                 </div>
-                                <div class="review__list-item_description_date">
-                                    22 сентябрь 2023, 10:45
-                                </div> 
-                            </div>
-                            <div class="reviews_headline_item_stars">
-                                <svg class="icon full">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
+                                <div class="reviews_headline_item_stars">
+                                    <svg class="icon full">
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                    <svg class="icon">
+                                        <use xlink:href="#star"></use>
+                                    </svg>
+                                </div>
+                                <div class="reviews_headline_item_message">
+                                    Отличное дополнение к мясным блюдам!
+                                </div>
                             </div>
                         </div>
-                    </div>     
-                    <h2>
-                        Достоинства товара 
-                    </h2>
-                    <p>
-                        Будьте внимательны при выборе адаптера, у них разная высота. К сожалению, я об этом узнал уже после того, как он не подошел к моему ноутбуку Будьте внимательны при выборе адаптера, у них разная высота.
-                    </p>
-                    <h2>
-                        Недостатки товара
-                    </h2>
-                    <p>
-                        Будьте внимательны при выборе адаптера, у них разная высота. К сожалению, я об этом узнал уже после того, как он не подошел к моему ноутбуку Будьте внимательны при выборе адаптера, у них разная высота.
-                    </p>
+                    <?php } ?>
+                    <div class="pagination">
+                        <ul class="pagination__items">
+                            <li class="pagination__item"><a href="#" class="pagination__link active">1</a></li>
+                            <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+                            <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+                            <li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+                            <li class="pagination__item"><a href="#" class="pagination__link">></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="review__list-item">
-                    <div class="review__list-item_header">
-                        <div class="review__list-item_avatar">
-                            <img src="img/avatar.png" alt="">
-                        </div>
-                        <div class="review__list-item_description">
-                            <div class="review__list-item_description_names">
-                                <div class="review__list-item_description_autor">
-                                    Mikheili
-                                </div>
-                                <div class="review__list-item_description_date">
-                                    22 сентябрь 2023, 10:45
-                                </div> 
-                            </div>
-                            <div class="reviews_headline_item_stars">
-                                <svg class="icon full">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>     
+
+                <div class="review_section_block_grade">
                     <h2>
-                        Достоинства товара 
+                        Оценка
                     </h2>
-                    <p>
-                        Будьте внимательны при выборе адаптера, у них разная высота.
-                    </p>
-                    <h2>
-                        Недостатки товара
-                    </h2>
-                    <p>
-                        Будьте внимательны при выборе адаптера, у них разная высота. К сожалению, я об этом узнал уже после того, как он не подошел к моему ноутбуку Будьте внимательны при выборе адаптера, у них разная высота.
-                    </p>
-                </div>
-                <div class="review__list-item">
-                    <div class="review__list-item_header">
-                        <div class="review__list-item_avatar">
-                            <img src="img/avatar.png" alt="">
+                    <div class="reviews_headline">
+                        <div class="reviews_headline_count">
+                            4.7
                         </div>
-                        <div class="review__list-item_description">
-                            <div class="review__list-item_description_names">
-                                <div class="review__list-item_description_autor">
-                                    Mikheili
-                                </div>
-                                <div class="review__list-item_description_date">
-                                    22 сентябрь 2023, 10:45
-                                </div> 
-                            </div>
-                            <div class="reviews_headline_item_stars">
-                                <svg class="icon full">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                            </div>
+                        <div class="reviews_headline_item_stars">
+                            <svg class="icon full">
+                                <use xlink:href="#star"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use xlink:href="#star"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use xlink:href="#star"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use xlink:href="#star"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use xlink:href="#star"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use xlink:href="#star"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use xlink:href="#star"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use xlink:href="#star"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use xlink:href="#star"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use xlink:href="#star"></use>
+                            </svg>
                         </div>
-                    </div>     
-                    <h2>
-                        Достоинства товара 
-                    </h2>
-                    <p>
-                        Будьте внимательны при выборе адаптера, у них разная высота.
-                    </p>
-                    <h2>
-                        Недостатки товара
-                    </h2>
-                    <p>
-                        Будьте внимательны при выборе адаптера, у них разная высота.
-                    </p>
-                </div>
-                
-                <! -- >
-               
-                <div class="review__list-item hide_review">
-                    <div class="review__list-item_header">
-                        <div class="review__list-item_avatar">
-                            <img src="img/avatar.png" alt="">
-                        </div>
-                        <div class="review__list-item_description">
-                            <div class="review__list-item_description_names">
-                                <div class="review__list-item_description_autor">
-                                    Mikheili
-                                </div>
-                                <div class="review__list-item_description_date">
-                                    22 сентябрь 2023, 10:45
-                                </div> 
-                            </div>
-                            <div class="reviews_headline_item_stars">
-                                <svg class="icon full">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>     
-                    <h2>
-                        Достоинства товара 
-                    </h2>
-                    <p>
-                        Будьте внимательны при выборе адаптера, у них разная высота.
-                    </p>
-                    <h2>
-                        Недостатки товара
-                    </h2>
-                    <p>
-                        Будьте внимательны при выборе адаптера, у них разная высота. К сожалению, я об этом узнал уже после того, как он не подошел к моему ноутбуку Будьте внимательны при выборе адаптера, у них разная высота.
-                    </p>
-                </div>          
                         
-                <div class="review__list-item hide_review">
-                    <div class="review__list-item_header">
-                        <div class="review__list-item_avatar">
-                            <img src="img/avatar.png" alt="">
-                        </div>
-                        <div class="review__list-item_description">
-                            <div class="review__list-item_description_names">
-                                <div class="review__list-item_description_autor">
-                                    Mikheili
-                                </div>
-                                <div class="review__list-item_description_date">
-                                    22 сентябрь 2023, 10:45
-                                </div> 
-                            </div>
-                            <div class="reviews_headline_item_stars">
-                                <svg class="icon full">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
+                    </div>
+                    <div class="reviews_headline_item_description">
+                        На основе  <a href="#"> 62 отзывов</a>
+                        <div class="tooltip">
+                            <svg class="icon">
+                                <use xlink:href="#information"></use>
+                            </svg>
+                            <div class="tooltip_container">
+                                <h3>
+                                    Рейтинг WE
+                                </h3>
+                                <p>
+                                    Рейтинг американского журнала Wine Enthusiast создает группа редакторов и профессиональных сомелье.
+                                </p>
                             </div>
                         </div>
-                    </div>     
-                    <h2>
-                        Достоинства товара 
-                    </h2>
-                    <p>
-                        Будьте внимательны при выборе адаптера, у них разная высота.
-                    </p>
-                    <h2>
-                        Недостатки товара
-                    </h2>
-                    <p>
-                        Будьте внимательны при выборе адаптера, у них разная высота.
-                    </p>
+                    </div>
+                    <div class="reviews_headline_item_description">
+                        <span>79%</span>На основе  <a href="#"> 62 отзывов</a>
+                        <div class="tooltip">
+                            <svg class="icon">
+                                <use xlink:href="#information"></use>
+                            </svg>
+                            <div class="tooltip_container">
+                                <h3>
+                                    Рейтинг WE
+                                </h3>
+                                <p>
+                                    Рейтинг американского журнала Wine Enthusiast создает группа редакторов и профессиональных сомелье.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews_cta reviews_cta_v2">
+                        <a href="#">
+                            Оставить отзыв
+                        </a>
+                    </div>  
                 </div>
-
-                <div class="review__list-item hide_review">
-                    <div class="review__list-item_header">
-                        <div class="review__list-item_avatar">
-                            <img src="img/avatar.png" alt="">
-                        </div>
-                        <div class="review__list-item_description">
-                            <div class="review__list-item_description_names">
-                                <div class="review__list-item_description_autor">
-                                    Mikheili
-                                </div>
-                                <div class="review__list-item_description_date">
-                                    22 сентябрь 2023, 10:45
-                                </div> 
-                            </div>
-                            <div class="reviews_headline_item_stars">
-                                <svg class="icon full">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="icon">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>     
-                    <h2>
-                        Достоинства товара 
-                    </h2>
-                    <p>
-                        Будьте внимательны при выборе адаптера, у них разная высота. К сожалению, я об этом узнал уже после того, как он не подошел к моему ноутбуку Будьте внимательны при выборе адаптера, у них разная высота.
-                    </p>
-                    <h2>
-                        Недостатки товара
-                    </h2>
-                    <p>
-                        Будьте внимательны при выборе адаптера, у них разная высота. К сожалению, я об этом узнал уже после того, как он не подошел к моему ноутбуку Будьте внимательны при выборе адаптера, у них разная высота.
-                    </p>
-                </div>                
-
-            </div>   
+            </div>
 
            
-            <div class="show_all_review">
-                <a href="#">
-                    Смотреть все отзывы
-                    <svg class="icon">
-                        <use xlink:href="#arrow-right"></use>
-                    </svg>
-                </a>
-            </div>
+            
         </div>
     </div>   
 </div>

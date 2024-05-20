@@ -779,6 +779,9 @@
     </div>
 </div>
 
+
+<div class="spacer"></div>
+
 <section class="header">
     <div class="container">
         <div class="header__inner">
@@ -998,7 +1001,7 @@
                     </a>
                 </div>
                 <div class="header__inner-other-cart">
-                    <a href="#">
+                    <a href="#" class="cta_menu">
                         <svg class="icon">
                             <use xlink:href="#cart"></use>
                         </svg>
@@ -1006,6 +1009,230 @@
                             12
                         </div> 
                     </a>
+                    <div class="pages_menu cart_mini">
+                       <div class="cart_mini_inner">
+                            <div class="cart_mini_headline">
+                                <h2>
+                                    Корзина <span>(32 товара)</span>
+                                </h2>
+                                <a href="#">
+                                    Очистить
+                                </a>
+                            </div>
+                            <div class="cart_mini_products">
+                               
+                                <div class="cart_mini_products_item">
+                                    <a href="#" class="remove_product">
+                                        <svg class="icon">
+                                            <use xlink:href="#close"></use>
+                                        </svg>
+                                    </a>
+                                    <div class="cart_mini_products_item_thumbnuil">
+                                        <a href="#">
+                                            <img src="img/search_product.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="cart_mini_products_item_data">
+                                        <div class="card__item-title">
+                                            <a href="#">
+                                                Виски Johnnie Walker Blue Label Ghost and Rare Pittyvaich 0,7 л
+                                            </a>
+                                        </div>
+                                        <div class="card__item-category">
+                                            <a href="#">Виски</a>,
+                                            <a href="#">Ирландия</a>, 
+                                            <a href="#">0,7 л</a>
+                                        </div>
+                                        <div class="cart_mini_count_price">
+                                            <div class="cart_mini_count">
+                                                <div class="cart_mini_minus">
+                                                    <svg class="icon">
+                                                        <use xlink:href="#minus"></use>
+                                                    </svg>
+                                                </div>
+                                                <input class="mini_count" type="text" value="1">
+                                                <div class="cart_mini_plus">
+                                                    <svg class="icon">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="cart_mini_price">
+                                                <div class="card__item-old_price">
+                                                    48 239  ₽
+                                                </div>
+                                                <div class="card__item-data-price">
+                                                    513 859 ₽
+                                                </div>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="cart_mini_products_item">
+                                    <a href="#" class="remove_product">
+                                        <svg class="icon">
+                                            <use xlink:href="#close"></use>
+                                        </svg>
+                                    </a>
+                                    <div class="cart_mini_products_item_thumbnuil">
+                                        <a href="#">
+                                            <img src="img/search_product.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="cart_mini_products_item_data">
+                                        <div class="card__item-title">
+                                            <a href="#">
+                                                Виски Johnnie Walker Blue Label Ghost and Rare Pittyvaich 0,7 л
+                                            </a>
+                                        </div>
+                                        <div class="card__item-category">
+                                            <a href="#">Виски</a>,
+                                            <a href="#">Ирландия</a>, 
+                                            <a href="#">0,7 л</a>
+                                        </div>
+                                        <div class="cart_mini_count_price">
+                                            <div class="cart_mini_count">
+                                                <div class="cart_mini_minus">
+                                                    <svg class="icon">
+                                                        <use xlink:href="#minus"></use>
+                                                    </svg>
+                                                </div>
+                                                <input class="mini_count" type="text" value="1">
+                                                <div class="cart_mini_plus">
+                                                    <svg class="icon">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="cart_mini_price">
+                                                <div class="card__item-old_price">
+                                                    48 239  ₽
+                                                </div>
+                                                <div class="card__item-data-price">
+                                                    513 859 ₽
+                                                </div>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="cart_mini_products_item">
+                                    <a href="#" class="remove_product">
+                                        <svg class="icon">
+                                            <use xlink:href="#close"></use>
+                                        </svg>
+                                    </a>
+                                    <div class="cart_mini_products_item_thumbnuil">
+                                        <a href="#">
+                                            <img src="img/search_product.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="cart_mini_products_item_data">
+                                        <div class="card__item-title">
+                                            <a href="#">
+                                                Виски Johnnie Walker Blue Label Ghost and Rare Pittyvaich 0,7 л
+                                            </a>
+                                        </div>
+                                        <div class="card__item-category">
+                                            <a href="#">Виски</a>,
+                                            <a href="#">Ирландия</a>, 
+                                            <a href="#">0,7 л</a>
+                                        </div>
+                                        <div class="cart_mini_count_price">
+                                            <div class="cart_mini_count">
+                                                <div class="cart_mini_minus">
+                                                    <svg class="icon">
+                                                        <use xlink:href="#minus"></use>
+                                                    </svg>
+                                                </div>
+                                                <input class="mini_count" type="text" value="1">
+                                                <div class="cart_mini_plus">
+                                                    <svg class="icon">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="cart_mini_price">
+                                                <div class="card__item-old_price">
+                                                    48 239  ₽
+                                                </div>
+                                                <div class="card__item-data-price">
+                                                    513 859 ₽
+                                                </div>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="cart_mini_products_item">
+                                    <a href="#" class="remove_product">
+                                        <svg class="icon">
+                                            <use xlink:href="#close"></use>
+                                        </svg>
+                                    </a>
+                                    <div class="cart_mini_products_item_thumbnuil">
+                                        <a href="#">
+                                            <img src="img/search_product.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="cart_mini_products_item_data">
+                                        <div class="card__item-title">
+                                            <a href="#">
+                                                Виски Johnnie Walker Blue Label Ghost and Rare Pittyvaich 0,7 л
+                                            </a>
+                                        </div>
+                                        <div class="card__item-category">
+                                            <a href="#">Виски</a>,
+                                            <a href="#">Ирландия</a>, 
+                                            <a href="#">0,7 л</a>
+                                        </div>
+                                        <div class="cart_mini_count_price">
+                                            <div class="cart_mini_count">
+                                                <div class="cart_mini_minus">
+                                                    <svg class="icon">
+                                                        <use xlink:href="#minus"></use>
+                                                    </svg>
+                                                </div>
+                                                <input class="mini_count" type="text" value="1">
+                                                <div class="cart_mini_plus">
+                                                    <svg class="icon">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="cart_mini_price">
+                                                <div class="card__item-old_price">
+                                                    48 239  ₽
+                                                </div>
+                                                <div class="card__item-data-price">
+                                                    513 859 ₽
+                                                </div>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                </div>                         
+                            </div>    
+                            <div class="cart_mini_discount">
+                                <div class="cart_mini_discount_item">
+                                    Скидка
+                                </div>
+                                <div class="cart_mini_discount_item">
+                                    5 138 590 ₽
+                                </div>
+                            </div>
+                            <div class="cart_mini_total">
+                                <div class="cart_mini_discount_item">
+                                    Итого:
+                                </div>
+                                <div class="cart_mini_discount_item">
+                                    5 138 590 ₽
+                                </div>
+                            </div>
+                            <div class="cart_mini_add">
+                                <a href="#">
+                                    Перейти в корзину
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>   
         </div>

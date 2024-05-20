@@ -112,10 +112,11 @@
 				line-height: 1.1em;
 			}
 	}
+	}
 
 }
 
-}
+
 
 .text_view_time::before {
 	content: url('../img/clock.svg');
@@ -213,12 +214,14 @@
 	gap: 66px;
 	padding-top: 0;
 }
+
 .blog-coctail .blog__head-title {
 	margin-bottom: 40px;
 }
+
 @media only screen and (max-width: $smDesktop) {
 	.coctail-recept-baner {
-	width: 100%;
-	margin-top: 20px;
-}
+		width: 100%;
+		margin-top: 20px;
+	}
 }
