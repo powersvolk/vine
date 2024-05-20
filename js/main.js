@@ -410,7 +410,32 @@ jQuery(function ($) {
        
     });
     
+    /* Show product Scroll */
 
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 700) {
+            $('.scroll__show_product').fadeIn();
+        } else {
+            $('.scroll__show_product').fadeOut();
+        }
+    });
+
+
+    /* Mini Cart */
+
+    $('.cart_mini_minus').click(function(){
+        let count = parseInt($('.mini_count').val());
+        if (count > 1) {
+            count--;
+            $('.mini_count').val(count);
+        }
+    });
+
+    $('.cart_mini_plus').click(function(){
+        let count = parseInt($('.mini_count').val());
+        count++;
+        $('.mini_count').val(count);
+    });
 
     /* Select */
     $('.select').niceSelect();

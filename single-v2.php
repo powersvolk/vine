@@ -566,26 +566,11 @@
                                 48 239  ₽
                             </div> 
                         </div> 
-                        <div class="card__item-exist">
-                            В наличии 111 622 шт.
+                        <div class="card__item-not-exist">
+                            Нет в наличии
                         </div> 
-                        <div class="card_count">
-                            <div class="card_count_minus">
-                            </div>
-                            <div class="card_count_count">
-                                <span>1</span> шт.
-                            </div>
-                            <div class="card_count_plus">
-                            </div>
-                        </div> 
-                        <div class="add_card">
-                            <a href="#">Добавить в корзину</a>
-                        </div>
-                        <div class="buy_now" >
-                            <a href="#" class="popup_open" data-item="fast-buy">Купить сразу</a>
-                        </div>
-                        <div class="rait_now">
-                            <a href="#" class="popup_open" data-item="rate">Оценить товар</a>
+                        <div class="buy_now product_back_cta">
+                            <a href="#">Сообщить о поступлении</a>
                         </div>
                     </div>
 
@@ -715,7 +700,13 @@
                             </div>
                         </div>
                     </div>
-
+                    <h3 class="region_title">
+                        Региона производства
+                    </h3>   
+                    <a href="#" class="region_link">
+                        Перейти на карту 
+                    </a>      
+                    <img class="region_thumb" src="img/map_vine.png" alt="">
                     <div class="product_full_description_content_shorts">
                         <div class="product_full_description_content_shorts_thumbnuil">
                             <img src="img/settings/settings_1.png" alt="">

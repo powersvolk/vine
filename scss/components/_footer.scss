@@ -260,3 +260,13 @@
         background: var(--cta-red-hover);
     }
 }
+
+.page-not-found_inner{
+    text-align: center;
+    padding: 90px 0;
+    img{
+        max-width: 1000px;
+        width:100%;
+        height: auto;
+    }
+}
