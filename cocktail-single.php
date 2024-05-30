@@ -57,8 +57,8 @@
 		</p>
 		<ol class="recept__items">
 			<li class="recept__item">Наполнить доверху льдом бокал хайбол.</li>
-			<li class="recept__item">Налить сверху 20 мл лимонного сока, 40 мл</br> виски, и в последнюю очередь — долить 80-100
-				мл </br>имбирного пива Ginger Ale до краев бокала.</li>
+			<li class="recept__item">Налить сверху 20 мл лимонного сока, 40 мл виски, и в последнюю<br/> 
+			очередь — долить 80-100мл имбирного пива Ginger Ale до краев бокала.</li>
 			<li class="recept__item">Тщательно перемешать коктейль ложкой.</li>
 			<li class="recept__item">Украсить цедрой лимона и подать коктейль с соломинкой.</li>
 		</ol>
@@ -67,7 +67,7 @@
 	</div>
 </section>
 
-<section class="category__section pt-60">
+<section class="category__section category__section_cotail pt-60">
 	<div class="container">
 		<div class="category__section_inner">
 			<div class="category__section_head">
@@ -164,7 +164,7 @@
 	</div>
 </section>
 
-<section class="category__section pt-60">
+<section class="category__section category__section_cotail pt-60">
 	<div class="container">
 		<div class="category__section_inner">
 			<div class="category__section_head">
@@ -252,8 +252,8 @@
 	<div class="container">
 		<ol class="recept__items">
 			<li class="recept__item">Наполнить доверху льдом бокал хайбол.</li>
-			<li class="recept__item">Налить сверху 20 мл лимонного сока, 40 мл</br> виски, и в последнюю очередь — долить 80-100
-				мл </br>имбирного пива Ginger Ale до краев бокала.</li>
+			<li class="recept__item">Налить сверху 20 мл лимонного сока, 40 мл виски, и в последнюю<br/> 
+			очередь — долить 80-100мл имбирного пива Ginger Ale до краев бокала.</li>
 			<li class="recept__item">Тщательно перемешать коктейль ложкой.</li>
 			<li class="recept__item">Украсить цедрой лимона и подать коктейль с соломинкой.</li>
 		</ol>

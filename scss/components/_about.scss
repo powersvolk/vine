@@ -5,22 +5,13 @@
 	background-repeat: no-repeat;
 	position: relative;
 	@media only screen and (max-width: 1599px) {
-		 background-position: 80%;
+		background-position: 80%;
 	}
 	@media only screen and (max-width: $desktop) {
-		 background-position: 75%;
+		background-position: 50%;
 	}
 	@media only screen and (max-width: $smDesktop) {
-		 &:before{
-			  content: '';
-			  position: absolute;
-			  top:0;
-			  left:0;
-			  right:0;
-			  bottom: 0;
-			  background: rgba(#000, 0.4);
-			  z-index: 1;
-		 }
+		background-position: 59%;
 	}
 	.about_hero_inner{
 		 padding: 80px 0 85px;
@@ -122,6 +113,9 @@
 	gap: 30px;
 	display: grid;
 	grid-template: repeat(2, 1fr) / repeat(auto-fill, minmax(250px, 1fr));
+	@media only screen and (max-width: $smDesktop) {
+		grid-template: repeat(2, 1fr) / repeat(auto-fill, minmax(210px, 1fr));
+	}
 }
 
 
@@ -165,7 +159,7 @@
 	&__desc {
 		font-family: var(--font-family);
 		color: #4A4A4E;
-		line-height: 1.3em;
+		line-height: 1.5em;
 		margin-top: 12px;
 	}
 	&__subtitle {
@@ -231,8 +225,7 @@ margin-top: 40px;
 
 .about-about-container {
 	display: flex;
-	gap: 31px;
-	margin-top: 25px;
+	gap: 30px;
 		&__item {
 			background: var(--text-white);
 			border: 1px solid #dbdbdb;
@@ -264,7 +257,7 @@ margin-top: 40px;
 
 	.about-list {
 		list-style: disc;
-		margin-left: 20px;
+		margin-left: 35px;
 		margin-top: 20px;
 
 		&__item {

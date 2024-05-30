@@ -34,7 +34,7 @@
 </section>
 
 
-<section class="about-plus mt-60">
+<section class="about-plus mt-90">
 	<div class="container">
 
 		<p class="about-plus__text">
