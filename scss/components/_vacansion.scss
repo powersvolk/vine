@@ -5,22 +5,13 @@
 	background-repeat: no-repeat;
 	position: relative;
 	@media only screen and (max-width: 1599px) {
-		 background-position: 80%;
+		background-position: 80%;
 	}
 	@media only screen and (max-width: $desktop) {
-		 background-position: 75%;
+		background-position: 50%;
 	}
 	@media only screen and (max-width: $smDesktop) {
-		 &:before{
-			  content: '';
-			  position: absolute;
-			  top:0;
-			  left:0;
-			  right:0;
-			  bottom: 0;
-			  background: rgba(#000, 0.4);
-			  z-index: 1;
-		 }
+		background-position: 59%;
 	}
 	.vacansion_hero_inner{
 		 padding: 80px 0 85px;
@@ -142,19 +133,20 @@
 		color: var(--text-color);
 		font-size: rem(16px);
 		font-weight: 400;
-		margin-top: 40px;
+		margin-top: 20px;
+		line-height: 1.5em;
 	}
 }
 
 
 .vacantion-container {
 display: flex;
-gap: 46px;
+gap: 45px;
 margin-top: 40px;
 	&__item {
 		background: #1B78AF;
 		border-radius: 15px;
-		padding: 42px 20px;
+		padding: 20px 20px;
 		display: flex;
 		flex: 1;
 		flex-direction: column;
@@ -164,7 +156,7 @@ margin-top: 40px;
 		font-size: rem(15px);
 		font-family: var(--font-family);
 		color: var(--text-white);
-		line-height: 1.2;
+		line-height: 1.3em;
 		font-weight: 500;
 		text-align: center;
 		span{
@@ -172,6 +164,18 @@ margin-top: 40px;
 			font-size: rem(12px);
 			margin-top: 5px;
 		}
+		@media only screen and (max-width: $desktop) {
+			padding: 20px 15px;
+			br{
+				display: none;
+			}
+			&:last-child{
+				margin:0 0 5px;
+			}
+		}
+	}
+	@media only screen and (max-width: $desktop) {
+		gap: 30px;
 	}
 	@media only screen and (max-width: $smDesktop) {
 		gap: 16px;
@@ -183,7 +187,7 @@ margin-top: 40px;
 	gap: 36px;
 	margin-top: 25px;
 		&__item {
-			background: #DBDBDB;
+			background: #fff;
 			border-radius: 15px;
 			padding: 54px 40px 60px;
 			color: var(--text-semi-gray);
@@ -191,11 +195,14 @@ margin-top: 40px;
 			vertical-align: middle;
 			font-weight: bold;
 			display: flex;
-		flex: 1;
-		flex-direction: column;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
+			flex: 1;
+			flex-direction: column;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			@media only screen and (max-width: $smDesktop) {
+				padding: 35px 15px;
+			}
 		}
 		&__img {
 			width: auto;
@@ -205,6 +212,7 @@ margin-top: 40px;
 		&__span {
 			padding-top: 40px;
 			display: block;
+			line-height: 1.3em;
 		}
 		
 	}
@@ -224,12 +232,12 @@ margin-top: 40px;
 	width: 680px;
 	margin:0 auto;
 	&__form{
-		margin-top: 80px;
-	display: flex;
-	flex-direction: column;
-	row-gap: 24px;
-	flex-wrap: wrap;
-	 
+		margin-top: 115px;
+		display: flex;
+		flex-direction: column;
+		row-gap: 24px;
+		flex-wrap: wrap;
+		
 	}
 }
 

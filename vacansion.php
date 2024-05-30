@@ -33,19 +33,40 @@
 		</div>
 	</div>
 </section>
-<section class="vacansion mt-60">
+<section class="vacansion mt-90">
 	<div class="container">
 		<h2 class="vacansion__title">Условия и гарантии трудоустройства</h2>
 		<div class="vacantion-container">
-			<div class="vacantion-container__item">Полное соблюдение<br> ТК РФ</div>
-			<div class="vacantion-container__item">Трудоустройство с 1-го рабочего дня</div>
-			<div class="vacantion-container__item">«Белая»
-				заработная плата <span>включая KPI, премии
-					и прочие выплаты</span></div>
-			<div class="vacantion-container__item">Отпускные и больничные рассчитываются из полной заработной платы</div>
-			<div class="vacantion-container__item"><span>Можно выбрать время начала и окончания рабочего дня:</span><br>
-
-				с 8.00-17.00, с 9.00-18.00, с 10.00-19.00</div>
+			<div class="vacantion-container__item">
+				Полное соблюдение<br> 
+				ТК РФ
+			</div>
+			<div class="vacantion-container__item">
+				Трудоустройство с<br> 
+				1-го рабочего дня
+			</div>
+			<div class="vacantion-container__item">
+				«Белая»<br>
+				заработная плата <br>
+				<span>
+					включая KPI, премии
+					и прочие выплаты
+				</span>
+			</div>
+			<div class="vacantion-container__item">
+				Отпускные и больничные<br> 
+				рассчитываются из<br> 
+				полной заработной<br> 
+				платы
+			</div>
+			<div class="vacantion-container__item">
+				<span>
+					Можно выбрать время начала <br>
+					и окончания рабочего дня:
+				</span>
+				<br>
+				с 8.00-17.00, с 9.00-18.00, с 10.00-19.00
+			</div>
 		</div>
 	</div>
 </section>

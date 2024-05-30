@@ -1,42 +1,5 @@
-.breadcrumbs{
-	ul{
-		 display: flex;
-		 justify-content: flex-start;
-		 gap:8px;
-		 padding-top: 16px;
-		 li{
-			  font-weight: 500;
-			  font-size: rem(12px);
-			  color: var(--text-light-gray);
-			  a{
-					font-size: rem(12px);
-					color: var(--text-light-gray);
-					text-decoration: none;
-					position: relative;
-					&:before{
-						 content:'';
-						 width: 0px;
-						 height:1px;
-						 display: block;
-						 position: absolute;
-						 top:100%;
-						 left:50%;
-						 transform: translateX(-50%);
-						 background: var(--text-light-gray);
-						 transition: 0.3s ease;
-					}
-					&:hover{
-						 &:before{
-							  width:100%;
-						 }
-					}
-			  }
-		 }
-	}
-}
 
 .coctails-head__baner {
-	min-height: 398px;
 	overflow: hidden;
 	border-radius: 15px;
 	background: linear-gradient(to right bottom, #82B0B5 600px, transparent 600px); 
@@ -53,6 +16,10 @@
 	padding: 73px 0 65px 53px; 
 	float: left; 
 	max-width: 480px;
+	@media only screen and (max-width: $desktop) {
+		padding: 45px 65px 55px; 
+
+	}
 }
 
 .image-container {
@@ -60,8 +27,9 @@
 	top: 0px; 
 	right: -1px; 
 	width: 58%; 
-	height: 401px; 
+	height: 407px; 
 	background-image: url('../img/cocktail/cocktail_hero.png'); 
+	background-size:cover;
 	clip-path: polygon(100% 0, 100% 100%, 0 100%, 20% 0); 
 	z-index: 1; 
 }
@@ -85,18 +53,20 @@
 .coctails-banne-button {
 	margin-top: 40px;
 	display: inline-block;
-	padding: 10px 20px;
+	padding: 15px 25px;
 	background-color: #fff;
 	color: var(--text-back);
 	text-decoration: none;
 	border-radius: 5px;
-	border: 1px inside #F0F0F4;
+	border: 1px solid #F0F0F4;
 	transition: background-color 0.3s ease;
+	font-weight: 600;
 }
 
 .coctails-banne-button:hover {
 	background-color: #eee;
 }
+
 @media only screen and (max-width: $desktop) {
 	.coctails-banner-title {
 		font-size: rem(32px);
@@ -109,12 +79,8 @@
 		display: flex;
 		justify-content: flex-end;
 		column-gap: 18px;
-		// &__filter {
-		// }
-
-		// &__brand {
-		// }
-}
+		margin: 0 0 0 auto;
+	}
 
 	
 
@@ -195,19 +161,12 @@
 	
 
 .coctail-title {
-font-size: rem(48px);
-font-family: var(--font-family) ;
-color: var(--text-dark);/**/
-font-weight: 700;
-margin-top: 60px;
-margin-bottom: 40px;
+	font-size: rem(36px);
+	font-family: var(--font-family) ;
+	color: var(--text-dark);
+	font-weight: 700;
+	margin-bottom: 40px;
 }
-
-
-
-
-
-
 
 
 .coctails-content-padding {

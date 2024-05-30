@@ -3,7 +3,7 @@
 	color: var(--text-dark);
 	font-size: rem(36px);
 	font-weight: 600;
-	margin-top: 60px;
+	margin: 60px 0 40px;
 
 }
 .page h2 {
@@ -11,46 +11,66 @@
 	color: var(--text-dark);
 	font-size: rem(22px);
 	font-weight: 600;
-	margin-top: 30px;
+	margin: 60px 0 40px;
 }
 .page h3 {
 	font-family: var(--font-family);
-	color: var(--text-color);
+	color: var(--text-dark);
 	font-size: rem(16px);
 	font-weight: 600;
+	margin: 60px 0 40px;
 	
 }
+
+.page p {
+	margin:0 0 20px;
+	font-family: var(--font-family);
+	font-size: rem(16px);
+	color: var(--text-color);
+	font-weight: 400;
+	line-height: 1.5em;
+}
+.page a {
+	text-decoration: none;
+	color: var(--text-color);
+	text-decoration: none;
+	transition: 0.3s ease;
+	background: -webkit-gradient(linear, left top, right top, from(currentColor), to(currentColor));
+	background: linear-gradient(to right, currentColor 0%, currentColor 100%);
+	background-size: 0px 1px;
+	background-position: 0 95%;
+	-webkit-transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+	transition: background-size 0.25s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+	background-repeat: no-repeat;
+	&:hover{
+		color: var(--text-dark);
+		background-size: 100% 1px;
+	}
+}
+.page a:hover {
+	text-decoration: none;
+}
+.page ul {
+	margin: 0 0 20px 20px;
+	li{
+		list-style: disc;
+		font-family: var(--font-family);
+		color: var(--text-color);
+		font-size: rem(16px);
+		font-weight: 400;
+		line-height: 1.5em;
+	}
+}
+
 .page ol li{
-	margin-left: 20px;
+	margin: 0 0 20px 20px;
 }
 .page ol li {
-	margin-top: 60px;
+	line-height: 1.5em;
 	font-family: var(--font-family);
 	color: var(--text-dark);
 	font-size: rem(16px);
 	font-weight: 600;
 	list-style: decimal;
 }
-.page p {
-	margin-top: 25px;
-	font-family: var(--font-family);
-	font-size: rem(16px);
-	color: var(--text-color);
-	font-weight: 400;
-}
-.page a {
-	text-decoration: underline;
-	color: var(--text-color);
-	font-weight: bold;
-}
-.page a:hover {
-	text-decoration: none;
-}
-.page ul li{
-	list-style: disc;
-	margin: 10px 0 0 20px;
-	font-family: var(--font-family);
-	color: var(--text-color);
-	font-size: rem(16px);
-	font-weight: 400;
-}
+

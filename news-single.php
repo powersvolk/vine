@@ -21,23 +21,25 @@
 	</div>
 </section>
 
-<section class="news-single-block mt-60">
+<section class="news-single-block mt-40">
 	<div class="container">
 		<div class="news-single-block__item">
 			<div class="news-single-block__text">
-				<h1 class="news-single-block__text_title">Что подать к новогодним салатам</h1>
+				<h1 class="news-single-block__text_title news-single-block__text_title-hero">
+					Что подать к новогодним салатам
+				</h1>
 				<div class="news-single-block__text_view">
 					<div class="text_view_time">19 февраля</div>
 					<div class="text_view_number">64526</div>
 				</div>
-				<p class="news-single-block__text_desc">
+				<div class="news-single-block__text_desc">
 					Классический хайбол — это легкий освежающий микс из 19 века с виски и большим количеством содовой. С
 					чувством легкой эйфории его можно долго потягивать один за одним в течение вечера и не пьянеть. Со
 					временем появилось множество твистов на классику, где крепкий алкоголь стали разбавлять любой другой
 					газированной жидкостью — например, тоником. Для приготовления хайболов вам не понадобятся никакие барные
 					приспособления — только высокий стакан, который по совпадению тоже называется хайболом: коктейль
 					смешивается прямо в нем.
-				</p>
+				</div>
 			</div>
 			<div class="news-single-block__image">
 				<img src="img/news/news-single-1.jpeg" class="news-single-block__image-img" alt="">
@@ -173,7 +175,7 @@
 	</div>
 </section>
 
-<section class="product_items pt-60">
+<section class="product_items product_items-news pt-60">
         <div class="container"> 
 		  <div class="category__section_head">
 				<h3 class="category__section_title">

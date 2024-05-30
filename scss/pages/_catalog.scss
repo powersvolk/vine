@@ -593,7 +593,7 @@
         }
     }
     .sidebar-filter-data{
-        max-height: 100px;
+        max-height: 125px;
         overflow: hidden;
         overflow-y: scroll;
         &::-webkit-scrollbar {
@@ -717,6 +717,14 @@
                     left:auto;
                     right:0;
                 }
+            }
+            @media only screen and (max-width: $desktop) {
+                font-size:rem(14px);
+                padding: 10px 18px;
+            }
+            @media only screen and (max-width: $smDesktop) {
+                font-size:rem(14px);
+                padding: 10px 8px;
             }
         }
     }
