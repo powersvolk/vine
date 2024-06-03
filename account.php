@@ -106,18 +106,16 @@
 				<h2 class="category__section_title">Изменить пароль</h2>
 				<form class="settings__form">
 					<label class="settings__label" for="old-password">Старый пароль</label>
-					<input class="settings__input" type="password" id="old-password" name="old-password"
+					<input class="settings__input settings__input-icon" type="password" id="old-password" name="old-password"
 						placeholder="*****************">
 
 					<label class="settings__label" for="first-name">Новый пароль</label>
-					<input class="settings__input" type="password" id="new-password" name="new-password"
+					<input class="settings__input settings__input-icon" type="password" id="new-password" name="new-password"
 						placeholder="*****************">
 
 					<label class="settings__label" for="repeat-password">Повторить пароль</label>
-					<input class="settings__input" type="password" id="repeat-password" name="repeat-password"
-						placeholder="*****************">
-
-
+					<input class="settings__input settings__input-icon" type="password" id="repeat-password"
+						name="repeat-password" placeholder="*****************">
 
 					<div class="container-button">
 						<button class="settings__button">Сохранить изменения</button>
