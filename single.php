@@ -1,6 +1,359 @@
 <?php include('components/Header.php'); ?>
 
+<div class="popup rewiews_window">
+    <a href="#" class="exit_window close_popup">
+        <svg class="icon">
+            <use xlink:href="#close"></use>
+        </svg>
+    </a>
+    <div class="rewiews_window_content">
+      
+        <div class="rewiews_window_header">
+            <div class="rewiews_window_header_data">
+                <h2>
+                    Написать отзывы
+                </h2>
+                <h3>
+                    Поставьте оценку товару*
+                </h3>
+                <div class="reviews_headline">
+                    <div class="reviews_headline_count">
+                        4.7
+                    </div>
+                    <div class="reviews_headline_item_stars">
+                        <svg class="icon full">
+                            <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="icon">
+                            <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="icon">
+                            <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="icon">
+                            <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="icon">
+                            <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="icon">
+                            <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="icon">
+                            <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="icon">
+                            <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="icon">
+                            <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="icon">
+                            <use xlink:href="#star"></use>
+                        </svg>
+                    </div>
+                </div>
+                <h3>
+                    Оцените вкусовые  свойства
+                </h3>
+                <div class="pickup_window_rating">
+                <?php for($s = 0; $s < 5; $s++) { ?>
+                    <div class="pickup_window_rating-item">
+                        <div class="pickup_window_rating-item-title">
+                            Ароматичность
+                        </div>
+                        <div class="pickup_window_rating-item-input">
+                            <div class=" rewiews-ragnger-<?php echo $s; ?>"></div>
+                            <div class="price_output" id="min-rewiews-<?php echo $s; ?>">
+                            
+                            </div>
+                        </div>        
+                    </div>
+                <?php } ?>
+                </div>
+            </div>
+            <div class="rewiews_window_header_product">
+                <div class="card__item card__item-type_3">
+                    <div class="card__item-thumbnuil">
+                        <a href="#">
+                            <img src="img/vine_product.png" alt="">
+                        </a>
+                        
+                        <div class="card__item-compare">
+                            <a href="#">
+                                <svg class="icon">
+                                    <use xlink:href="#heart"></use>
+                                </svg>
+                            </a>    
+                        </div>
+                        <div class="card__item-raiting_bage">
+                            <img src="img/raiting.png" alt="">
+                        </div>
+                        <div class="card__item-marker_bage">
+                            <svg class="icon">
+                                <use xlink:href="#grape"></use>
+                            </svg>
+                            <span>
+                                Vivion<br/>
+                                <span>3.2</span>
+                            </span>    
+                        </div>
+                    </div> 
+                    <div class="card__item-title">
+                        <a href="#">
+                            Вино Сикоры Пино Нуар Семейный Резерв Семигорье 2019 750 мл
+                        </a>
+                    </div>
+                    <div class="card__item-data">
+                        <div class="card__item-data-price">
+                            51 859 ₽
+                        </div> 
+                        <div class="card__item-old_price">
+                            48 239  ₽
+                        </div> 
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="rewies_taste">
+            <div class="owl-taste owl-taste-smaller owl-carousel owl-theme">
+                <?php $q = 1; for($w = 0; $w < 23; $w++) { $q++;?>
+                <div class="item <?php if($w == 3) { echo 'show_active'; } ?>">
+                    <a href="#" data-tab="taste_item-<?php echo $w; ?>">
+                        <img src="img/grenash_<?php echo $q; ?>.png" alt="">
+                        <span>Малина</span>
+                    </a>
+                </div>
+                <?php
+                    if($q == 10) { $q = 1;}
+                } ?>
+            </div> 
+        </div>
+          
 
+        
+        <?php for($c = 0; $c < 23; $c++) { ?>
+        <div class="taste_item taste_item-<?php echo $c; if($c==3) {echo ' active'; }?>">
+            <a href="#">
+                <img src="img/grenash_1.png" alt="">
+                <span>Абрикос <?php echo $c;?></span>
+            </a>
+            <a href="#">
+                <img src="img/grenash_2.png" alt="">
+                <span>Слива <?php echo $c;?></span>
+            </a>
+        </div>    
+        <?php } ?>
+             
+        <div class="feeling">
+            <div class="feeling_inner">
+                <div class="feeling_item">
+                    <span>
+                        Ощущения:
+                    </span>
+                    <a href="#">Сложное</a>
+                    <a href="#">Простое</a>
+                    <a href="#">Изящное</a>
+                    <a href="#">Сочное</a>
+                    <a href="#">Элегантное </a>
+                    <a href="#">Утонченное</a>
+                </div>
+                <div class="feeling_item">
+                    <span>
+                        Интенсивность:
+                    </span>
+                    <a href="#">Сложное</a>
+                    <a href="#">Простое</a>
+                    <a href="#">Изящное</a>
+                    <a href="#">Сочное</a>
+                    <a href="#">Элегантное </a>
+                    <a href="#">Утонченное</a>
+                </div>
+                <div class="feeling_item">
+                    <span>
+                        Кислотность:
+                    </span>
+                    <a href="#">Сложное</a>
+                    <a href="#">Простое</a>
+                    <a href="#">Изящное</a>
+                    <a href="#">Сочное</a>
+                    <a href="#">Элегантное </a>
+                    <a href="#">Утонченное</a>
+                    <a href="#">Элегантное </a>
+                    <a href="#">Утонченное</a>
+                </div>
+                <div class="feeling_item">
+                    <span>
+                        Ощущения:
+                    </span>
+                    <a href="#">Сложное</a>
+                    <a href="#">Простое</a>
+                    <a href="#">Изящное</a>
+                    <a href="#">Сочное</a>
+                    <a href="#">Элегантное </a>
+                    <a href="#">Утонченное</a>
+                </div>
+                <div class="feeling_item">
+                    <span>
+                        Интенсивность:
+                    </span>
+                    <a href="#">Сложное</a>
+                    <a href="#">Простое</a>
+                    <a href="#">Изящное</a>
+                    <a href="#">Сочное</a>
+                    <a href="#">Элегантное </a>
+                    <a href="#">Утонченное</a>
+                </div>
+                <div class="feeling_item">
+                    <span>
+                        Кислотность:
+                    </span>
+                    <a href="#">Сложное</a>
+                    <a href="#">Простое</a>
+                    <a href="#">Изящное</a>
+                    <a href="#">Сочное</a>
+                    <a href="#">Элегантное </a>
+                    <a href="#">Утонченное</a>
+                    <a href="#">Элегантное </a>
+                    <a href="#">Утонченное</a>
+                </div>
+            </div>
+        </div>
+
+        <form class="rewiews_form" method="POSST">
+            <span>
+                Достоинства товара*
+            </span>
+            <textarea></textarea>
+          
+            <div class="rewiews_form-cell">
+                <div class="rewiews_form-cell_item">
+                    <span>
+                        Ваше имя
+                    </span> 
+                    <input type="text" placeholder="Ваше имя">
+                    <div class="form_rule">
+                        <input type="checkbox" class="cheackbox" id="checkboxRewiew">
+                        <label for="checkboxRewiew" class="checkbox-label"></label>
+                        <div class="form_rule_text">
+                            Я соглашаюсь на обработку персональных данных<br/> 
+                            в соответствии с Политикой конфиденциальности
+                        </div>
+                    </div>
+                    <div class="form_rule_required">
+                        <span>*</span>- Поля, обязательные для заполнения
+                    </div>
+                </div>
+                <div class="rewiews_form-cell_item">
+                    <span>
+                        Номер телефона*
+                    </span> 
+                    <input type="text" placeholder="+7 909 22-55-456">
+                    <div class="rewiews_form-cell_item_cell_symbol">
+                        <div class="rewiews_form-cell_item_cell">
+                            <span>
+                                Символы на картинке*
+                            </span> 
+                            <input type="text">
+                        </div>
+                        <div class="rewiews_form-cell_item_cell rewiews_form-cell_item_cell_pic">
+                            <img src="img/captcha.png" alt="">
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+            <input type="submit" value="Оставить отзыв">
+
+        </form>       
+
+
+    </div>    
+</div>
+
+
+<div class="popup pickup_window">
+    <a href="#" class="exit_window close_popup">
+        <svg class="icon">
+            <use xlink:href="#close"></use>
+        </svg>
+    </a>
+    <div class="pickup_window_content">
+        <div class="container">
+            <h2>
+                Мы поможем Вам подобрать лучший вариант напитка
+            </h2>
+            <h3>
+                Оцените вкусовые  свойства 
+            </h3>
+            <div class="pickup_window_rating">
+            <?php for($n = 0; $n < 5; $n++) { ?>
+                <div class="pickup_window_rating-item">
+                    <div class="pickup_window_rating-item-title">
+                        Ароматичность
+                    </div>
+                    <div class="pickup_window_rating-item-input">
+                        <div class="price-ragnger-<?php echo $n; ?>"></div>
+                        <div class="price_output" id="min-price-<?php echo $n; ?>">
+                           
+                        </div>
+                    </div>        
+                </div>
+            <?php } ?>
+            </div> 
+            <div class="owl-taste owl-taste-big owl-carousel owl-theme">
+                <?php $k = 1; for($m = 0; $m < 23; $m++) { $k++;?>
+                <div class="item <?php if($m == 3) { echo 'show_active'; } ?>">
+                    <a href="#" data-tab="taste_item-<?php echo $m; ?>">
+                        <img src="img/grenash_<?php echo $k; ?>.png" alt="">
+                        <span>Малина</span>
+                    </a>
+                </div>
+                <?php
+                    if($k == 10) { $k = 1;}
+                } ?>
+            </div>   
+             
+            <?php for($c = 0; $c < 23; $c++) { ?>
+            <div class="taste_item taste_item-<?php echo $c; if($c==3) {echo ' active'; }?>">
+                <a href="#">
+                    <img src="img/grenash_1.png" alt="">
+                    <span>Абрикос <?php echo $c;?></span>
+                </a>
+                <a href="#">
+                    <img src="img/grenash_2.png" alt="">
+                    <span>Слива <?php echo $c;?></span>
+                </a>
+            </div>    
+            <?php } ?>
+             
+        </div>
+        <div class="sort_product">
+            <div class="sort_product_inner">
+                <a href="#" class="active">по популярности</a>
+                <a href="#">по цене</a>
+                <a href="#">по убыванию</a>
+                <a href="#">по рейтингу</a>
+                <a href="#">по выгодности</a>
+            </div>
+        </div>         
+        <div class="product_items">
+            <div class="product_items_inner four_item">
+                <?php include('components/cards/cartTypeOne.php'); ?>
+                <?php include('components/cards/cartTypeOne.php'); ?>
+                <?php include('components/cards/cartTypeOne.php'); ?>
+                <?php include('components/cards/cartTypeOne.php'); ?>
+                <?php include('components/cards/cartTypeOne.php'); ?>
+                <?php include('components/cards/cartTypeOne.php'); ?>
+                <?php include('components/cards/cartTypeOne.php'); ?>
+                <?php include('components/cards/cartTypeOne.php'); ?>
+             </div>
+        </div>        
+
+
+    </div>
+</div>
 
 <div class="popup news_window">
     <a href="#" class="exit_window close_popup">
@@ -131,7 +484,7 @@
 </div>
 
 
-
+<!-- 
 <div class="scroll__show_product">
     <div class="container">
         <div class="scroll__show_product_inner">
@@ -227,7 +580,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
 
@@ -589,6 +942,33 @@
                         </div>
                     </div>
 
+                    <div class="product__single__pick">
+                        <a href="#" class="popup_open" data-item="pickup">
+                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1625_45299)" filter="url(#filter0_d_1625_45299)">
+                            <path d="M10.9008 20.2934L10.1093 21.6669C10.8604 22.1035 11.5852 22.5251 12.31 22.9485C12.4443 23.0273 12.6367 23.0884 12.6855 23.2076C12.7616 23.3832 12.8086 23.6432 12.7278 23.7916C12.664 23.9099 12.3926 23.9446 12.2096 23.9559C12.1025 23.9624 11.9871 23.8545 11.8791 23.7916L6.56138 20.7178C6.49379 20.6793 6.42242 20.6445 6.35858 20.6004C6.11823 20.4333 5.95674 20.2249 6.13982 19.9319C6.31069 19.6559 6.5567 19.6268 6.82897 19.7827C7.43923 20.1319 8.04885 20.4827 8.65786 20.8351L9.27939 21.1919L10.1929 19.6202C9.05755 18.4653 8.079 17.166 7.28244 15.7559C6.07164 13.6159 5.28009 11.2646 4.95029 8.82807C4.82167 7.91268 5.36996 7.10715 6.23558 6.93158C7.05239 6.76635 7.83166 7.27238 8.08515 8.1427C8.20908 8.56894 8.31421 8.99988 8.51231 9.42424C8.55268 9.19704 8.58554 8.9689 8.63343 8.74357C9.00897 7.0095 9.9112 5.60873 11.2782 4.49056C12.9972 3.08227 14.7172 1.67398 16.4222 0.251615C16.7752 -0.0441251 17.0606 -0.0788628 17.4672 0.157729C19.7035 1.47213 21.9496 2.77057 24.2053 4.05305C24.5687 4.26053 24.7264 4.49994 24.6541 4.91961C24.2476 7.27426 23.8598 9.63173 23.4505 11.9854C23.2026 13.4125 22.5172 14.6227 21.5371 15.6545C22.3398 16.1953 23.1435 16.7023 23.9096 17.2609C25.5526 18.4598 26.7186 20.1 27.9345 21.6913C28.1222 21.9326 28.1222 22.1946 27.8575 22.3917C27.5927 22.5889 27.3543 22.4988 27.1646 22.2584C26.7205 21.6951 26.2802 21.1233 25.838 20.5553C24.2466 18.5096 22.2609 16.9792 19.8434 16.0357C17.6623 15.1929 15.6945 13.8784 14.0807 12.1864C13.4958 11.5752 13.0094 11.4972 12.586 11.9047C12.1626 12.3122 12.2593 12.8436 12.8526 13.4379C13.7596 14.3467 14.675 15.247 15.5753 16.1605C16.0795 16.6769 16.1659 17.321 15.857 17.9293C15.725 18.2065 15.5084 18.4345 15.2384 18.5805C14.9684 18.7264 14.659 18.7828 14.3548 18.7415C14.0732 18.703 13.754 18.5941 13.554 18.4072C11.558 16.5455 9.61078 14.6283 8.47664 12.085C7.9706 10.9499 7.60444 9.75097 7.20167 8.57176C7.02892 8.06666 6.77917 7.80754 6.41771 7.88265C6.01776 7.96527 5.87036 8.29761 5.94829 8.84872C6.46466 12.4596 7.93085 15.6307 10.3468 18.3622C11.573 19.7413 13.0695 20.7431 14.7707 21.4538C15.9518 21.9467 17.1301 22.4481 18.3103 22.9447C18.4131 22.9817 18.5134 23.0253 18.6107 23.0752C18.8444 23.2161 19.0022 23.3982 18.8642 23.693C18.7262 23.9878 18.5008 24.0742 18.207 23.9427C15.7922 22.8574 13.2019 22.1232 11.1026 20.4042C11.0385 20.3619 10.9709 20.3248 10.9008 20.2934ZM9.61831 8.69757C9.86053 8.61213 10.0304 8.54736 10.2041 8.49196C12.1138 7.87889 13.9305 8.21781 15.7096 9.01678C16.5762 9.40641 17.438 9.8242 18.3384 10.1115C19.7551 10.5621 21.1775 10.5086 22.5276 9.81763C22.7003 9.72938 22.9031 9.53597 22.9369 9.36697C23.1895 7.98498 23.3913 6.59359 23.6383 5.21159C23.6908 4.91773 23.5969 4.7938 23.366 4.6633C22.1708 3.98451 20.9822 3.29257 19.7908 2.60626C19.082 2.19692 19.082 2.19692 18.4595 2.70015C18.3262 2.80812 18.1938 2.91796 18.0605 3.02781C17.4972 3.49724 16.9292 3.96667 16.3565 4.42765C16.1274 4.61542 15.8589 4.67551 15.6448 4.42765C15.4186 4.16289 15.5105 3.9047 15.7612 3.6944C15.9405 3.54418 16.1227 3.39585 16.3039 3.24657L18.1919 1.68431L17.008 1.00645C15.1961 2.49829 13.4 3.95916 11.6247 5.44537C10.6285 6.27907 9.97507 7.34749 9.61831 8.69569V8.69757Z" fill="white"/>
+                            <path d="M14.6942 4.5206C14.9177 4.80226 15.1158 4.95154 15.1561 5.13368C15.2209 5.41533 15.0275 5.60311 14.7289 5.61625C14.4304 5.62939 14.2257 5.44349 14.2595 5.16371C14.2839 4.9797 14.483 4.81916 14.6942 4.5206Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_1625_45299" x="0.933594" y="0" width="31.1328" height="32" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="4"/>
+                            <feGaussianBlur stdDeviation="2"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1625_45299"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1625_45299" result="shape"/>
+                            </filter>
+                            <clipPath id="clip0_1625_45299">
+                            <rect width="23.1334" height="24" fill="white" transform="translate(4.93359)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                            Подберите похожее
+                        </a>
+                    </div>
+
                     <div class="product__single__inner-cards-subscribe">
                         <svg class="icon">
                             <use xlink:href="#sms"></use>
@@ -807,46 +1187,31 @@
                             <h3>
                                 Вкусовые букеты
                             </h3>   
-                            <div class="card__item-options_cards">
-                                <div class="card__item-options_cards-item">
-                                    <a href="#">
-                                        <img src="img/grenash_3.png" alt="">
-                                        <span>Малина</span>
-                                    </a>
-                                    <a href="#">
-                                        <img src="img/grenash_4.png" alt="">
-                                        <span>Кожа</span>
-                                    </a>
-                                    <a href="#">
-                                        <img src="img/grenash_5.png" alt="">
-                                        <span>Малина</span>
-                                    </a>
-                                    <a href="#">
-                                        <img src="img/grenash_6.png" alt="">
-                                        <span>Кожа</span>
-                                    </a>
-                                    <a href="#">
-                                        <img src="img/grenash_7.png" alt="">
-                                        <span>Ваниль</span>
-                                    </a>
-                                    <a href="#">
-                                        <img src="img/grenash_8.png" alt="">
-                                        <span>Малина</span>
-                                    </a>
-                                    <a href="#">
-                                        <img src="img/grenash_9.png" alt="">
-                                        <span>Кожа</span>
-                                    </a>
-                                    <a href="#">
-                                        <img src="img/grenash_10.png" alt="">
-                                        <span>Малина</span>
-                                    </a>
-                                    <a href="#">
-                                        <img src="img/grenash_11.png" alt="">
+                            <div class="owl-taste owl-taste-smaller owl-carousel owl-theme">
+                                <?php $k = 1; for($m = 0; $m < 23; $m++) { $k++;?>
+                                <div class="item <?php if($m == 3) { echo 'show_active'; } ?>">
+                                    <a href="#" data-tab="taste_item-<?php echo $m; ?>">
+                                        <img src="img/grenash_<?php echo $k; ?>.png" alt="">
                                         <span>Малина</span>
                                     </a>
                                 </div>
-                            </div>
+                                <?php
+                                    if($k == 10) { $k = 1;}
+                                } ?>
+                            </div>   
+                            
+                            <?php for($c = 0; $c < 23; $c++) { ?>
+                            <div class="taste_item taste_item-<?php echo $c; if($c==3) {echo ' active'; }?>">
+                                <a href="#">
+                                    <img src="img/grenash_1.png" alt="">
+                                    <span>Абрикос <?php echo $c;?></span>
+                                </a>
+                                <a href="#">
+                                    <img src="img/grenash_2.png" alt="">
+                                    <span>Слива <?php echo $c;?></span>
+                                </a>
+                            </div>    
+                            <?php } ?>
                             <h3>
                                 Вкусовые сочитания
                             </h3>
@@ -1185,7 +1550,7 @@
                     </div>
                 </div>
                 <div class="reviews_cta">
-                    <a href="#">
+                    <a href="#" class="popup_open" data-item="rewiews">
                         Оставить отзыв
                     </a>
                 </div>    
