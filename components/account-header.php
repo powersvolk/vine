@@ -1,3 +1,39 @@
+
+
+
+<div class="popup complaint_window">
+    <a href="#" class="exit_window close_popup">
+        <svg class="icon">
+            <use xlink:href="#close"></use>
+        </svg>
+    </a>
+    <div class="complaint_window_content">
+        <h2>
+			Оставте свое <br/>
+            предложение
+		</h2>
+		<form action="#">
+            <label>Тема</label>
+            <input type="text" placeholder="Жалоба">
+            <label>Содержание</label>
+            <textarea></textarea>
+            
+
+            <div class="form_submit">
+                <div class="form_submit-item">
+                    Ваши предложения и жалобы<br/> 
+                    не останутся незамеченными
+                </div>
+                <div class="form_submit-item">
+                <input type="submit" value="Войти">
+                </div>
+            </div>
+
+            
+        </form>
+    </div>
+</div>
+
 <section class="breadcrumbs banner__promotion">
 	<div class="container">
 		<div class="breadcrumbs">
@@ -33,7 +69,7 @@
 				<div class="profile-card__info">
 					<div class="profile-card__name">Рустам</div>
 					<div class="profile-card__loyalty-card">Карта лояльности №2345666342</div>
-					<button class="profile-card__button">Предложения и жалобы</button>
+					<button class="profile-card__button popup_open" data-item="complaint">Предложения и жалобы</button>
 				</div>
 			</div>
 			<div class="profile-card__right">
