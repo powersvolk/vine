@@ -9163,7 +9163,7 @@ use path {
           justify-content: space-between;
 }
 .order .order_inner .order_item_paymets {
-  width: calc(40% - 30px);
+  width: calc(43% - 30px);
 }
 .order .order_inner .order_item_paymets .cart__inner-item-title {
   display: -webkit-box;
@@ -9282,7 +9282,7 @@ use path {
           box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 .order .order_inner .order_item_paymets .order_paymets_methods .order_paymets_methods_inner .radio {
-  padding: 0 0 30px;
+  padding: 0 0 20px;
   font-size: 16px;
   color: #212121;
 }
@@ -9301,8 +9301,197 @@ use path {
   margin: 5px 0 0;
   color: var(--text-color);
 }
+.order .order_inner .order_item_paymets .order_paymets_methods .order_paymets_methods_inner .order_paymets_points {
+  border-top: 1px solid var(--line);
+  padding: 25px 0 0 0;
+}
+.order .order_inner .order_item_paymets .order_paymets_methods .order_paymets_methods_inner .order_paymets_points h3 {
+  color: #212121;
+  font-weight: 600;
+  margin: 0 0 20px;
+}
+.order .order_inner .order_item_paymets .order_paymets_methods .order_paymets_methods_inner .order_paymets_points_slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.order .order_inner .order_item_paymets .order_paymets_methods .order_paymets_methods_inner .order_paymets_points_slider .order_paymets_points-total {
+  width: 70px;
+  font-size: 0.625rem;
+  background: #F4F4F6;
+  padding: 7px;
+}
+.order .order_inner .order_item_paymets .order_paymets_methods .order_paymets_methods_inner .order_paymets_points_slider .order_paymets_points-total span {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1B78AF;
+}
+.order .order_inner .order_item_paymets .order_paymets_methods .order_paymets_methods_inner .order_paymets_points-input {
+  width: calc(100% - 250px);
+  position: relative;
+}
+.order .order_inner .order_item_paymets .order_paymets_methods .order_paymets_methods_inner .order_paymets_points-input .price_output_headline {
+  color: #AAB7BF;
+  font-size: 0.625rem;
+  position: absolute;
+  top: 50%;
+  right: -125px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.order .order_inner .order_item_paymets .order_paymets_methods .order_paymets_methods_inner .order_paymets_points-input .price_output_headline .price_output {
+  font-size: 1rem;
+  color: #1B78AF;
+  font-weight: 700;
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 7px;
+  border-radius: 6px;
+  width: 45px;
+  margin: 5px 0 0;
+}
+.order .order_inner .order_item_paymets .order_paymets_methods .order_paymets_methods_inner .order_paymets_points-input .ui-slider-horizontal {
+  height: 8px;
+}
+.order .order_inner .order_item_paymets .order_paymets_methods .order_paymets_methods_inner .order_paymets_points-input .ui-widget.ui-widget-content {
+  border: 1px solid #D9D9D9;
+}
+.order .order_inner .order_item_paymets .order_paymets_methods .order_paymets_methods_inner .order_paymets_points-input .ui-widget-header {
+  background: #3F93C5;
+}
+.order .order_inner .order_item_paymets .order_paymets_methods .order_paymets_methods_inner .order_paymets_points-input .ui-state-default,
+.order .order_inner .order_item_paymets .order_paymets_methods .order_paymets_methods_inner .order_paymets_points-input .ui-widget-content .ui-state-default,
+.order .order_inner .order_item_paymets .order_paymets_methods .order_paymets_methods_inner .order_paymets_points-input .ui-widget-header .ui-state-default,
+.order .order_inner .order_item_paymets .order_paymets_methods .order_paymets_methods_inner .order_paymets_points-input .ui-button,
+.order .order_inner .order_item_paymets .order_paymets_methods .order_paymets_methods_inner .order_paymets_points-input html .ui-button.ui-state-disabled:hover,
+.order .order_inner .order_item_paymets .order_paymets_methods .order_paymets_methods_inner .order_paymets_points-input html .ui-button.ui-state-disabled:active {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid #fff !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  outline: none !important;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.order .order_inner .order_item_paymets .order_paymets_methods .order_paymets_methods_inner .order_paymets_points-input .ui-slider-horizontal .ui-slider-handle {
+  top: -5px;
+}
+.order .order_inner .order_item_paymets .order_paymets_methods .order_paymets_methods_inner .order_paymets_points-input .price-slider_data-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 0 0;
+}
+.order .order_inner .order_item_paymets .order_paymets_methods .order_paymets_methods_inner .order_paymets_points-input .price-slider_data-row input {
+  width: calc(50% - 7px);
+  height: 42px;
+  border: 1px solid var(--gray-bg);
+  padding: 0 12px;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: var(--text-color);
+  font-size: 0.875rem;
+  outline: none;
+}
+.order .order_inner .order_item_paymets .order_paymets_headline_delivery {
+  margin: 60px 0 0;
+}
+.order .order_inner .order_item_paymets .order_paymets_delivery .order_paymets_city {
+  width: 100%;
+  display: block;
+}
+.order .order_inner .order_item_paymets .order_paymets_delivery .order_paymets_city .nice-select {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.order .order_inner .order_item_paymets .order_paymets_delivery .order_paymets_city .nice-select .list {
+  width: 100%;
+}
+.order .order_inner .order_item_paymets .order_paymets_delivery .order_paymets_street {
+  width: 100%;
+  display: block;
+}
+.order .order_inner .order_item_paymets .order_paymets_delivery .order_paymets_street .nice-select {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.order .order_inner .order_item_paymets .order_paymets_delivery .order_paymets_street .nice-select .list {
+  width: 100%;
+}
+.order .order_inner .order_item_paymets .order_paymets_delivery .order_paymets_courier {
+  gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.order .order_inner .order_item_paymets .order_paymets_delivery .order_paymets_courier .order_paymets_courier_item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 24px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #F0F0F4;
+  border-radius: 7px;
+}
+.order .order_inner .order_item_paymets .order_paymets_delivery .order_paymets_courier .order_paymets_courier_item .order_paymets_courier_item_adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 0.875rem;
+}
+.order .order_inner .order_item_paymets .order_paymets_delivery .order_paymets_courier .order_paymets_courier_item .order_paymets_courier_item_adress svg {
+  margin-right: 10px;
+}
+.order .order_inner .order_item_paymets .order_paymets_delivery .order_paymets_courier .order_paymets_courier_item a {
+  display: inline-block;
+  padding: 5px 8px;
+  background: #DAEBF4;
+  border: 1px solid #F0F0F4;
+  color: #1C3C6E;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  font-size: 0.875rem;
+}
+.order .order_inner .order_item_paymets .order_paymets_delivery .order_paymets_courier .order_paymets_courier_item a:hover {
+  background: #f5f5f5;
+}
 .order .order_inner .order_item_checkout {
-  width: calc(60% - 30px);
+  width: calc(57% - 30px);
 }
 
 .radio {

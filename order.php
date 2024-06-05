@@ -61,7 +61,7 @@
                 </div>
 
                 <div class="order_paymets_methods">
-                    <h2>
+                    <h2 class="order_paymets_headline_paymet">
                         Способ оплаты
                         <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.336412 8.01843L7.87203 0.253456C7.96174 0.16129 8.05893 0.0961594 8.16359 0.0580641C8.26825 0.0193544 8.38039 -3.76775e-07 8.5 -3.71547e-07C8.61961 -3.66318e-07 8.73175 0.0193545 8.83641 0.0580641C8.94107 0.0961594 9.03826 0.16129 9.12797 0.253456L16.686 8.01843C16.8953 8.23349 17 8.5023 17 8.82488C17 9.14746 16.8879 9.42396 16.6636 9.65438C16.4393 9.88479 16.1777 10 15.8786 10C15.5796 10 15.3179 9.88479 15.0937 9.65438L8.5 2.88018L1.90633 9.65438C1.69701 9.86943 1.43924 9.97696 1.13303 9.97696C0.826227 9.97696 0.560686 9.86175 0.336412 9.63133C0.112136 9.40092 -3.99177e-07 9.1321 -3.85748e-07 8.82488C-3.72319e-07 8.51766 0.112136 8.24885 0.336412 8.01843Z" fill="#212B36"/>
@@ -81,10 +81,126 @@
                             <label for="radio-2" class="radio-label">
                                 При получении QR кодом
                             </label>
-                        </div>   
+                        </div> 
+                        
+                        <div class="order_paymets_points">
+                            <h3>Оплата заказа балами лояльности</h3>
+                        </div>
+
+                        <div class="order_paymets_points_slider">
+                            <div class="order_paymets_points-input">
+                                <div class="point-ragnger-1"></div>
+
+                                <div class="price_output_headline">
+                                    Балов для оплаты
+                                    <div class="price_output" id="min-point-1"></div>
+                                </div>
+                            </div>
+
+                            <div class="order_paymets_points-total">
+                                Всего балов
+                                <span>1470</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="order_paymets_points">
-                        <h3>Оплата заказа балами лояльности</h3>
+                    
+                    <h2 class="order_paymets_headline_delivery">
+                        Способ получения
+                        <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.336412 8.01843L7.87203 0.253456C7.96174 0.16129 8.05893 0.0961594 8.16359 0.0580641C8.26825 0.0193544 8.38039 -3.76775e-07 8.5 -3.71547e-07C8.61961 -3.66318e-07 8.73175 0.0193545 8.83641 0.0580641C8.94107 0.0961594 9.03826 0.16129 9.12797 0.253456L16.686 8.01843C16.8953 8.23349 17 8.5023 17 8.82488C17 9.14746 16.8879 9.42396 16.6636 9.65438C16.4393 9.88479 16.1777 10 15.8786 10C15.5796 10 15.3179 9.88479 15.0937 9.65438L8.5 2.88018L1.90633 9.65438C1.69701 9.86943 1.43924 9.97696 1.13303 9.97696C0.826227 9.97696 0.560686 9.86175 0.336412 9.63133C0.112136 9.40092 -3.99177e-07 9.1321 -3.85748e-07 8.82488C-3.72319e-07 8.51766 0.112136 8.24885 0.336412 8.01843Z" fill="#212B36"/>
+                        </svg>
+                    </h2>
+
+                    <div class="order_paymets_methods_inner order_paymets_delivery">
+                        <div class="order_paymets_city">
+                            <select class="select">
+                                <option>г.Москва</option>
+                                <option>г.Питер</option>
+                                <option>г.Екатеринбург</option>
+                                <option>г.Новосибирск</option>
+                                <option>г.Казань</option>
+                                <option>г.Челябинск</option>
+                            </select>    
+                        </div>
+                        <div class="radio">
+                            <input id="radio-3" name="radio2" type="radio" checked>
+                            <label for="radio-3" class="radio-label">
+                                Самовывоз
+                                <span>г. Москва, ул.Лесная, 14 </span>
+                            </label>
+                        </div>  
+                        
+                        <div class="radio">
+                            <input id="radio-4" name="radio2" type="radio">
+                            <label for="radio-4" class="radio-label">
+                                Пункт выдачи
+                            </label>
+                        </div> 
+                        <div class="order_paymets_street">
+                            <select class="select">
+                                <option>г.Москва ул. Иваново</option>
+                                <option>г.Питер ул. Иваново</option>
+                                <option>г.Екатеринбург ул. Иваново</option>
+                                <option>г.Новосибирск ул. Иваново</option>
+                                <option>г.Казань ул. Иваново</option>
+                                <option>г.Челябинск ул. Иваново</option>
+                            </select>    
+                        </div>  
+                        <div class="radio">
+                            <input id="radio-5" name="radio2" type="radio">
+                            <label for="radio-5" class="radio-label">
+                                Курьером 
+                            </label>
+                        </div> 
+                        <div class="order_paymets_courier">
+                            <div class="order_paymets_courier_item">
+                                <div class="order_paymets_courier_item_adress">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.00187 9.6849C9.15063 9.6849 10.0819 8.75365 10.0819 7.6049C10.0819 6.45615 9.15063 5.5249 8.00187 5.5249C6.85312 5.5249 5.92188 6.45615 5.92188 7.6049C5.92188 8.75365 6.85312 9.6849 8.00187 9.6849Z" stroke="#1B78AF" stroke-width="1.5"/>
+                                        <path d="M2.41184 6.39161C3.72517 0.618276 12.2785 0.624943 13.5852 6.39828C14.3518 9.78494 12.2452 12.6516 10.3985 14.4249C9.0585 15.7183 6.9385 15.7183 5.59184 14.4249C3.75184 12.6516 1.64517 9.77828 2.41184 6.39161Z" stroke="#1B78AF" stroke-width="1.5"/>
+                                    </svg>
+                                    Москва, ул. Маяковского, д 13, п. 8 кв 525
+                                </div>
+                                <a href="#">
+                                    Изменить
+                                </a>
+                            </div>
+                            <div class="order_paymets_courier_item">
+                                <div class="order_paymets_courier_item_adress">
+                                    <svg width="22" height="25" viewBox="0 0 22 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g filter="url(#filter0_d_1625_47169)">
+                                        <path d="M8.33203 2.06494V4.06494" stroke="#1B78AF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.668 2.06494V4.06494" stroke="#1B78AF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5.33203 6.7915H16.6654" stroke="#1B78AF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M17 6.39827V12.0649C17 14.0649 16 15.3983 13.6667 15.3983H8.33333C6 15.3983 5 14.0649 5 12.0649V6.39827C5 4.39827 6 3.06494 8.33333 3.06494H13.6667C16 3.06494 17 4.39827 17 6.39827Z" stroke="#1B78AF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.4625 9.86458H13.4685" stroke="#1B78AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.4625 11.8646H13.4685" stroke="#1B78AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M10.9976 9.86458H11.0036" stroke="#1B78AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M10.9976 11.8646H11.0036" stroke="#1B78AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.52889 9.86458H8.53488" stroke="#1B78AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.52889 11.8646H8.53488" stroke="#1B78AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                        <filter id="filter0_d_1625_47169" x="-1" y="0.731445" width="24" height="24" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                        <feOffset dy="4"/>
+                                        <feGaussianBlur stdDeviation="2"/>
+                                        <feComposite in2="hardAlpha" operator="out"/>
+                                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1625_47169"/>
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1625_47169" result="shape"/>
+                                        </filter>
+                                        </defs>
+                                    </svg>
+                                    Доставка сегодня с 17 до 18
+                                </div>
+                                <a href="#">
+                                    Изменить
+                                </a>
+                            </div>
+                        </div>
+                        
                     </div>
 
                 </div>

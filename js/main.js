@@ -665,6 +665,21 @@ jQuery(function ($) {
         $("#min-rewiews-4").html($(".rewiews-ragnger-4").slider("value").toFixed(1));
     }
 
+
+    $(".point-ragnger-1").slider({
+        range: "min",
+        value: 600, 
+        min: 0,
+        max: 1470,
+        slide: function( event, ui ) {
+            $("#min-point-1").html(ui.value);
+        }
+    });
+    if($(".point-ragnger-1").length) {
+        $("#min-point-1").html($(".point-ragnger-1").slider("value"));
+    }
+
+
     $('.product_sidebar .sidebar_tab h3').click(function (e) {
         e.preventDefault();
         $(this).toggleClass('active');
