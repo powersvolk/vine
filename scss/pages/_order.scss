@@ -1,0 +1,361 @@
+.order{
+    margin: 30px 0 0;
+    .order_inner{
+        display: flex;
+        justify-content: space-between;
+        .order_item_paymets{
+            width:calc(43% - 30px);
+            .cart__inner-item-title{
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-end;
+                gap: 10px;
+                margin: 15px 0 0;
+                h1{
+                    font-weight: 600;
+                    color: var(--text-black);
+                    font-size: rem(28px);
+                }
+                a{
+                    text-decoration: none;
+                    margin-right: 5px;
+                    svg{
+                        width: 19px;
+                        height: 19px;
+                        stroke: var(--text-black);
+                        -webkit-transition: 0.3s ease;
+                        transition: 0.3s ease;
+                        position: relative;
+                        top:0px;
+                    }
+                }
+            }
+            .order_card{
+                margin: 30px 0 0;
+                display: flex;
+                align-items: center;
+                span{
+                    margin-left: 15px;
+                    font-size:18px;
+                    color: var(--text-dark);
+                    strong{
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .order_phone{
+                margin: 30px 0 0;
+                display: flex;
+                align-items: center;
+                a{
+                    margin-left: 15px;
+                    display: inline-block;
+                    background: #e1e8ed;
+                    border:1px solid #dbdbdb;
+                    padding: 15px 24px;
+                    border-radius: 20px;
+                    text-decoration: none;
+                    color:#212121;
+                    font-weight: 600;
+                    transition: 0.3s ease;
+                    svg{
+                        margin-left:5px;
+                        position: relative;
+                        top:2px;
+                    }
+                    &:hover{
+                        background: #fff;
+                        border-radius: 15px;
+                    }
+                }
+            }
+
+            .order_paymets_methods{
+                margin: 60px 0 0;
+                h2{
+                    font-weight: 600;
+                    color: var(--text-black);
+                    font-size: rem(22px);
+                    position: relative;
+                    
+                    svg{
+                        position: absolute;
+                        top:50%;
+                        transform: translateY(-50%);
+                        right:0px;
+                        transition: 0.3s ease;
+                        cursor: pointer;
+                        path{
+                            transition: 0.3s ease;
+                        }
+                        &:hover{
+                            path{
+                                fill:var(--text-red) !important;
+                            }
+                        }
+                    }
+                   
+                }
+                .order_paymets_methods_inner{
+                    margin: 30px 0 0;
+                    background: var(--white-bg);
+                    padding: 35px 30px;
+                    box-sizing: border-box;
+                    border-radius: 15px;
+                    position: relative;
+                    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+                    .radio{
+                        padding: 0 0 20px;
+                        font-size:16px;
+                        color:#212121;
+                        label{
+                            position: relative;
+                            img{
+                                position: absolute;
+                                top:6px;
+                                right:0px;
+                            }
+                        }
+                        span{
+                            display: block;
+                            font-size:14px;
+                            padding-left: 36px;
+                            margin: 5px 0 0;
+                            color: var(--text-color);
+                        }
+                    }
+
+                    .order_paymets_points{
+                        border-top: 1px solid var(--line);
+                        padding: 25px 0 0 0;
+                        h3{
+                          color:#212121;
+                          font-weight: 600;
+                          margin: 0 0 20px;
+                        }
+                    }
+                   
+                    .order_paymets_points_slider{
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      .order_paymets_points-total{
+                        width:70px;
+                        font-size: rem(10px);
+                        background: #F4F4F6;
+                        padding: 7px;
+                        span{
+                          display: block;
+                          font-size:rem(20px);
+                          font-weight: 700;
+                          color:#1B78AF;
+                        }
+                        
+                      }
+                    }
+                    .order_paymets_points-input{
+                      width:calc(100% - 250px);
+                        position: relative;
+                        .price_output_headline{
+                          color:#AAB7BF;
+                          font-size: rem(10px);
+                          position: absolute;
+                          top:50%;
+                          right:-125px;
+                          transform: translateY(-50%);
+                          .price_output{
+                            font-size: rem(16px);
+                            color: #1B78AF;
+                            font-weight: 700;
+                            background: #fff;
+                            border: 1px solid var(--line);
+                            padding: 7px;
+                            border-radius: 6px;
+                            width: 45px;
+                            margin: 5px 0 0;
+                          } 
+                        }
+                           
+                        .ui-slider-horizontal{
+                            height:8px;
+                        }
+                        .ui-widget.ui-widget-content{
+                            border:1px solid #D9D9D9;
+                            
+                        }
+                        .ui-widget-header{
+                            background: #3F93C5;
+                        }
+                
+                        .ui-state-default, 
+                        .ui-widget-content .ui-state-default, 
+                        .ui-widget-header .ui-state-default, 
+                        .ui-button,
+                        html .ui-button.ui-state-disabled:hover, 
+                        html .ui-button.ui-state-disabled:active{
+                            width:18px;
+                            height:18px;
+                            border-radius: 50%;  
+                            background: #fff;  
+                            border:3px solid #fff !important; 
+                            box-sizing: border-box;
+                            color: #fff;  
+                            outline: none !important;
+                            box-shadow: 0 0 5px rgba(#000, 0.2);
+                        }
+                        .ui-slider-horizontal .ui-slider-handle{
+                            top:-5px;
+                        }
+                        .price-slider_data-row{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin: 20px 0 0;
+                            input{
+                                width:calc(50% - 7px);
+                                height:42px;
+                                border:1px solid var(--gray-bg);
+                                padding: 0 12px;
+                                border-radius: 8px;
+                                box-sizing: border-box;
+                                color:var(--text-color);
+                                font-size:rem(14px);
+                                outline:none;
+                            }   
+                        }
+                    }
+                }
+            }
+            .order_paymets_headline_delivery{
+              margin: 60px 0 0;
+            }
+            .order_paymets_delivery{
+              .order_paymets_city{
+                width:100%;
+                display: block;
+                .nice-select{
+                  width:100%;
+                  margin-bottom: 25px;
+                  .list{
+                    width:100%;
+                  }
+                }
+              }
+              .order_paymets_street{
+                width:100%;
+                display: block;
+                .nice-select{
+                  width:100%;
+                  margin-bottom: 25px;
+                  .list{
+                    width:100%;
+                  }
+                }  
+              }
+              .order_paymets_courier{
+                gap:20px;
+                display: flex;
+                flex-wrap: wrap;
+                .order_paymets_courier_item{
+                  width: 100%;
+                  display: flex;
+                  justify-content: space-between;
+                  padding: 24px 20px;
+                  align-items: center;
+                  border: 1px solid #F0F0F4;
+                  border-radius: 7px;
+                 
+                  .order_paymets_courier_item_adress{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    font-size: rem(14px);
+                    svg{
+                      margin-right:10px;
+                    }
+                  }
+                  a{
+                    display: inline-block;
+                    padding: 5px 8px;
+                    background: #DAEBF4;
+                    border: 1px solid #F0F0F4;
+                    color:#1C3C6E;
+                    text-align: center;
+                    text-decoration: none;
+                    border-radius: 10px;
+                    transition: 0.3s ease;
+                    font-size: rem(14px);
+                    &:hover{
+                      background: #f5f5f5;
+                    }
+                  }
+                }
+              }
+            }
+        }
+        .order_item_checkout{
+            width:calc(57% - 30px);
+        }
+    }
+}
+
+$color1: #f4f4f4;
+$color2: #3197EE;
+.radio {
+    margin: 0.5rem;
+    input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      + .radio-label {
+        &:before {
+          content: '';
+          background: $color1;
+          border-radius: 100%;
+          border: 1px solid darken($color1, 25%);
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          position: relative;
+          top: -2px;
+          margin-right: 10px; 
+          vertical-align: top;
+          cursor: pointer;
+          text-align: center;
+          transition: all 250ms ease;
+        }
+      }
+      &:checked {
+        + .radio-label {
+          &:before {
+            background-color: $color2;
+            box-shadow: inset 0 0 0 4px $color1;
+          }
+        }
+      }
+      &:focus {
+        + .radio-label {
+          &:before {
+            outline: none;
+            border-color: $color2;
+          }
+        }
+      }
+      &:disabled {
+        + .radio-label {
+          &:before {
+            box-shadow: inset 0 0 0 4px $color1;
+            border-color: darken($color1, 25%);
+            background: darken($color1, 25%);
+          }
+        }
+      }
+      + .radio-label {
+        &:empty {
+          &:before {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }

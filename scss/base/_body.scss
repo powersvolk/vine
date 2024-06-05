@@ -11,6 +11,20 @@ html body {
 	min-width: 100%;
 	font-weight: 400;
     background: var(--main-bg);
+	&::-webkit-scrollbar {
+		width: 6px;
+		
+	}
+	&::-webkit-scrollbar-track {
+		background: #f1f1f1; 
+	}
+	&::-webkit-scrollbar-thumb {
+		background: #888; 
+		border-radius: 5px;
+	}
+	&::-webkit-scrollbar-thumb:hover {
+		background: #555; 
+	}
 }
 
 html body .container {
