@@ -75,6 +75,7 @@ jQuery(function ($) {
     $('.popup_open').click(function (e) {
 		e.preventDefault();
         $('.pages_menu').fadeOut();
+        $('.left_filter').fadeOut();
         let itemId = $(this).data('item');
         $(`.overlay, .popup.${itemId}_window`).fadeIn(500);
 	});
@@ -131,8 +132,8 @@ jQuery(function ($) {
     $owlFullWidth.owlCarousel({
         autoplay:true,
         autoplayTimeout:10000,
-        autoplaySpeed: 1000,
-        smartSpeed:1000,
+        autoplaySpeed: 500,
+        smartSpeed:500,
         loop:true,
         margin:10,
         nav:true,
@@ -169,8 +170,8 @@ jQuery(function ($) {
     $owlCategories.owlCarousel({
         autoplay:true,
         autoplayTimeout:10000,
-        autoplaySpeed: 1000,
-        smartSpeed:1000,
+        autoplaySpeed: 500,
+        smartSpeed:500,
         loop:true,
         margin:25,
         nav:true,
@@ -213,64 +214,72 @@ jQuery(function ($) {
 
     /* Slide Menu */
 
-    document.querySelectorAll('.switch-menu').forEach(menu => {
-        let navItems = menu.querySelectorAll('.menu-item');
-        let indicator = menu.querySelector('.indicator');
-        let left_position = 0;
-        let activeIndex = 0;
     
-        navItems.forEach((item, index) => {
-            item.addEventListener('mouseenter', () => {
-                updateIndicator(index);
-                navItems.forEach(navItem => {
-                    navItem.classList.remove('active');
-                });
-             });
-            item.addEventListener('mouseleave', () => {
-                updateIndicator(activeIndex);
-                navItems[activeIndex].classList.add('active');
-            });
-            item.addEventListener('click', (e) => {
-                e.preventDefault();
-                updateIndicator(index);
-                setActiveNavItem(index);
-                activeIndex = index;
-            });
+    $('.switch-menu li a').click(function (e) {
+		e.preventDefault();
+		$(this).parent().parent().find('.active').removeClass('active');
+        $(this).parent().addClass('active');
+        
+	});
 
-        });
-        window.addEventListener('load', () => {
-            updateIndicator(activeIndex);
-        });
-        window.addEventListener('resize', () => {
-            updateIndicator(activeIndex);
-        });
+    // document.querySelectorAll('.switch-menu').forEach(menu => {
+    //     let navItems = menu.querySelectorAll('.menu-item');
+    //     let indicator = menu.querySelector('.indicator');
+    //     let left_position = 0;
+    //     let activeIndex = 0;
+    
+    //     navItems.forEach((item, index) => {
+    //         item.addEventListener('mouseenter', () => {
+    //             updateIndicator(index);
+    //             navItems.forEach(navItem => {
+    //                 navItem.classList.remove('active');
+    //             });
+    //          });
+    //         item.addEventListener('mouseleave', () => {
+    //             updateIndicator(activeIndex);
+    //             navItems[activeIndex].classList.add('active');
+    //         });
+    //         item.addEventListener('click', (e) => {
+    //             e.preventDefault();
+    //             updateIndicator(index);
+    //             setActiveNavItem(index);
+    //             activeIndex = index;
+    //         });
 
-        function updateIndicator(index) {
-            setIndicatorWidth(navItems[index]);
-            setIndicatorPosition(index);
-        }
+    //     });
+    //     window.addEventListener('load', () => {
+    //         updateIndicator(activeIndex);
+    //     });
+    //     window.addEventListener('resize', () => {
+    //         updateIndicator(activeIndex);
+    //     });
+
+    //     function updateIndicator(index) {
+    //         setIndicatorWidth(navItems[index]);
+    //         setIndicatorPosition(index);
+    //     }
     
-        function setIndicatorWidth(item) {
-            indicator.style.width = item.clientWidth + "px";
-        }
+    //     function setIndicatorWidth(item) {
+    //         indicator.style.width = item.clientWidth + "px";
+    //     }
     
-        function setIndicatorPosition(index) {
-            left_position = 0;
-            for (let i = 0; i < index; i++) {
-                left_position += navItems[i].clientWidth;
-            }
-            indicator.style.left = left_position + "px";
-        }
+    //     function setIndicatorPosition(index) {
+    //         left_position = 0;
+    //         for (let i = 0; i < index; i++) {
+    //             left_position += navItems[i].clientWidth;
+    //         }
+    //         indicator.style.left = left_position + "px";
+    //     }
     
-        function setActiveNavItem(index) {
-            navItems.forEach((item, i) => {
-                item.classList.remove('active');
-                if (i === index) {
-                    item.classList.add('active');
-                }
-            });
-        }
-    });
+    //     function setActiveNavItem(index) {
+    //         navItems.forEach((item, i) => {
+    //             item.classList.remove('active');
+    //             if (i === index) {
+    //                 item.classList.add('active');
+    //             }
+    //         });
+    //     }
+    // });
     
     /* Sort */
 
@@ -288,8 +297,8 @@ jQuery(function ($) {
     $owlProduct.owlCarousel({
         autoplay:true,
         autoplayTimeout:10000,
-        autoplaySpeed: 1000,
-        smartSpeed:1000,
+        autoplaySpeed: 500,
+        smartSpeed:500,
         loop:true,
         margin:25,
         nav:true,
@@ -424,6 +433,13 @@ jQuery(function ($) {
             
         });
 
+        $('.left_filter .sidebar_tab h3').click(function (e) {
+            e.preventDefault();
+            $(this).toggleClass('active');
+            $(this).parent().toggleClass('close');
+            
+        });
+
     /* Product Option */    
 
         $('.product_options_item').click(function (e) {
@@ -520,8 +536,8 @@ jQuery(function ($) {
     $owlTaste.owlCarousel({
         autoplay:false,
         autoplayTimeout:10000,
-        autoplaySpeed: 1000,
-        smartSpeed:1000,
+        autoplaySpeed: 500,
+        smartSpeed:500,
         loop:false,
         margin:15,
         nav:true,
@@ -562,8 +578,8 @@ jQuery(function ($) {
     $owlTasteSmaller.owlCarousel({
         autoplay:false,
         autoplayTimeout:10000,
-        autoplaySpeed: 1000,
-        smartSpeed:1000,
+        autoplaySpeed: 500,
+        smartSpeed:500,
         loop:false,
         margin:15,
         nav:true,
@@ -695,6 +711,84 @@ jQuery(function ($) {
         $('.rewiews_window_content .taste_item').removeClass('active');
         $(`.rewiews_window_content .${tab}`).addClass('active');
     });
+
+    $('.order_paymets_delivery .radio input').click(function(e){
+        
+        if ($('#radio-4').is(':checked')) {
+            $('.order_paymets_street').fadeIn();
+        } else {
+            $('.order_paymets_street').fadeOut();
+        }
+        if ($('#radio-5').is(':checked')) {
+            $('.order_paymets_courier').css({'display':'flex'});
+        } else {
+            $('.order_paymets_courier').css({'display':'none'});
+        }
+        
+    });
+
+
+    /* Pick Up */
+
+    $('.pick_up_data h2').click(function(e){
+        e.preventDefault();
+        $(this).parent().toggleClass('open');
+        
+    });
+
+    $('.drink-label').click(function(){
+        let color = $(this).data('color');
+        $('.pickup_1_color').css({'display': 'none'});
+        $(color).css({'display': 'flex'});
+    });
+
+    $('.drinkColor-label').click(function(){
+        $('.pick_up_data_1').addClass('open');
+    });
+
+    $('.region-label').click(function(){
+        let region = $(this).data('region');
+        if ($(this).parent().find('.cheackbox').is(':checked')) {
+            $(region).removeClass('active');
+        } else {
+            $(region).addClass('active');
+        }
+        
+        if($('.pickup_region .pickup_drink_item.active').length > 0) {
+            $('.region_headline').addClass('pickup_region_headline')
+        } else {
+            $('.region_headline').removeClass('pickup_region_headline')
+        }
+       
+    });
+
+    $('.drinkregion-label').click(function(){
+        $('.pick_up_data_2').addClass('open');
+    });
+
+    $('.eat-label').click(function(){
+        $('.pick_up_data_3').addClass('open');
+    });
+
+     $('.pick_up_data_content .owl-taste .item a').click(function(e){
+        e.preventDefault();
+        $('.pick_up_data_content .owl-taste .item').removeClass('show_active');
+        $(this).parent().addClass('show_active');
+        let tab = $(this).data('tab');
+        $('.pick_up_data_content .taste_item').removeClass('active');
+        $(`.pick_up_data_content .${tab}`).addClass('active');
+    });
+
+
+    $('.up_filter').click(function (e) {
+		e.preventDefault();
+        $('.left_filter').fadeIn();
+	});
+
+    $('.close_filter').click(function (e) {
+		e.preventDefault();
+        $('.left_filter').fadeOut();
+	});
 
 
     /* Gift */

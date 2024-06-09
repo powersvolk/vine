@@ -3,8 +3,12 @@
     .order_inner{
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
         .order_item_paymets{
             width:calc(43% - 30px);
+            @media only screen and (max-width: 1199px) {
+              width:calc(43% - 15px);
+            }
             .cart__inner-item-title{
                 display: flex;
                 justify-content: flex-start;
@@ -115,6 +119,9 @@
                                 position: absolute;
                                 top:6px;
                                 right:0px;
+                                @media only screen and (max-width: 1199px) {
+                                 display: none;
+                                }
                             }
                         }
                         span{
@@ -244,7 +251,7 @@
               }
               .order_paymets_street{
                 width:100%;
-                display: block;
+                display: none;
                 .nice-select{
                   width:100%;
                   margin-bottom: 25px;
@@ -255,8 +262,8 @@
               }
               .order_paymets_courier{
                 gap:20px;
-                display: flex;
                 flex-wrap: wrap;
+                display: none;
                 .order_paymets_courier_item{
                   width: 100%;
                   display: flex;
@@ -296,6 +303,125 @@
         }
         .order_item_checkout{
             width:calc(57% - 30px);
+            @media only screen and (max-width: 1199px) {
+              width:calc(57% - 15px);
+            }
+            h2 {
+              font-weight: 600;
+              color: var(--text-black);
+              font-size: 1.75rem;
+            }
+            .order_checkout_container{
+              margin: 30px 0 0;
+              background: #fff;
+              padding: 30px;
+              box-sizing: border-box;
+              border-radius: 15px;
+              position: relative;
+              -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+              box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+              @media only screen and (max-width: 1199px) {
+                padding: 30px 15px;
+              }
+              .order_checkout_container_section{
+                border-bottom: 1px solid #F0F1F1;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 0;
+              }
+              .order_checkout_items{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+              }
+              .order_checkout_container-thumb{
+                width:65px;
+                margin-right: 15px;
+                img{
+                  width:100%;
+                  height:auto;
+                }
+              }
+              .order_checkout_container-info{
+                h3{
+                  font-weight: 600;
+                  color:#212121;
+                  font-size:rem(16px);
+                  margin: 0 0 5px;
+                }
+                p{
+                  color:#5C798B;
+                  font-size:rem(14px);
+                }
+                .order_checkout_container-info-price{
+                  font-weight: 600;
+                  color:#212121;
+                  font-size:rem(16px);
+                  margin: 20px 0 0;
+                }
+              }
+              .order_checkout_container-count{
+                color:#000;
+              }
+              .order_checkout_container-price{
+                font-size:24px;
+                font-weight: 600;
+                color:#212121;
+                @media only screen and (max-width: 1199px) {
+                  font-size:18px;
+                 }
+              }
+
+              .order_checkout_total-info{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                border-bottom: 1px solid #F0F1F1;
+                padding: 15px 0;
+                .order_checkout_total-info-text{
+                  color:#09213D;
+                  font-size:rem(17px);
+                  text-align: right;
+                  span{
+                    font-weight: 600;
+                  }
+                }
+                .order_checkout_total-info-price{
+                  color:#131D2A;
+                  font-size:rem(20px);
+                  font-weight: 600;
+                  width:150px;
+                  text-align: right;
+                  span{
+                    font-size: rem(24px);
+                  }
+                }
+                
+              }
+              .order_checkout_cta{
+                text-align: right;
+                margin: 20px 0 0;
+                a{
+                  display: inline-block;
+                  font-size: 1rem;
+                  color: var(--text-white);
+                  line-height: 1;
+                  padding: 12px 40px 14px;
+                  background: var(--cta-red);
+                  transition: 0.3s ease;
+                  border-radius: 7px;
+                  text-decoration: none;
+                  font-weight: 600;
+                  box-sizing: border-box;
+                  text-align: center;
+                  &:hover{
+                    background: var(--cta-red-hover);
+                    border-radius: 5px;
+                  }
+                }
+              }
+            }
         }
     }
 }

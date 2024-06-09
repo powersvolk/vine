@@ -207,7 +207,156 @@
                   
             </div>
             <div class="order_inner_item order_item_checkout">
-                
+                <h2>
+                    Корзина
+                </h2>
+                <div class="order_checkout_container">
+                    <div class="order_checkout_container_section">
+                        <div class="order_checkout_items">
+                            <div class="order_checkout_container-thumb">
+                                <img src="img/bottle.png" alt="">
+                            </div>  
+                            <div class="order_checkout_container-info">
+                                <h3>
+                                    Вино Rosso di Montalcino, Banfi, 2021 г.
+                                </h3>
+                                <p>
+                                    Италия, красное, сухое, 0.75 л.<br/>
+                                    Артикул: 143946
+                                </p>
+                                <div class="order_checkout_container-info-price">
+                                    2 358 ₽
+                                </div>
+                            </div> 
+                        </div> 
+                        <div class="order_checkout_container-count">
+                            1 шт.
+                        </div>
+                        <div class="order_checkout_container-price">
+                            2 358 ₽
+                        </div>
+                    </div>
+                    <div class="order_checkout_container_section">
+                        <div class="order_checkout_items">
+                            <div class="order_checkout_container-thumb">
+                                <img src="img/bottle.png" alt="">
+                            </div>  
+                            <div class="order_checkout_container-info">
+                                <h3>
+                                    Вино Rosso di Montalcino, Banfi, 2021 г.
+                                </h3>
+                                <p>
+                                    Италия, красное, сухое, 0.75 л.<br/>
+                                    Артикул: 143946
+                                </p>
+                                <div class="order_checkout_container-info-price">
+                                    2 358 ₽
+                                </div>
+                            </div> 
+                        </div> 
+                        <div class="order_checkout_container-count">
+                            1 шт.
+                        </div>
+                        <div class="order_checkout_container-price">
+                            2 358 ₽
+                        </div>
+                    </div>
+                    <div class="order_checkout_container_section">
+                        <div class="order_checkout_items">
+                            <div class="order_checkout_container-thumb">
+                                <img src="img/bottle.png" alt="">
+                            </div>  
+                            <div class="order_checkout_container-info">
+                                <h3>
+                                    Вино Rosso di Montalcino, Banfi, 2021 г.
+                                </h3>
+                                <p>
+                                    Италия, красное, сухое, 0.75 л.<br/>
+                                    Артикул: 143946
+                                </p>
+                                <div class="order_checkout_container-info-price">
+                                    2 358 ₽
+                                </div>
+                            </div> 
+                        </div> 
+                        <div class="order_checkout_container-count">
+                            1 шт.
+                        </div>
+                        <div class="order_checkout_container-price">
+                            2 358 ₽
+                        </div>
+                    </div>
+                    <div class="order_checkout_container_section">
+                        <div class="order_checkout_items">
+                            <div class="order_checkout_container-thumb">
+                                <img src="img/bottle.png" alt="">
+                            </div>  
+                            <div class="order_checkout_container-info">
+                                <h3>
+                                    Вино Rosso di Montalcino, Banfi, 2021 г.
+                                </h3>
+                                <p>
+                                    Италия, красное, сухое, 0.75 л.<br/>
+                                    Артикул: 143946
+                                </p>
+                                <div class="order_checkout_container-info-price">
+                                    2 358 ₽
+                                </div>
+                            </div> 
+                        </div> 
+                        <div class="order_checkout_container-count">
+                            1 шт.
+                        </div>
+                        <div class="order_checkout_container-price">
+                            2 358 ₽
+                        </div>
+                    </div>
+                    <div class="order_checkout_total-info">
+                        <div class="order_checkout_total-info-text">
+                            Скидка:
+                        </div>
+                        <div class="order_checkout_total-info-price">
+                            7 489 ₽
+                        </div>
+                    </div>
+                    <div class="order_checkout_total-info">
+                        <div class="order_checkout_total-info-text">
+                            Доставка из нашего склада:
+                        </div>
+                        <div class="order_checkout_total-info-price">
+                            89 ₽
+                        </div>
+                    </div>
+                    <div class="order_checkout_total-info">
+                        <div class="order_checkout_total-info-text">
+                            Доставка под заказ:
+                        </div>
+                        <div class="order_checkout_total-info-price">
+                            189 ₽
+                        </div>
+                    </div>
+                    <div class="order_checkout_total-info">
+                        <div class="order_checkout_total-info-text">
+                            Балы лояльности:
+                        </div>
+                        <div class="order_checkout_total-info-price">
+                            389 ₽
+                        </div>
+                    </div>
+                    <div class="order_checkout_total-info">
+                        <div class="order_checkout_total-info-text">
+                            <span>Итого:</span>
+                        </div>
+                        <div class="order_checkout_total-info-price">
+                            <span>9 489 ₽</span>
+                        </div>
+                    </div>
+                    <div class="order_checkout_cta">
+                        <a href="#">
+                            Оформить заказ
+                        </a>
+                    </div>
+                </div>    
             </div>
         </div>
     </div> 
