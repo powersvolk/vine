@@ -1,0 +1,330 @@
+.pick_up_description{
+    h1{
+        color: var(--text-dark);
+        font-size: rem(28px);
+        font-weight: 600;
+        margin: 0 0 10px;
+    }
+    p{
+        color: var(--text-dark);
+        line-height: 1.5em;
+    }
+}
+
+.pick_up{
+    .pick_up_data{
+        background: #fff;
+        border-radius: 10px;
+        border: 1px solid #DBDBDB;
+        padding: 30px 40px;
+        margin: 0 0 15px;
+        transition: 0.3s ease;
+        h2{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-size: rem(22px);
+            color:#000;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .pick_up_data_content{
+            display: none;
+            h3{
+                color:#000;
+                font-size:rem(16px);
+                font-weight: 600;
+                margin: 40px 0;
+                display: none;
+                &.pickup_region_headline{
+                    display: block;
+                }
+            }
+            .pickup_drink{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 100%;
+                gap:40px;
+                flex-wrap: wrap;
+                @media only screen and (max-width: $smDesktop) {
+                    gap:10px;
+                }
+                .pickup_drink_item {
+                    width:150px;
+                    @media only screen and (max-width: $desktop) {
+                        width:130px;
+
+                    }
+                    .radio_pick {
+                        text-align: center;
+                        img{
+                            width:150px;
+                            height:150px;
+                            border-radius: 50%;
+                            border: 5px solid #DBDBDB;
+                            display: block;
+                            margin: 0 auto 15px;
+                            @media only screen and (max-width: $desktop) {
+                                width:100px;
+                                height:100px;
+                            }
+                        }
+                        label{
+                            font-size: rem(16px);
+                            color:#5C798B;
+                            font-weight: 600;
+                            margin: 15px 0 0;
+                            cursor: pointer;
+                            @media only screen and (max-width: $desktop) {
+                                font-size: rem(14px);
+                            }
+                        }
+                        input[type="radio"] {
+                          position: absolute;
+                          opacity: 0;
+                          + .radio-label {
+                            span {
+                              background: $color1;
+                              border-radius: 100%;
+                              border: 1px solid darken($color1, 25%);
+                              display: inline-block;
+                              width: 14px;
+                              height: 14px;
+                              position: relative;
+                              top: 1px;
+                              margin-right: 10px; 
+                              vertical-align: top;
+                              cursor: pointer;
+                              text-align: center;
+                              transition: all 250ms ease;
+                            }
+                          }
+                          &:checked {
+                            + .radio-label {
+                              span {
+                                background-color: $color2;
+                                box-shadow: inset 0 0 0 4px $color1;
+                              }
+                            }
+                          }
+                          &:focus {
+                            + .radio-label {
+                              span {
+                                outline: none;
+                                border-color: $color2;
+                              }
+                            }
+                          }
+                          &:disabled {
+                            + .radio-label {
+                              span {
+                                box-shadow: inset 0 0 0 4px $color1;
+                                border-color: darken($color1, 25%);
+                                background: darken($color1, 25%);
+                              }
+                            }
+                          }
+                          + .radio-label {
+                            &:empty {
+                              &:before {
+                                margin-right: 0;
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                }
+                &.pickup_color{
+                    display: none;
+                    .pickup_drink_item {
+                        width:120px;
+                        .radio_pick {
+                            text-align: center;
+                            img{
+                                width:80px;
+                                height:80px;
+                                border:3px solid #DBDBDB;
+                            }
+                        }    
+                    }
+
+                }
+            }
+            .drinkregion-label{
+                font-size: rem(14px) !important;
+            }
+            .pickup_city{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 100%;
+                gap:40px;
+                flex-wrap: wrap;
+                @media only screen and (max-width: $smDesktop) {
+                    gap:10px;
+                }
+                .pickup_city_item{
+                    width:130px;
+                    text-align: center;
+                    img{
+                        width:100px;
+                        height:100px;
+                        border-radius: 50%;
+                        border: 5px solid #DBDBDB;
+                        display: block;
+                        margin: 0 auto 15px;
+                    }
+                    .checkbox-label {
+                        width: auto;
+                        height: auto;
+                        font-size: rem(14px);
+                        color:#5C798B;
+                        font-weight: 600;
+                        margin: 15px 0 0;
+                        cursor: pointer;
+                        padding: 0;
+                    }
+                    .checkbox-label:before,
+                    .checkbox-label:after {
+                        display: none;
+                    }
+                    .checkbox-label span {
+                        background: $color1;
+                        border-radius: 3px;
+                        border: 1px solid darken($color1, 25%);
+                        display: inline-block;
+                        width: 14px;
+                        height: 14px;
+                        position: relative;
+                        top: -1px;
+                        margin-right: 10px; 
+                        vertical-align: top;
+                        cursor: pointer;
+                        text-align: center;
+                        transition: all 250ms ease;
+                    }
+
+                    .cheackbox:checked + .checkbox-label span {
+                        background-color: $color2; 
+                        border-color: $color2; 
+                    }
+
+                    .checkbox-label span:after {
+                        content: '\2713'; 
+                        position: absolute;
+                        top: 0px;
+                        left: 2px;
+                        font-size: rem(14px);
+                        color: #fff;
+                        display: none; 
+                    }
+
+                    .cheackbox:checked + .checkbox-label span:after {
+                        display: block; 
+                    }
+     
+                }
+            }
+        }
+        &.open{
+            h2{
+                margin: 0 0 30px;
+            }
+            .pick_up_data_content{
+                display: block;
+            }
+        }
+
+
+        .pickup_region{
+            display: flex !important;
+            .pickup_drink_item{
+                display: none;
+                &.active{
+                    display: block;
+                }
+            }
+        }
+        
+     
+
+
+        
+        .pickup_window_rating{
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap:20px 80px;
+            .pickup_window_rating-item{
+                width:calc(33% - 80px);
+                .pickup_window_rating-item-title{
+                    font-size: 0.75rem;
+                    color: #5C798B;
+                    margin: 0 0 9px;
+                }
+
+            }
+        }
+
+        .pickup_window_rating-item-input{
+            position: relative;
+            .price_output{
+                position: absolute;
+                top:-19px;
+                right:0px;
+                font-size: 0.75rem;
+                color: #5C798B;
+                font-weight: 500;
+            }    
+            .ui-slider-horizontal{
+                height:4px;
+            }
+            .ui-widget.ui-widget-content{
+                border:1px solid #D9D9D9;
+                background: #D9D9D9;
+            }
+            .ui-widget-header{
+                background: var(--cta-red);
+            }
+    
+            .ui-state-default, 
+            .ui-widget-content .ui-state-default, 
+            .ui-widget-header .ui-state-default, 
+            .ui-button,
+            html .ui-button.ui-state-disabled:hover, 
+            html .ui-button.ui-state-disabled:active{
+                width:14px;
+                height:14px;
+                border-radius: 50%;  
+                background: #fff;  
+                border:3px solid #fff !important; 
+                box-sizing: border-box;
+                color: #fff;  
+                outline: none !important;
+                box-shadow: 0 0 5px rgba(#000, 0.2);
+            }
+            .ui-slider-horizontal .ui-slider-handle{
+                top:-5px;
+            }
+            .price-slider_data-row{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 20px 0 0;
+                input{
+                    width:calc(50% - 7px);
+                    height:42px;
+                    border:1px solid var(--gray-bg);
+                    padding: 0 12px;
+                    border-radius: 8px;
+                    box-sizing: border-box;
+                    color:var(--text-color);
+                    font-size:rem(14px);
+                    outline:none;
+                }   
+            }
+        }
+    }
+}

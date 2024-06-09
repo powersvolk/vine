@@ -1,5 +1,269 @@
 <?php include('components/Header.php'); ?>
 
+<div class="up_filter">
+    <svg height="20" viewBox="0 0 1792 1792" width="20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1595 295q17 41-14 70l-493 493v742q0 42-39 59-13 5-25 5-27 0-45-19l-256-256q-19-19-19-45v-486l-493-493q-31-29-14-70 17-39 59-39h1280q42 0 59 39z"/>
+    </svg>
+</div>
+
+
+<div class="left_filter">
+    <a href="#" class="close_filter">
+        <svg class="icon">
+            <use xlink:href="#close"></use>
+        </svg>
+    </a>
+    <div class="sidebar_tab">
+        <h3 class="active">
+            Цена, ₽
+            <span>
+                <svg class="icon">
+                    <use xlink:href="#arrow-down"></use>
+                </svg>
+            </span>
+        </h3>
+        <div class="sidebar_tab-content price-slider_data">
+            <div id="price-slider"></div>
+            <div class="price-slider_data-row">
+                <input type="text" id="min-price" readonly>
+                <input type="text" id="max-price" readonly>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar_tab">
+        <h3 class="active">
+            Содержание сахара
+            <span>
+                <svg class="icon">
+                    <use xlink:href="#arrow-down"></use>
+                </svg>
+            </span>
+        </h3>
+        <div class="sidebar_tab-content sidebar-filter-data">
+            <div class="form_rule">
+                <input type="checkbox" class="cheackbox" id="name_1">
+                <label for="name_1" class="checkbox-label">Сухое <span>34</span></label>
+            </div>
+            <div class="form_rule">
+                <input type="checkbox" class="cheackbox" id="name_2">
+                <label for="name_2" class="checkbox-label">Полусухое <span>71</span></label>
+            </div>
+            <div class="form_rule">
+                <input type="checkbox" class="cheackbox" id="name_3">
+                <label for="name_3" class="checkbox-label">Полусладкое <span>105</span></label>
+            </div>
+            <div class="form_rule">
+                <input type="checkbox" class="cheackbox" id="name_4">
+                <label for="name_4" class="checkbox-label">Сладкое <span>2356</span></label>
+            </div>
+            <div class="form_rule">
+                <input type="checkbox" class="cheackbox" id="name_5">
+                <label for="name_5" class="checkbox-label">Сладкое <span>2356</span></label>
+            </div>
+            <div class="form_rule">
+                <input type="checkbox" class="cheackbox" id="name_6">
+                <label for="name_6" class="checkbox-label">Сладкое <span>2356</span></label>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar_tab">
+        <h3 class="active">
+            Производитель
+            <span>
+                <svg class="icon">
+                    <use xlink:href="#arrow-down"></use>
+                </svg>
+            </span>
+        </h3>
+        <div class="sidebar_tab-content sidebar-filter-country">
+            <select class="select">
+                <option value="Турция">Турция</option>
+                <option value="Италия">Италия</option>
+                <option value="Грузия">Грузия</option>
+                <option value="Испания">Испания</option>
+                <option value="Португалия">Португалия</option>
+            </select>    
+        </div>
+    </div>
+    <div class="sidebar_tab">
+        <h3 class="active">
+            Страна
+            <span>
+                <svg class="icon">
+                    <use xlink:href="#arrow-down"></use>
+                </svg>
+            </span>
+        </h3>
+        <div class="sidebar_tab-content sidebar-filter-data">
+            <div class="form_rule">
+                <input type="checkbox" class="cheackbox" id="cname_1">
+                <label for="cname_1" class="checkbox-label">
+                    <img src="img/country/brazil.png" alt="">
+                    Франция <span>34</span>
+                </label>
+            </div>
+            <div class="form_rule">
+                <input type="checkbox" class="cheackbox" id="cname_2">
+                <label for="cname_2" class="checkbox-label">
+                    <img src="img/country/georgia.png" alt="">
+                    Италия <span>71</span>
+                </label>
+            </div>
+            <div class="form_rule">
+                <input type="checkbox" class="cheackbox" id="cname_3">
+                <label for="cname_3" class="checkbox-label">
+                    <img src="img/country/spain.png" alt="">
+                    Испания <span>105</span>
+                </label>
+            </div>
+            <div class="form_rule">
+                <input type="checkbox" class="cheackbox" id="cname_4">
+                <label for="cname_4" class="checkbox-label">
+                    <img src="img/country/brazil.png" alt="">
+                    Грузия <span>2356</span>
+                </label>
+            </div>
+            <div class="form_rule">
+                <input type="checkbox" class="cheackbox" id="cname_5">
+                <label for="cname_5" class="checkbox-label">
+                    <img src="img/country/spain.png" alt="">
+                    Бразилия <span>2356</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar_tab">
+        <h3 class="active">
+            Сорт винограда
+            <span>
+                <svg class="icon">
+                    <use xlink:href="#arrow-down"></use>
+                </svg>
+            </span>
+        </h3>
+        <div class="form_rule_field">
+            <input type="text" placeholder="Введите сорт винограда">
+        </div>
+        <div class="sidebar_tab-content sidebar-filter-data">
+            <div class="form_rule">
+                <input type="checkbox" class="cheackbox" id="sname_1">
+                <label for="sname_1" class="checkbox-label">
+                    Пино Нуар<span>34</span>
+                </label>
+            </div>
+            <div class="form_rule">
+                <input type="checkbox" class="cheackbox" id="sname_2">
+                <label for="sname_2" class="checkbox-label">
+                    Мерло <span>71</span>
+                </label>
+            </div>
+            <div class="form_rule">
+                <input type="checkbox" class="cheackbox" id="sname_3">
+                <label for="sname_3" class="checkbox-label">
+                    Совиньон Блан <span>105</span>
+                </label>
+            </div>
+            <div class="form_rule">
+                <input type="checkbox" class="cheackbox" id="sname_4">
+                <label for="sname_4" class="checkbox-label">
+                    Санджовезе <span>2356</span>
+                </label>
+            </div>
+            <div class="form_rule">
+                <input type="checkbox" class="cheackbox" id="sname_5">
+                <label for="sname_5" class="checkbox-label">
+                    Каберене Совиньон <span>2356</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar_tab close">
+        <h3 class="">
+            Год
+            <span>
+                <svg class="icon">
+                    <use xlink:href="#arrow-down"></use>
+                </svg>
+            </span>
+        </h3>
+        <div class="sidebar_tab-content sidebar-filter-data">
+            <div class="form_rule">
+                <input type="checkbox" class="cheackbox" id="dsname_1">
+                <label for="dsname_1" class="checkbox-label">
+                    1930<span>34</span>
+                </label>
+            </div>
+            <div class="form_rule">
+                <input type="checkbox" class="cheackbox" id="dsname_2">
+                <label for="dsname_2" class="checkbox-label">
+                    1950 <span>71</span>
+                </label>
+            </div>
+            <div class="form_rule">
+                <input type="checkbox" class="cheackbox" id="dsname_3">
+                <label for="dsname_3" class="checkbox-label">
+                    1960 <span>105</span>
+                </label>
+            </div>
+            <div class="form_rule">
+                <input type="checkbox" class="cheackbox" id="dsname_4">
+                <label for="dsname_4" class="checkbox-label">
+                    1990 <span>2356</span>
+                </label>
+            </div>
+            <div class="form_rule">
+                <input type="checkbox" class="cheackbox" id="dsname_5">
+                <label for="dsname_5" class="checkbox-label">
+                    2000 <span>2356</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar_tab close">
+        <h3 class="">
+            Крепость, °С
+            <span>
+                <svg class="icon">
+                    <use xlink:href="#arrow-down"></use>
+                </svg>
+            </span>
+        </h3>
+        <div class="sidebar_tab-content sidebar-filter-data">
+            <div class="form_rule">
+                <input type="checkbox" class="cheackbox" id="ssname_1">
+                <label for="ssname_1" class="checkbox-label">
+                    10%<span>34</span>
+                </label>
+            </div>
+            <div class="form_rule">
+                <input type="checkbox" class="cheackbox" id="ssname_2">
+                <label for="ssname_2" class="checkbox-label">
+                    15% <span>71</span>
+                </label>
+            </div>
+            <div class="form_rule">
+                <input type="checkbox" class="cheackbox" id="ssname_3">
+                <label for="ssname_3" class="checkbox-label">
+                    20% <span>105</span>
+                </label>
+            </div>
+            <div class="form_rule">
+                <input type="checkbox" class="cheackbox" id="ssname_4">
+                <label for="ssname_4" class="checkbox-label">
+                    25% <span>2356</span>
+                </label>
+            </div>
+            <div class="form_rule">
+                <input type="checkbox" class="cheackbox" id="ssname_5">
+                <label for="ssname_5" class="checkbox-label">
+                    30% <span>2356</span>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>    
+
+
 <div class="categories">
     <section class="category_hero" style="background-image:url(img/catalog/banner.jpg);">
         <div class="container">
@@ -561,7 +825,7 @@
                                 Купажированные
                             </a>
                         </li>
-                        <div class="indicator"></div>   
+                           
                     </ul>    
                 </div>
                 <div class="switch_filter_inner-item">
@@ -581,7 +845,7 @@
                                 Купажированные
                             </a>
                         </li>
-                        <div class="indicator"></div>   
+                          
                     </ul> 
                 </div>
             </div>
@@ -603,7 +867,7 @@
                                 Ароматные
                             </a>
                         </li>
-                        <div class="indicator"></div>   
+                        
                     </ul>    
                 </div>
                 <div class="switch_filter_inner-item">
@@ -618,7 +882,7 @@
                                 Сладкие
                             </a>
                         </li>
-                        <div class="indicator"></div>   
+                       
                     </ul> 
                 </div>
                 <div class="switch_filter_inner-item">
@@ -633,7 +897,7 @@
                                 Полнотелые
                             </a>
                         </li>
-                        <div class="indicator"></div>   
+                        
                     </ul> 
                 </div>
                 <div class="switch_filter_inner-item">
@@ -648,7 +912,7 @@
                                 Менее кислотные
                             </a>
                         </li>
-                        <div class="indicator"></div>   
+                         
                     </ul> 
                 </div>
                 <div class="switch_filter_inner-item">
@@ -663,7 +927,7 @@
                                 Менее игристое 
                             </a>
                         </li>
-                        <div class="indicator"></div>   
+                        
                     </ul> 
                 </div>
             </div>
@@ -959,6 +1223,7 @@
     </section>
     <?php include('components/buy_index.php'); ?>
 </div>    
+
 
 
 

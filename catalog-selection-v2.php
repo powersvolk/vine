@@ -365,7 +365,7 @@
                                 Купажированные
                             </a>
                         </li>
-                        <div class="indicator"></div>   
+                           
                     </ul>    
                 </div>
                 <div class="switch_filter_inner-item">
@@ -385,7 +385,7 @@
                                 Купажированные
                             </a>
                         </li>
-                        <div class="indicator"></div>   
+                           
                     </ul> 
                 </div>
             </div>
@@ -407,7 +407,7 @@
                                 Ароматные
                             </a>
                         </li>
-                        <div class="indicator"></div>   
+                           
                     </ul>    
                 </div>
                 <div class="switch_filter_inner-item">
@@ -422,7 +422,7 @@
                                 Сладкие
                             </a>
                         </li>
-                        <div class="indicator"></div>   
+                           
                     </ul> 
                 </div>
                 <div class="switch_filter_inner-item">
@@ -437,7 +437,7 @@
                                 Полнотелые
                             </a>
                         </li>
-                        <div class="indicator"></div>   
+                           
                     </ul> 
                 </div>
                 <div class="switch_filter_inner-item">
@@ -452,7 +452,7 @@
                                 Менее кислотные
                             </a>
                         </li>
-                        <div class="indicator"></div>   
+                           
                     </ul> 
                 </div>
                 <div class="switch_filter_inner-item">
@@ -467,7 +467,7 @@
                                 Менее игристое 
                             </a>
                         </li>
-                        <div class="indicator"></div>   
+                           
                     </ul> 
                 </div>
             </div>
